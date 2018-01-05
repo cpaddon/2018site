@@ -78,9 +78,8 @@ $(function() {
         switchSections(id, true);
     }
     var ctaContent = {
-        '#fully-managed': ['Book a Demo', '#', 'fully%20managed%20home%20with%20video'],
-        '#self-service': ['Get Started', '#', 'self%20service%20home%20with%20video'], 
-        '#custom-api': ['Get Started', '#', 'self%20service%20home%20with%20video']
+        '#fully-managed': ['Book a Demo', '#wp_popup_2278578', 'fully%20managed%20home%20with%20video'],
+        '#self-service': ['Get Started', 'https://www.wishpond.com/pricing/', 'self%20service%20home%20with%20video']
     };
     var demoNavHref = $('.demo-nav a').attr('href');
 
@@ -125,7 +124,7 @@ $(function() {
         $('#inline-switch').fadeIn();
     }
 });
-$.getScript('scrollreveal.js', function() {
+$.getScript('https://d30itml3t0pwpf.cloudfront.net/wp-content/themes/wishpond/js/wishpond-scripts/scrollreveal.min.js', function() {
     window.sr = ScrollReveal();
     sr.reveal(document.querySelectorAll('.service-section .align-self-center img'), {
         duration: 800,
