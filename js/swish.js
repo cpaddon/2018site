@@ -92,10 +92,10 @@ $(function() {
                     $('html, body').stop().animate({
                         'scrollTop': $('.content-section[data-toggle="' + el + '"]').offset().top - 50
                     }, 500, 'swing');
-                    analytics.identify({
+/*                   analytics.identify({
                         'selected_service': el
                     });
-                }
+*/               }
             });
         });
         $('.learn-more').text(ctaContent[el][0]);
@@ -261,6 +261,8 @@ $(window).trigger('scroll');
 $('#menu-item-117 > a, #menu-item-41781 > a, #menu-item-41781 > a, #menu-item-42030 > a').click(function(e) {
     e.preventDefault();
 });
+
+
 window.analytics.ready(function() {
     var interval, timeout;
     timeout = setTimeout((function() {
