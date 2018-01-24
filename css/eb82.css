@@ -236,7 +236,7 @@ img.content-image.auto-width {
 
 .table-row>[class^="col-"] {
     display: table-cell;
-    float: none;
+    /*float: none;*/
     vertical-align: middle
 }
 
