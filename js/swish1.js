@@ -228,7 +228,7 @@ $('.navbar-nav').each(function() {
         over: function() {
             $('ul:first', this).css({
                 visibility: 'visible',
-                display: 'none'
+                display: 'block'
             }).slideDown(250);
             var pathSet = $(this).parents('.navbar-nav li').find('a:first');
             $('.navbar-nav li a.dd-path').not(pathSet).removeClass('dd-path');

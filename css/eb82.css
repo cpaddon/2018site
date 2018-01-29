@@ -1406,7 +1406,7 @@ a.cta-button.transparent:focus {
 
 #intercom-container .intercom-app .intercom-launcher-discovery-frame,
 #intercom-container .intercom-app .intercom-launcher-frame {
-    display: none
+    display: block
 }
 
 #intercom-container span .intercom-messenger-frame {
