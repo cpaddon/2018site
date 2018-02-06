@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
 
@@ -262,11 +260,15 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="../xmlrpc.php.html">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/sinline.css">
+	<link type="text/css" media="all" href="css/swish.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300,400,600,700,800%7CLato:300" rel="stylesheet">
     <script type="text/javascript" src="js/header-v5.js"></script>
     <script type="text/javascript" src="js/151844449.js"></script>
+	<script type="text/javascript" defer src="js/swish.js"></script>
     <link type="text/css" media="all" href="css/eb82.css" rel="stylesheet" />
     <title>Marketplace | OnSched</title>
     <link rel="canonical" href="index.html" />
@@ -301,17 +303,145 @@
             padding: 0 !important;
             margin: 0 !important;
         }
+		.site-header .container-fluid {
+		display: none;
+}
+#menu-primary a {
+  color: #1e6a8a;
+}
+#primary-nav .navbar-header {
+  margin-left: 1%;
+}
+#primary-nav ul {
+  margin-left: 48%;
+}
+		  @media (max-width: 768px) {
+    .site-header .navbar-brand{
+      margin: 10px;
+    }
+  
+    .site-header .navbar-nav > li:nth-child(-n+5) a {
+      color: #0090f7 !important;
+	  text-transform: uppercase;
+    }
+  
+    .site-header .container-fluid {
+      background-color: #fff;
+    }
+  
+    .site-header img {
+      -webkit-filter: none !important;
+      filter: none !important;
+    }
+  
+    .collapsing,
+    .collapsing.show {
+      -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
+      box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.75);
+    }
+  
+     .signup-nav .nav-link {
+       /*margin-left: 1em !important;*/
+     }
+  
+    .demo-nav .nav-link {
+      margin-left: 1em !important;
+      min-width: 121.69px;
+      text-align: center;
+      margin-top: 1rem !important;
+    }
+  }
+      @media (max-width: 767px){
+      .site-header .navbar-nav > li a {
+          text-align: center;  
+          border-bottom: 1px solid #ededed !important;
+      }
+      .site-header .navbar-nav > li a:hover{
+        background-color: #ededed;
+      }
+      .signup-nav, .demo-nav{
+        display: block !important;
+        margin: 0 auto !important;
+      }
+      .signup-nav {
+        margin-top: 10px !important;
+      }
+      .demo-nav{
+        margin-bottom: 10px !important;
+      }
+	  		.site-header .container-fluid {
+		display: block;
+}
+  
+    }
     </style>
 </head>
 
 <body class="page-template page-template-templates page-template-page page-template-templatespage-php page page-id-42867">
     <div id="page" class="hfeed site">
-        <nav class="site-header navbar navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
+        <nav class="site-header navbar navbar-expand-md" role="navigation">
+
+            <div class="container-fluid flex-wrap">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/transdark.png"
+                        class="wishpond-blue"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-nav"
+                    aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars fa-2" aria-hidden="true"></i>
+                </button>
+                <div id="primary-nav" class="collapse navbar-collapse justify-content-sm-center justify-content-md-end">
+                    <ul id="menu-primary" class="navbar-nav">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-117"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117 nav-item dropdown">
+                            <a title="Products" href="index.html#" class="nav-link">Solutions</a>
+                            <ul role="menu" class=" dropdown-menu">
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
+                                    <a title="Calling" href="marketplace.html" class="dropdown-item">Marketplaces</a>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
+                                <a title="Calling" href="Directories.html" class="dropdown-item">Directories</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
+                            <a title="Calling" href="b2bsales.html" class="dropdown-item">B2B Sales Teams</a>
+                                
+                            </li>
+                            </ul>
+                        </li>
+
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1928"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1928 nav-item">
+                            <a title="Pricing" href="pricing.html" class="nav-link">Pricing</a>
+                        </li>
+                      <!--  <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18377"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18377 nav-item">
+                            <a title="Blog" href="#" class="nav-link">Blog</a>
+                        </li>-->
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-109"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109 nav-item">
+                            <a title="Login" href="https://app.onsched.com/portal/calendar" class="nav-link">Login</a>
+                        </li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10751"
+                            class="signup-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-10751 nav-item">
+                            <a title="Start Free Trial" href="https://app.onsched.com/custom/onboarding/" class="nav-link">Start Free Trial</a>
+                        </li>
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-17597" 
+                        class="mitch.css">
+                      <a title="Book A Demo" href="http://onsched.com/book-demo-new/" class="nav-link" style="
+                      background: #03c9a8;
+                      padding-left: 17px;
+                      font-weight: bold;
+                      padding-right:  17px;">Book A Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div id="primary-nav" class="navbar-collapse collapse">
+				                <div class="navbar-header">
                     <a class="navbar-brand" href="index.html"> <img src="img/transdark.png" alt="OnSched"> </a>
                 </div>
-                <div id="primary-nav" class="navbar-collapse collapse">
                     <ul id="menu-primary" class="nav navbar-nav navbar-right">
                         <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-117"><a href="#">Solutions</a>
                             <ul class="sub-menu">
@@ -326,20 +456,7 @@
                         <li id="menu-item-17597" class="nav-button demo-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-17597"><a href="http://onsched.com/book-demo-new/">Book A Demo</a></li>
                     </ul>
                 </div>
-                <div class="mobile-navbar">
-                    <select class="form-control">
-                        <option value="">Solutions
-                            <option value="marketplace.html">- Marketplaces</option>
-                            <option value="directories.html">- Directories</option>
-                            <option value="b2bsales.html">- B2B Sales Teams
-                        </option>
-                        <option value="pricing.html">Pricing</option>
-                        <option value="https://app.onsched.com/portal/calendar">Login</option>
-                        <option value="https://app.onsched.com/custom/onboarding/">Start Free Trial</option>
-                        <option value="http://onsched.com/book-demo-new/">Book A Demo</option>
-                    </select>
-                </div>
-            </div>
+			
         </nav>
         <div id="content" class="site-content">
             <article id="post-42867" class="post-42867 page type-page status-publish hentry">
@@ -972,7 +1089,7 @@
                         
                         .site-header .navbar-brand img {
                             -webkit-filter: brightness(0%) invert(100%);
-                            filter: brightness(0%) invert(100%);
+                            /*filter: brightness(0%) invert(100%);*/
                             width: 126.89px;
                             height: 26.98px;
                         }
@@ -1020,7 +1137,36 @@
                             #menu-item-17597 a {
                                 box-shadow: none;
                             }
+#primary-nav ul {
+  margin-left: 0;
+}
+							
+						}	
+						@media (max-width: 767px){
+							.fa-2 {
+						font-size: 3rem;
+					}
+					#primary-nav {
+					width: 100%;
+				}
+				#primary-nav ul {
+				margin-left: 10px;
+}
+#menu-primary > li:not(:nth-child(7)):not(:last-child) > a {
+  color: #49a1d8;
+  text-transform: uppercase;
+}
+.navbar-toggler {
+  margin-left: 72px;
+  margin-top: 10px;
+}
+#menu-item-17597 a {
+  margin-left: 27%;
+  margin-top: 14px;
+  width: 46%;
+}
                         }
+						
                     </style>
                 </div>
             </article>
@@ -1081,9 +1227,11 @@
         </footer>
     </div>
     <script type="text/javascript" src="js/jquerymarketplace.js"></script>
+	<script src="js/cloudflarepopper.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jqueryplaceholders.js"></script>
     <script type="text/javascript" src="js/ekkolightbox.js"></script>
+	<script type="text/javascript" src="js/cloudflarejquery.js"></script>
     <noscript>
         <div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/979353421/?value=0&guid=ON&script=0" /></div>
     </noscript>
