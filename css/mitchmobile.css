@@ -18,7 +18,7 @@ button.animated{
     background: -webkit-linear-gradient(top, #77c1fd, #006dc5);
 	background: linear-gradient(top, #77c1fd, #006dc5);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: #2196f3;
     border: 1px solid #2196f3;
     border-radius: 3px;
     -webkit-animation-duration: 1.5s;

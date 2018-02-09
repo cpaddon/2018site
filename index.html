@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/sinline.css">
+    <link rel="stylesheet" media="screen and (min-width: 701px)" type="text/css" href="css/mitch.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" type="text/css" href="css/mitchmobile.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/animate.min.css">-->
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
     <link rel='dns-prefetch' href='https://fonts.googleapis.com' />
     <link rel='stylesheet' id='OnSched-fonts-css' href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
     
@@ -20,8 +24,9 @@
 
     
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/cloudflare.js"></script>
+    
 </head>
 
 <body class="home page-template page-template-templates page-template-new-theme page-template-templatesnew-theme-php page page-id-210">
@@ -1049,6 +1054,10 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2 id="learn" class="section-headline feature-card-headline">First, how are you looking to use booking:</h2>
+                <div class="animatedParent">
+                        <button onclick="window.location.href='marketplace.html'" id="custom-animated-btn" class="animated tada button-usecase">See how we increased TechnologyAdvisors revenue by 6%</button>
+                    </div>
+
             </div>
         </div>
         <div class="row">
@@ -1190,9 +1199,12 @@
             </div>
             <div class="col-sm-6 align-self-center">
                 <div>
-                        <video width="100%" autoplay muted loop>
-                                <source src="videos/timezones5.mp4" type="video/mp4">
-                              </video>
+                        <div class="animatedParent">
+                                <video width="100%" autoplay muted loop class="delay-250 animated bounceInRight">
+                                    <source src="videos/timezones5.mp4" type="video/mp4">
+                                </video>
+                        </div>
+
                 </div>
             </div>
         </div>
@@ -1280,9 +1292,12 @@
                 </a>
             </div>
             <div class="col-sm-6 align-self-center order-sm-1">
-                    <video width="100%" autoplay muted loop>
-                            <source src="videos/routing3.mp4" type="video/mp4">
-                          </video>
+                    <div class="animatedParent">
+                            <video width="100%" autoplay muted loop class="delay-250 animated bounceInLeft">
+                                <source src="videos/routing3.mp4" type="video/mp4">
+                            </video>
+                    </div>
+
             </div>
         </div>
         <div class="row product-points product-points-top">
@@ -1349,9 +1364,12 @@
             </div>
             <div class="col-sm-6 align-self-center">
                 <div>
-                        <video width="100%" autoplay muted loop>
-                                <source src="videos/leadreport2.mp4" type="video/mp4">
-                              </video>
+                        <div class="animatedParent">
+                                <video width="100%" autoplay muted loop class="delay-250 animated bounceInRight">
+                                    <source src="videos/leadreport2.mp4" type="video/mp4">
+                                </video>
+                        </div>
+
                 </div>
             </div>
         </div>
@@ -1420,9 +1438,12 @@
             </div>
             <div class="col-sm-6 align-self-center">
                 <div>
-                        <video width="100%" autoplay muted loop>
-                                <source src="videos/enrichment.mp4" type="video/mp4">
-                              </video>
+                        <div class="animatedParent">
+                                <video width="100%" autoplay muted loop class="delay-250 animated bounceInRight">
+                                    <source src="videos/enrichment.mp4" type="video/mp4">
+                                </video>
+                        </div>
+
                 </div>
             </div>
         </div>
@@ -1455,8 +1476,10 @@
             <div class="col-12">
                 <h2 class="section-headline">Apps & Integrations</h2>
                 <p class="subheadline">Integrate your booking flow with popular apps to create the user experience you want.</p>
-                <img src="img/integrations650.png"
-                    class="integrations">
+                <div class="animatedParent">
+                        <img src="img/integrations650.png" class="animated flipInX integrations">
+                </div>
+
             </div>
         </div>
     </div>
@@ -1571,7 +1594,7 @@
     <div class="container-fluid diy-headline">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="section-headline">Powerup your B2B Sales team with OnSched</h2>
+                    <h2 class="section-headline" id="jquery-test">Powerup your B2B Sales team with OnSched</h2>
                     <p class="subheadline">Keep leads out of the lead graveyard. The OnSched engine books appointments with the right sales rep, enriches the appointment data and provides a report on the person who booked the demo.</p> 
                 </div>
             </div>
@@ -1610,9 +1633,12 @@
             </a>
             </div>
             <div class="col-sm-6 align-self-center">
-                    <video width="100%" autoplay muted loop>
-                            <source src="videos/customnotifications.mp4" type="video/mp4">
-                          </video>
+                    <div class="animatedParent">
+                            <video width="100%" autoplay muted loop class="delay-250 animated bounceInRight">
+                                <source src="videos/customnotifications.mp4" type="video/mp4">
+                            </video>
+                    </div>
+
             </div>
         </div>
         <div class="row product-points product-points-top">
@@ -1697,9 +1723,12 @@
                 </a>
             </div>
             <div class="col-sm-6 order-sm-1 align-self-center">
-                    <video width="100%" autoplay muted loop>
-                            <source src="videos/leadreport2.mp4" type="video/mp4">
-                          </video>
+                    <div class="animatedParent">
+                            <video width="100%" autoplay muted loop class="delay-250 animated bounceInLeft">
+                                <source src="videos/leadreport2.mp4" type="video/mp4">
+                            </video>
+                    </div>
+
             </div>
         </div>
         <div class="row product-points product-points-top">
@@ -1933,9 +1962,12 @@
                     </a>
                 </div>
                 <div class="col-sm-6 align-self-center">
-                        <video width="100%" autoplay muted loop>
-                                <source src="videos/api.mp4" type="video/mp4">
-                              </video>
+                        <div class="animatedParent">
+                                <video width="100%" autoplay muted loop class="delay-250 animated bounceInRight">
+                                    <source src="videos/api.mp4" type="video/mp4">
+                                </video>
+                        </div>
+
                 </div>
             </div>
             <div class="row product-points product-points-top">
@@ -1999,9 +2031,12 @@
                 </div>
                 <div class="col-sm-6 align-self-center order-sm-1">
                     <div>
-                            <video width="100%" autoplay muted loop>
-                                    <source src="videos/customnotifications.mp4" type="video/mp4">
-                                  </video>
+                            <div class="animatedParent">
+                                    <video width="100%" autoplay muted loop class="delay-250 animated bounceInLeft">
+                                        <source src="videos/customnotifications.mp4" type="video/mp4">
+                                    </video>
+                            </div>
+
                     </div>
                 </div>
             </div>
@@ -2056,8 +2091,11 @@
                 <div class="col-12">
                     <h2 class="section-headline">Apps & Integrations</h2>
                     <p class="subheadline">Integrate your booking flow with popular apps to create the user experience you want.</p>
-                    <img src="img/integrations650.png"
-                        class="integrations">
+                    <div class="animatedParent">
+                            <img src="img/integrations650.png" class="animated flipInX integrations">
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script src="js/css3-animate-it.js"></script>
                 </div>
             </div>
         </div>
