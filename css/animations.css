@@ -1766,6 +1766,7 @@
     -webkit-transform: translateY(-20px); 
     transform: translateY(-20px); 
 }
+
 .fadeInDownShort.go { 
     -webkit-animation-name: fadeInDownShort; 
     animation-name: fadeInDownShort; 

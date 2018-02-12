@@ -28,7 +28,15 @@ button.animated{
 
 #custom-animated-btn:active {
     border: none;
-    background: #2196f3;
+    background: white;
     background: -webkit-linear-gradient(top, #b5dbfa, #2196f3);
-	background: linear-gradient(top, #b5dbfa, #2196f3);
+    background: linear-gradient(top, #b5dbfa, #2196f3);
+    -webkit-text-fill-color: white;
+}
+}
+
+#rocket{
+    width: 100px;
+    height: auto;
+    margin-bottom: 25px;
 }
