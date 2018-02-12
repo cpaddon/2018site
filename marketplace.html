@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
 
@@ -263,13 +265,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-	<link rel="stylesheet" type="text/css" href="css/sinline.css">
-	<link type="text/css" media="all" href="css/swish.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300,400,600,700,800%7CLato:300" rel="stylesheet">
     <script type="text/javascript" src="js/header-v5.js"></script>
     <script type="text/javascript" src="js/151844449.js"></script>
-	<script type="text/javascript" defer src="js/swish.js"></script>
     <link type="text/css" media="all" href="css/eb82.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/sinline.css">
     <title>Marketplace | OnSched</title>
     <link rel="canonical" href="index.html" />
     <meta property="og:locale" content="en_US" />
@@ -303,86 +303,19 @@
             padding: 0 !important;
             margin: 0 !important;
         }
-		.site-header .container-fluid {
-		display: none;
+		.navbar {
+  left: 0;
+  position: fixed !important;
+  right: 0;
+  z-index: 1030;
 }
-#menu-primary a {
-  color: #1e6a8a;
-}
-#primary-nav .navbar-header {
-  margin-left: 1%;
-}
-#primary-nav ul {
-  margin-left: 48%;
-}
-		  @media (max-width: 768px) {
-    .site-header .navbar-brand{
-      margin: 10px;
-    }
-  
-    .site-header .navbar-nav > li:nth-child(-n+5) a {
-      color: #0090f7 !important;
-	  text-transform: uppercase;
-    }
-  
-    .site-header .container-fluid {
-      background-color: #fff;
-    }
-  
-    .site-header img {
-      -webkit-filter: none !important;
-      filter: none !important;
-    }
-  
-    .collapsing,
-    .collapsing.show {
-      -webkit-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
-      box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.75);
-    }
-  
-     .signup-nav .nav-link {
-       /*margin-left: 1em !important;*/
-     }
-  
-    .demo-nav .nav-link {
-      margin-left: 1em !important;
-      min-width: 121.69px;
-      text-align: center;
-      margin-top: 1rem !important;
-    }
-  }
-      @media (max-width: 767px){
-      .site-header .navbar-nav > li a {
-          text-align: center;  
-          border-bottom: 1px solid #ededed !important;
-      }
-      .site-header .navbar-nav > li a:hover{
-        background-color: #ededed;
-      }
-      .signup-nav, .demo-nav{
-        display: block !important;
-        margin: 0 auto !important;
-      }
-      .signup-nav {
-        margin-top: 10px !important;
-      }
-      .demo-nav{
-        margin-bottom: 10px !important;
-      }
-	  		.site-header .container-fluid {
-		display: block;
-}
-  
-    }
     </style>
 </head>
 
 <body class="page-template page-template-templates page-template-page page-template-templatespage-php page page-id-42867">
     <div id="page" class="hfeed site">
         <nav class="site-header navbar navbar-expand-md" role="navigation">
-
-            <div class="container-fluid flex-wrap">
+				            <div class="container-fluid flex-wrap">
                 <a class="navbar-brand" href="index.html">
                     <img src="img/transdark.png"
                         class="wishpond-blue"> </a>
@@ -402,7 +335,7 @@
                                 </li>
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
-                                <a title="Calling" href="Directories.html" class="dropdown-item">Directories</a>
+                                <a title="Calling" href="directories.html" class="dropdown-item">Directories</a>
                             </li>
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
@@ -438,25 +371,6 @@
                     </ul>
                 </div>
             </div>
-                <div id="primary-nav" class="navbar-collapse collapse">
-				                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"> <img src="img/transdark.png" alt="OnSched"> </a>
-                </div>
-                    <ul id="menu-primary" class="nav navbar-nav navbar-right">
-                        <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-117"><a href="#">Solutions</a>
-                            <ul class="sub-menu">
-                                <li id="menu-item-1901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1901"><a href="marketplace.html">Marketplaces</a></li>
-                                <li id="menu-item-1904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1904"><a href="directories.html">Directories</a></li>
-                                <li id="menu-item-48229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-48229"><a href="b2bsales.html">B2B Sales Teams</a>
-                            </ul>
-                        </li>
-                        <li id="menu-item-1928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1928"><a href="pricing.html">Pricing</a></li>
-                        <li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109"><a href="https://app.onsched.com/portal/calendar">Login</a></li>
-                        <li id="menu-item-50644" class="nav-button signup-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-50644"><a href="https://app.onsched.com/custom/onboarding/">Start Free Trial</a></li>
-                        <li id="menu-item-17597" class="nav-button demo-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-17597"><a href="http://onsched.com/book-demo-new/">Book A Demo</a></li>
-                    </ul>
-                </div>
-			
         </nav>
         <div id="content" class="site-content">
             <article id="post-42867" class="post-42867 page type-page status-publish hentry">
@@ -496,7 +410,7 @@
                                 <div class="col-sm-6 col-sm-pull-6">
                                     <div class="feature-text">
                                         <h2>Custom Notifications</h2>
-                                        <h3>Each of your vendors engage with their customers in a different fashion, OnSched allows your vendors to customize email and text-message notifications in a way that suits their business.</h3> <h3>Custom fields allow you to capture datasets, use them in email templates, and more.</h3> <h3>Shrink your to-do list with handy, time-saving features like automated reminders, text and email confirmations.</h3> <a class="cta-new" href="https://app.onsched.com/custom/onboarding/">Start for Free</a></div>
+                                        <h3>Each of your vendors engage with their customers in a different fashion, OnSched allows your vendors to customize email and text-message notifications in a way that suits their business.</h3> <h3>Custom fields allow you to capture datasets, use them in email templates, and more.</h3> <h3>Shrink your to-do list with handy, time-saving features like automated reminders, text and email confirmations.</h3><a class="cta-new" href="https://app.onsched.com/custom/onboarding/">Start for Free</a></div>
                                 </div>
                             </div>
                         </div>
@@ -1007,9 +921,9 @@
                             background-color: #fff;
                         }
                         
-                        .nav-shadow #menu-primary > li a {
+                        /*.nav-shadow #menu-primary > li a {
                             display: block;
-                        }
+                        }*/
                         
                         .globe-blue {
                             right: 29px;
@@ -1089,7 +1003,7 @@
                         
                         .site-header .navbar-brand img {
                             -webkit-filter: brightness(0%) invert(100%);
-                            /*filter: brightness(0%) invert(100%);*/
+                            filter: brightness(0%) invert(100%);
                             width: 126.89px;
                             height: 26.98px;
                         }
@@ -1123,6 +1037,41 @@
                             #menu-primary>li:not(:nth-child(7)):not(:last-child)>a {
                                 color: #49a1d8;
                             }
+							.btn-group-vertical > .btn-group::after, .btn-group-vertical > .btn-group::before, .btn-toolbar::after, .btn-toolbar::before, .clearfix::after, .clearfix::before, .container-fluid::after, .container-fluid::before, .container::after, .container::before, .dl-horizontal dd::after, .dl-horizontal dd::before, .form-horizontal .form-group::after, .form-horizontal .form-group::before, .modal-footer::after, .modal-footer::before, .nav::after, .nav::before, .navbar-collapse::after, .navbar-collapse::before, .navbar-header::after, .navbar-header::before, .navbar::after, .navbar::before, .pager::after, .pager::before, .panel-body::after, .panel-body::before, .row::after, .row::before {
+  content: initial;
+  display: table;
+}
+.fa-2 {
+  font-size: 3rem;
+}
+.navbar-toggler {
+  margin-right: 22px;
+}
+#menu-primary > li:not(:nth-child(7)):not(:last-child) > a {
+  color: #49a1d8;
+  text-transform: uppercase;
+  text-align: center;
+}
+#menu-item-10751 a {
+ margin-left: 10% !important;
+    width: 79%;
+}
+#menu-item-17597 a {
+margin-left: 12%;
+ text-align: center;
+text-transform: uppercase;
+width: 75%;
+}
+.dropdown-menu > li > a {
+  color: #49a1d8;
+}
+#menu-item-117 .dropdown-menu {
+  margin-left: 30px;
+}
+.site-header .navbar-brand img {
+  max-width: 150px;
+  min-height: 100%;
+}
                         }
                         
                         #menu-item-50644 a,
@@ -1137,57 +1086,10 @@
                             #menu-item-17597 a {
                                 box-shadow: none;
                             }
-#primary-nav ul {
-  margin-left: 0;
-}
-							
-						}	
-						@media (max-width: 767px){
-							.fa-2 {
-						font-size: 3rem;
-					}
-					#primary-nav {
-					width: 100%;
-				}
-				#primary-nav ul {
-				margin-left: 10px;
-}
-#menu-primary > li:not(:nth-child(7)):not(:last-child) > a {
-  color: #49a1d8;
-  text-transform: uppercase;
-}
-.navbar-toggler {
-  margin-left: 72px;
-  margin-top: 10px;
-}
-#menu-item-17597 a {
-  margin-top: 10px;
-  width: 46%;
-}
-#menu-item-10751 {
-  margin: 0 10px !important;
-}
-#menu-item-10751 a {
-  width: 100%;
-}
-#menu-item-17597 {
-  margin: 0 10px !important;
-}
-#menu-item-17597 a {
-  width: 95%;
-  margin-left: 5px;
-}
-
                         }
-						
                     </style>
                 </div>
             </article>
-<a class="wpcss-intercom__launcher" href="mailto:l15ft8CP@inbound.intercom-mail.com" id="wpjs-intercom__launcher">
-    <div class="wpcss-intercom__icon wpcss-intercom__icon--close"></div>
-    <div class="wpcss-intercom__icon wpcss-intercom__icon--open"></div>
-    <span class="wpcss-intercom__unread-count" id="wpjs-intercom__unread-count"></span>
-</a>
         </div>
         <footer id="colophon" class="site-footer" role="contentinfo">
             <div class="site-info">
@@ -1199,44 +1101,44 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-6 col-md-3">
-                            <h2>Solutions</h2>
-                            <div class="menu-products-container">
-                                <ul id="menu-products" class="menu">
-                                    <li id="menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><a href="marketplace.html">Marketplaces</a></li>
-                                    <li id="menu-item-1589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1589"><a href="directories.html">Directories</a></li>
-                                    <li id="menu-item-1592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592"><a href="b2bsales.html">B2B Sales Teams</a></li>
-                                </ul>
+                                <h2>Solutions</h2>
+                                <div class="menu-products-container">
+                                    <ul id="menu-products" class="menu">
+                                        <li id="menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><a href="marketplace.html">Marketplaces</a></li>
+                                        <li id="menu-item-1589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1589"><a href="directories.html">Directories</a></li>
+                                        <li id="menu-item-1592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592"><a href="b2bsales.html">B2B Sales Teams</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <h2>Company</h2>
-                            <div class="menu-company-container">
-                                <ul id="menu-company" class="menu">
-                                    <li id="menu-item-1949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1949"><a href="http://onsched.com/our-story/index.html">Our Story</a></li>
-                                    <li id="menu-item-49658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49658"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question: ')">Chat With Us</a></li>
-                                    <li id="menu-item-29996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29996"><a href="http://onsched.com/book-demo-new/">Book A Demo</a></li>
-                                </ul>
+                            <div class="col-xs-6 col-sm-3">
+                                <h2>Company</h2>
+                                <div class="menu-company-container">
+                                    <ul id="menu-company" class="menu">
+                                        <li id="menu-item-1949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1949"><a href="http://onsched.com/our-story/index.html">Our Story</a></li>
+                                        <li id="menu-item-49658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49658"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question: ')">Chat With Us</a></li>
+                                        <li id="menu-item-29996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29996"><a href="http://onsched.com/book-demo-new/">Book A Demo</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <h2>Contact</h2>
-                            <div class="menu-contact-container">
-                                <ul id="menu-contact" class="menu">
-                                    <li id="menu-item-49653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49653"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question for Sales: ')">Sales Team</a></li>
-                                    <li id="menu-item-49654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49654"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question for Support: ')">Support Team</a></li>
-                                    <li id="menu-item-49655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49655"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question for Development: ')">Development Team</a></li>
-                                </ul>
+                            <div class="col-xs-6 col-sm-3">
+                                <h2>Contact</h2>
+                                <div class="menu-contact-container">
+                                    <ul id="menu-contact" class="menu">
+                                        <li id="menu-item-49653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49653"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question for Sales: ')">Sales Team</a></li>
+                                        <li id="menu-item-49654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49654"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question for Support: ')">Support Team</a></li>
+                                        <li id="menu-item-49655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49655"><a onclick="Intercom('showNewMessage', 'Hi there, I have a question for Development: ')">Development Team</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <h2>Resources</h2>
-                            <div class="menu-resources-container">
-                                <ul id="menu-resources" class="menu">
-                                    <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="#">Homepage</a></li>
-                                   <!-- <li id="menu-item-1961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1961"><a href="#">Marketing Ebooks</a></li>
-                                    <li id="menu-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="#">Wishpond Academy</a></li>
-                                    <li id="menu-item-1964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1964"><a href="#">Webinars</a></li> -->
-                                </ul>
+                            <div class="col-xs-6 col-sm-3">
+                                <h2>Resources</h2>
+                                <div class="menu-resources-container">
+                                    <ul id="menu-resources" class="menu">
+                                        <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="#">Homepage</a></li>
+                                       <!-- <li id="menu-item-1961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1961"><a href="#">Marketing Ebooks</a></li>
+                                        <li id="menu-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="#">Wishpond Academy</a></li>
+                                        <li id="menu-item-1964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1964"><a href="#">Webinars</a></li> -->
+                                    </ul>
                             </div>
                         </div>
                     </div>
@@ -1245,11 +1147,9 @@
         </footer>
     </div>
     <script type="text/javascript" src="js/jquerymarketplace.js"></script>
-	<script src="js/cloudflarepopper.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jqueryplaceholders.js"></script>
     <script type="text/javascript" src="js/ekkolightbox.js"></script>
-	<script type="text/javascript" src="js/cloudflarejquery.js"></script>
     <noscript>
         <div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/979353421/?value=0&guid=ON&script=0" /></div>
     </noscript>
@@ -1268,12 +1168,6 @@
             "agent": ""
         }
     </script>
-<script>
-        window.intercomSettings = {
-          app_id: "q5lly5sv"
-        };
-      </script>
-      <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q5lly5sv';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 </body>
 
 </html>

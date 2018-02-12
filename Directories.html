@@ -269,6 +269,7 @@
     <script type="text/javascript" src="js/header-v5.js"></script>
     <script type="text/javascript" src="js/151844449.js"></script>
     <link type="text/css" media="all" href="css/eb82.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/sinline.css">
     <title>Marketplace | OnSched</title>
     <link rel="canonical" href="index.html" />
     <meta property="og:locale" content="en_US" />
@@ -294,15 +295,6 @@
             background: none !important;
             padding: 0 !important;
         }
-				.site-header .container-fluid {
-		display: none;
-}
-#menu-primary > li > a{color: #49a1d8;
-    text-align: center;
-    text-transform: uppercase;}
-#primary-nav ul {
-  margin-left: 43%;
-}
     </style>
     <link rel='stylesheet' id='wishpond-fonts-css' href='https://fonts.googleapis.com/css?family=Noto+Sans:400italic,700italic,400,700%7CNoto+Serif:400italic,700italic,400,700%7CInconsolata:400,700&subset=latin,latin-ext' type='text/css' media='all' />
     <style type="text/css">
@@ -311,16 +303,19 @@
             padding: 0 !important;
             margin: 0 !important;
         }
-		#menu-item-17597 a {
-		color: #fff !important;
-		}
+		.navbar {
+  left: 0;
+  position: fixed !important;
+  right: 0;
+  z-index: 1030;
+}
     </style>
 </head>
 
 <body class="page-template page-template-templates page-template-page page-template-templatespage-php page page-id-42867">
     <div id="page" class="hfeed site">
         <nav class="site-header navbar navbar-expand-md" role="navigation">
-		            <div class="container-fluid flex-wrap">
+				            <div class="container-fluid flex-wrap">
                 <a class="navbar-brand" href="index.html">
                     <img src="img/transdark.png"
                         class="wishpond-blue"> </a>
@@ -340,7 +335,7 @@
                                 </li>
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
-                                <a title="Calling" href="Directories.html" class="dropdown-item">Directories</a>
+                                <a title="Calling" href="directories.html" class="dropdown-item">Directories</a>
                             </li>
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
@@ -371,31 +366,11 @@
                       <a title="Book A Demo" href="http://onsched.com/book-demo-new/" class="nav-link" style="
                       background: #03c9a8;
                       padding-left: 17px;
-                      text-align: center;
                       font-weight: bold;
                       padding-right:  17px;">Book A Demo</a></li>
                     </ul>
                 </div>
             </div>
-		
-                <div id="primary-nav" class="navbar-collapse collapse">
-				                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"> <img src="img/transdark.png" alt="OnSched"> </a>
-                </div>
-                    <ul id="menu-primary" class="nav navbar-nav navbar-right">
-                        <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-117"><a href="#">Solutions</a>
-                            <ul class="sub-menu">
-                                <li id="menu-item-1901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1901"><a href="marketplace.html">Marketplaces</a></li>
-                                <li id="menu-item-1904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1904"><a href="directories.html">Directories</a></li>
-                                <li id="menu-item-48229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-48229"><a href="b2bsales.html">B2B Sales Teams</a>
-                            </ul>
-                        </li>
-                        <li id="menu-item-1928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1928"><a href="pricing.html">Pricing</a></li>
-                        <li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109"><a href="https://app.onsched.com/portal/calendar">Login</a></li>
-                        <li id="menu-item-50644" class="nav-button signup-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-50644"><a href="https://app.onsched.com/custom/onboarding/">Start Free Trial</a></li>
-                        <li id="menu-item-17597" class="nav-button demo-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-17597"><a href="http://onsched.com/book-demo-new/">Book A Demo</a></li>
-                    </ul>
-                </div>
         </nav>
         <div id="content" class="site-content">
             <article id="post-42867" class="post-42867 page type-page status-publish hentry">
@@ -405,8 +380,8 @@
                             <div class="row table-row">
                                 <div class="col-sm-6">
                                     <div class="hero-text text-white">
-                                        <h1>Empower the vendors in your Directory with OnSched's booking API</h1>
-                                        <h2>Power bookings in your Directory with OnSched. Integrate our API to deliver your own user experience, or use our booking widget for quick deployment.</h2> <a class="cta-new" href="https://app.onsched.com/custom/onboarding/">Start for Free</a></div>
+                                        <h1>Power your Directories bookings with OnSched's API</h1>
+                                        <h2>Empower the vendors in your Directory with OnSched's booking API. Integrate our API to deliver your own user experience, or use our booking widget for quick deployment.</h2> <a class="cta-new" href="https://app.onsched.com/custom/onboarding/">Start for Free</a></div>
                                 </div>
                                 <div class="col-sm-6 hero-image-column"> <img class="hero-image shadow" src="img/opt-in_ACTIONDirectory.png"></div>
                             </div>
@@ -415,7 +390,7 @@
                     <div id="" data-toggle="" class="content-section features feature-1 white" style="padding:120px 0 70px;">
                         <div class="container">
                             <div class="row table-row">
-                                <div class="col-sm-6 feature-image">                         <video width="100%" controls autoplay muted loop>
+                                <div class="col-sm-6 feature-image"> <video width="100%" controls autoplay muted loop>
                                         <source src="videos/api.mp4" type="video/mp4">
                                       </video></div>
                                 <div class="col-sm-6">
@@ -443,13 +418,13 @@
                     <div id="" data-toggle="" class="content-section features feature-2 white" style="padding:70px 0 70px;">
                         <div class="container">
                             <div class="row table-row">
-                                <div class="col-sm-6 feature-image">                         <video width="100%" controls autoplay muted loop>
+                                <div class="col-sm-6 feature-image"> <video width="100%" controls autoplay muted loop>
                                         <source src="videos/timezones5.mp4" type="video/mp4">
                                       </video></div>
                                 <div class="col-sm-6">
                                     <div class="feature-text">
                                         <h2>Timezone to Timezone</h2>
-                                        <h3>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</h3> <a class="cta-new" href="https://app.onsched.com/custom/onboarding/">Start for Free</a></div>
+                                        <h3>Are vendors in your Marketplace spread across the globe?</h3><h3>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</h3> <h3>One more paragraph.</h3> <h3>Another paragraph.</h3> <a class="cta-new" href="https://app.onsched.com/custom/onboarding/">Start for Free</a></div>
                                 </div>
                             </div>
                         </div>
@@ -1027,8 +1002,8 @@
                         }
                         
                         .site-header .navbar-brand img {
-                           /* -webkit-filter: brightness(0%) invert(100%);*/
-                            /*filter: brightness(0%) invert(100%);*/
+                            -webkit-filter: brightness(0%) invert(100%);
+                            filter: brightness(0%) invert(100%);
                             width: 126.89px;
                             height: 26.98px;
                         }
@@ -1062,6 +1037,41 @@
                             #menu-primary>li:not(:nth-child(7)):not(:last-child)>a {
                                 color: #49a1d8;
                             }
+							.btn-group-vertical > .btn-group::after, .btn-group-vertical > .btn-group::before, .btn-toolbar::after, .btn-toolbar::before, .clearfix::after, .clearfix::before, .container-fluid::after, .container-fluid::before, .container::after, .container::before, .dl-horizontal dd::after, .dl-horizontal dd::before, .form-horizontal .form-group::after, .form-horizontal .form-group::before, .modal-footer::after, .modal-footer::before, .nav::after, .nav::before, .navbar-collapse::after, .navbar-collapse::before, .navbar-header::after, .navbar-header::before, .navbar::after, .navbar::before, .pager::after, .pager::before, .panel-body::after, .panel-body::before, .row::after, .row::before {
+  content: initial;
+  display: table;
+}
+.fa-2 {
+  font-size: 3rem;
+}
+.navbar-toggler {
+  margin-right: 22px;
+}
+#menu-primary > li:not(:nth-child(7)):not(:last-child) > a {
+  color: #49a1d8;
+  text-transform: uppercase;
+  text-align: center;
+}
+#menu-item-10751 a {
+ margin-left: 10% !important;
+    width: 79%;
+}
+#menu-item-17597 a {
+margin-left: 12%;
+ text-align: center;
+text-transform: uppercase;
+width: 75%;
+}
+.dropdown-menu > li > a {
+  color: #49a1d8;
+}
+#menu-item-117 .dropdown-menu {
+  margin-left: 30px;
+}
+.site-header .navbar-brand img {
+  max-width: 150px;
+  min-height: 100%;
+}
                         }
                         
                         #menu-item-50644 a,
@@ -1070,67 +1080,13 @@
                             border-radius: 3px;
                             color: #fff;
                         }
-						.site-header .navbar-brand img {
-						max-width: 150px;
-						min-height: 100%;
-					}
                         
                         @media (max-width: 768px) {
                             #menu-item-50644 a,
                             #menu-item-17597 a {
                                 box-shadow: none;
                             }
-								#primary-nav ul {
-								margin-left: 0;
-							}
-							#menu-item-17597 a {
-							color: #fff !important;
-							}
                         }
-@media (max-width: 767px){
-	  		.site-header .container-fluid {
-		display: block;
-}
-							.fa-2 {
-						font-size: 3rem;
-					}
-					#primary-nav {
-					width: 100%;
-				}
-				#primary-nav ul {
-				margin-left: 10px;
-}
-#menu-primary > li:not(:nth-child(7)):not(:last-child) > a {
-  color: #49a1d8;
-  text-transform: uppercase;
-  text-align: center;
-}
-.navbar-toggler {
-  margin-left: 85px;
-  margin-top: 7px;
-}
-#menu-item-17597 a {
-  margin-top: 10px;
-  width: 46%;
-}
-#menu-item-10751 {
-  margin: 0 10px !important;
-}
-#menu-item-10751 a {
-  width: 100%;
-}
-#menu-item-17597 {
-  margin: 0 10px !important;
-}
-#menu-item-17597 a {
-   margin-left: 5px;
-    width: 95%;
-}
-.dropdown-menu > li > a{color: #49a1d8;
-    text-align: center;
-    text-transform: uppercase;}
-	
-}
                     </style>
                 </div>
             </article>
@@ -1154,7 +1110,6 @@
                                     </ul>
                                 </div>
                             </div>
-							
                             <div class="col-xs-6 col-sm-3">
                                 <h2>Company</h2>
                                 <div class="menu-company-container">
@@ -1213,12 +1168,6 @@
             "agent": ""
         }
     </script>
-<script>
-        window.intercomSettings = {
-          app_id: "q5lly5sv"
-        };
-      </script>
-      <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q5lly5sv';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 </body>
 
 </html>
