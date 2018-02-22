@@ -824,6 +824,13 @@ a.cta-button.transparent:focus {
     .signup-form input[type]:not(: first-child) {
         margin-left: 10px
     }
+    .site-header .navbar-nav li ul {
+        display: none;
+        position: absolute;
+        width: 195px;
+        margin-left:none;
+        z-index: 9999
+    }
 }
 
 @media (max-width: 767px) {
@@ -1183,7 +1190,8 @@ a.cta-button.transparent:focus {
 .site-header .navbar-nav li ul {
     display: none;
     position: absolute;
-    width: 173px;
+    width: 195px;
+    margin-left:4.1em;
     z-index: 9999
 }
 

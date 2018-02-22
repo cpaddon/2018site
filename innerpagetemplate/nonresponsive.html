@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DEMOS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/innerpage/css/normalize.min.css">
+        <link rel="stylesheet" href="/innerpage/css/animate.min.css">
+        <link rel="stylesheet" href="/innerpage/css/main.css">
+
+        </head>
+        <body>
+            
+                <header class="tm-header">
+                        <div class="tm-container">
+                                <a href="#"><img src="img/transdark.png" alt="onsched logo" height="50" class="tm-logo"></a>
+                                <nav class="tm-nav" id="tm-navbar">
+                                    <div class="animatedParent">
+                                        <ul>
+                                            <li><a href="#">Solutions</a></li>
+                                            <li><a href="#">Pricing</a></li>
+                                            <li><a href="https://app.onsched.com/portal">Login</a></li>
+                                            <li><button onclick="location.href='http://app.onsched.com/custom/onboarding/'" class="hd-btn" id="hd-start-trial">Start Free Trial</button></li>
+                                            <li><button class="hd-btn animated tada" id="demo02" href="#modal-02">Book A Demo</button></li>
+                                            <li><button class="menu-icon" onclick="mobileNav()">&#9776;</button></li>
+                                        </ul>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                                        <script src="/css3-animate-it.js"></script>
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                        <script type="text/javascript" src="js/cloudflare.js"></script>
+                                        
+                                    </div>
+                                </nav>
+                                <div style="clear:both"></div>
+                        </div>
+
+                </header>
+
+            <!--Book Modal-->
+            <div id="modal-02">
+                <div  id="btn-close-modal" class="close-modal-02"> 
+                    <img class="closebt" src="img/closebt.svg">
+                </div>
+                
+                <div class="modal-content">
+                    <div>
+                        <p align="center">
+                            <iframe src="https://onsched.com/demo15a/ngonsched1/#/step-three" class="booking-frame"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <script src="js/jquery.min.js"></script>
+            <script src="js/animatedModal.min.js"></script>
+            <script>
+    
+                //demo 02
+                $("#demo02").animatedModal({
+                    modalTarget:'modal-02',
+                    animatedIn:'lightSpeedIn',
+                    animatedOut:'bounceOutDown',
+                    color:'#f2f7fa',
+                    // Callbacks
+                    beforeOpen: function() {
+                        console.log("The animation was called");
+                    },           
+                    afterOpen: function() {
+                        console.log("The animation is completed");
+                    }, 
+                    beforeClose: function() {
+                        console.log("The animation was called");
+                    }, 
+                    afterClose: function() {
+                        console.log("The animation is completed");
+                    }
+                });
+    
+            </script>
+            <div class="tm-hero">
+                <div class="tm-container">
+                    <div class="hero-text">
+                        <h1>Page Title</h1>
+                        <p>Page description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text.</p>
+                        <button class="tm-btn" onclick="location.href='http://app.onsched.com/custom/onboarding/'">Start Free Trial</button>
+                    </div>
+                    <div class="animatedParent">
+                        <img class="animated bounceInRight hero-shadow" id="hero" src="img/placeholder.png">
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="tm-section">
+                <div class="tm-container">
+                    <div class="section-text-right">
+                        <h1>Section Title</h1>
+                        <p>Section description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text.</p>
+                        <p>Section description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text. Section description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text.</p>
+                        <a class="learn-more" href="#">LEARN MORE</a> <i class="fa fa-arrow-right blue"></i>
+                    </div>
+                    <div class="animatedParent">
+                        <img class="animated bounceInLeft section-shadow" id="section-image-left" src="img/placeholder.png">
+                    </div>
+                </div>
+            </div>
+        <div style="clear:both"></div>
+
+                <div class="tm-container bullet-row">
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>   <h3>Feature 1</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                </div>
+                    <div class="tm-container bullet-row">
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>   <h3>Feature 1</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                </div>
+            <div style="clear:both"></div>
+            <div class="tm-section">
+                    <div class="tm-container">
+                        <div class="section-text-left">
+                            <h1>Section Title</h1>
+                            <p>Section description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text.</p>
+                            <p>Section description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text. Section description goes here. A bunch of text. A bunch more text. Blah blah blah. Even more text. Wow thats a lot of text.</p>
+                            <a class="learn-more" href="#">LEARN MORE</a> <i class="fa fa-arrow-right blue"></i>
+                        </div>
+                        <div>
+                                <img class="animated bounceInRight section-shadow" id="section-image-right" src="img/placeholder.png">
+                        </div>
+                    </div>
+                </div>
+            <div style="clear:both"></div>
+
+            <div class="tm-container bullet-row">
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>   <h3>Feature 1</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                </div>
+                    <div class="tm-container bullet-row">
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>   <h3>Feature 1</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                    <div class="bullet-section">
+                        <i class="fa fa-arrow-right blue"></i>  <h3>Feature 3</h3>
+                                                                <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+                    </div>
+                </div>
+            <div style="clear:both"></div>
+            <div class="tm-container integrations">
+                <h1>Apps & Integrations</h1>
+                <h3>Integrate your booking flow with popular apps to create the user experience you want.</h3>
+                <div class="animatedParent">
+                    <img class="animated flipInX" src="img/integrations650.png">
+                </div>
+            </div>
+            <div class="tm-hero-bottom">
+                <div class="tm-container">
+                    <div class="animatedParent">
+                        <img class="animated bounceInUp" src="img/asset2.png" style="height:100px; padding-top:50px;">
+                    </div>
+                    <h1>Try OnSched free for 14 days</h1>
+                    <h3>Start creating online booking flows for your business with OnSched's 14-day free trial. No commitment.</h3>
+                    <button class="tm-btn" onclick="location.href='http://app.onsched.com/custom/onboarding/'">Start Free Trial</button>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            
+            <footer>
+                <div class="tm-container">
+                        <div class="ft-col">
+                            <h1>Solutions</h1>
+                                <a href="">Marketplaces</a></li>
+                                <a href="">Directories</a></li>
+                                <a href="">B2B Sales</a></li>
+                        </div>
+                        <div class="ft-col">
+                            <h1>Company</h1>
+                                <a href="">Our Story</a></li>
+                                <a href="">Chat With Us</a></li>
+                                <a href="">Book A Demo</a></li>
+                        </div>
+                        <div class="ft-col">
+                            <h1>Contact</h1>
+                                <a href="">Sales Team</a></li>
+                                <a href="">Support Team</a></li>
+                                <a href="">Development Team</a></li>
+                        </div>
+                        <div class="ft-col">
+                            <h1>Resources</h1>
+                                <a href="">Homepage</a></li>
+                        </div>
+                </div>
+            </footer>
+            <script>
+                    function mobileNav() {
+                    var x = document.getElementById("tm-navbar");
+                    if (x.className === "tm-nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "tm-nav";
+                    }
+                }
+                </script>
+        </body>
+    </html>
+    

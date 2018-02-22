@@ -1,0 +1,1 @@
+<?php header("Location: https://www.onsched.com/", true, 301); ?>

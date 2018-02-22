@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tm-container {
+	max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero-container {
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(15deg, #0868C7 0%, #2196F3 100%);
+  color: white;
+}
+
+#use-case {
+  padding-bottom: 10px;
+}
+
+#hero-title {
+  padding-top: 10px;
+}
+
+.hero-container h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.banner-container h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.logo {
+  height: 60px;
+  margin-top: 14px;
+  padding-bottom: 14px;
+  cursor: pointer;
+}
+
+.nav-btn {
+  color: white;
+  box-shadow: 2px 2px 2px #787e83;
+  border-radius: 4px;
+}
+.nav-btn:active {
+  box-shadow: none;
+  border-radius: 4px;
+  top: 1px;
+  left: 1px;
+}
+
+#book-btn {
+  background-color: #ff9800;
+  color: white;
+  margin: 10px 5px;
+}
+
+#chat-btn {
+  background-color: #03c9a8;
+  color: white;
+  margin: 10px 5px;
+}
+
+#book-btn:hover {
+  background-color: #d88303;
+  border: none;
+}
+
+#chat-btn:hover {
+  background-color: #02ad91;
+  border: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 0;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #4fadff;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.topnav a:hover {
+  border: 1px solid #4fadff;
+  border-radius: 4px;
+  left: 1px;
+  text-decoration: none;
+  color: #4fadff;
+}
+
+.active {
+  background-color: #fff;
+  color: #2e343d;
+}
+
+.topnav .icon {
+  display: none;
+  border: none;
+  color: #2e343d;
+  background-color: #fff;
+  line-height: 50px;
+  outline: none;
+  padding-top: 10px;
+}
+
+.book-cta {
+  margin: 20px 10px;
+  padding: 15px 35px;
+  font-size: 18px;
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  box-shadow: 2px 2px 2px rgb(8, 76, 145);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.book-cta:hover {
+  background-color: #d88303;
+  cursor: pointer;
+}
+
+.learn-cta {
+  margin: 20px 10px;
+  padding: 13px 18px;
+  font-size: 18px;
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+
+.learn-cta:hover {
+  background-color: white;
+  color: #2196F3;
+}
+
+.video {
+
+}
+
+.section {
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+#apps {
+  padding-top: 0px;
+}
+
+.section a, p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #808080;
+  line-height: 1.4em;
+}
+
+.nav-icon {
+  display: inline-block;
+}
+
+.line {
+  border-radius: 1px;
+  margin-right: 12px;
+  height: 4px;
+  width: 28px;
+  background-color: #2196F3;
+}
+#line1 {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-top: 17px;
+  margin-bottom: 5px;
+  z-index: 6;
+}
+#line2 {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  margin-bottom: 5px;
+  z-index: 5;
+}
+#line3 {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: 7;
+}
+
+.animateline1 {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    -ms-transform: rotate(45deg) translateY(4px) translateX(10px);
+    -webkit-transform: rotate(45deg) translateY(4px) translateX(10px);
+    transform: rotate(45deg) translateY(4px) translateX(10px);
+    width: 35px;
+  }
+
+.animateline2 {
+  background-color: white;
+}
+
+.animateline3 {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    -ms-transform: rotate(-45deg) translateY(-3px) translateX(8px);
+    -webkit-transform: rotate(-45deg) translateY(-3px) translateX(8px);
+    transform: rotate(-45deg) translateY(-3px) translateX(8px);
+    width: 35px;
+}
+
+.banner-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apps {
+  text-align: center;
+}
+
+.apps img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+#wwd-vid {
+  float: right;
+}
+
+#wwd-txt {
+  float: left;
+}
+
+#ps-vid {
+  float: right;
+}
+
+#ps-txt {
+  float: left;
+}
+
+.col-6 {
+  max-width: 50%;
+  flex: 0 0 90%;
+  display: inline-block;
+}
+
+.foot-bottom {
+  padding-top: 22px;
+  padding-left: 35px;
+  margin-bottom: 22px;
+}
+
+.foot-bottom p, a {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.foot-bottom a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.foot ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.foot ul li a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 14px;
+}
+
+.foot h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 801px) {
+  .hero-text {
+    margin: 0px 120px;
+  }
+  .hero-container h1 {
+    margin: 0;
+    padding: 25px 0px;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  .banner-container h1 {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  .hero-text {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .hero-line {
+    height: 3px;
+    max-width: 820px;
+    display: inline-block;
+    background-color: #fff;
+    align-content: center;
+    padding: 0px 188px;
+    opacity: 0.7;
+    box-shadow: 0px 2px 2px #0e5faf;
+    animation-delay: 500ms;
+    animation-duration: 500ms;
+  }
+  .section-header {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #2e343d;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .banner-container {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(15deg, #0868C7 0%, #2196F3 100%);
+    color: white;
+  }
+  .banner-text {
+    padding-top: 50px;
+  }
+  .rocket {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-bottom: 25px
+  }
+  .dropdown-content.respond a {
+    display: inline-block;
+  }
+  .topnav a:active {
+    background-color: #2196F3;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a {display: none;}
+  .topnav div.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    padding: 1px 0px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  .topnav.responsive .nav-links {
+    border-bottom: 1px solid #2196F3;
+  }
+  .hero-container h1 {
+    margin: 0;
+    padding: 25px 0px;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  .banner-container h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  .hero-text {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .hero-line {
+    height: 3px;
+    max-width: 820px;
+    display: inline-block;
+    background-color: #fff;
+    align-content: center;
+    padding: 0px 168px;
+    opacity: 0.7;
+    box-shadow: 0px 2px 2px #0e5faf;
+    animation-delay: 500ms;
+    animation-duration: 500ms;
+  }
+  .section-header {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    color: #2e343d;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .banner-container {
+    height: 230px;
+    width: 100%;
+    background-image: linear-gradient(15deg, #0868C7 0%, #2196F3 100%);
+    color: white;
+  }
+  .banner-text {
+    padding-top: 10px;
+  }
+  .rocket {
+    display: block;
+    width: 75px;
+    height: auto;
+    margin-bottom: 10px
+  }
+  .dropdown-content.respond a {
+    display: block;
+  }
+  
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content.respond {
+  position: relative;
+  text-align: center;
+  display: block;
+  float: none;
+  background-color: #fff;
+  margin: 2px 15px;
+}
+.dropdown-content.respond a {
+  text-decoration: none;
+  color: white;
+  background-color: #2196F3;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 0px 0px;
+  padding: 3px 22px;
+}
+.dropdown-content.respond:hover {
+  cursor: pointer;
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <div class="tm-container">
+    <div class="topnav" id="myTopnav">
+      <img onclick="window.location.href='https://www.onsched.com/'" class="logo" src="/img/transdark.png">
+      <a class="nav-btn" id="book-btn" href="/book-demo/index.html">Book A Demo</a>
+      <a class="nav-btn" id="chat-btn" href="#" onclick="Intercom('showNewMessage', 'Hi there, I have a question: ')">Chat With Sales</a>
+      <a class="nav-links" id="login" href="https://app.onsched.com/portal">Login</a>
+      <a class="nav-api" id="api" onclick="apidropFunction();">API</a>
+      <a class="nav-links" style="cursor:pointer;" id="price" onclick="dropFunction();">Pricing</a>
+
+        <div onclick="myFunction();animateLines();flipNav();pickupFuntion();" class="nav-icon icon">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </div>
+    </div>
+
+  </div>
+  <div class="dropdown-content" id="pricing-dropdown">
+      <a href="/pricing-marketplace.html">Marketplace Pricing</a>
+      <a onclick="Intercom('showNewMessage', 'Hi there, I have a question about PPC Directory pricing: ')">PPC Directory Pricing</a>
+      <a onclick="Intercom('showNewMessage', 'Hi there, I have a question about Authorized Dealer pricing: ')">Authorized Dealer Pricing</a>
+      <a href="/pricing-sales.html">B2B Sales Stack<sup>BETA</sup> Pricing</a>
+    </div>
+  </div>
+  <div class="dropdown-content" id="api-dropdown">
+      <a href="#">API Docs</a>
+      <a href="#">About API</a>
+      <a href="#">API Examples</a>
+    </div>
+
+<div class="hero-container">
+  <div class="tm-container">
+    <div class="hero-text">
+      <h1 id="use-case">Use Case</h1>
+      <div class="hero-line animated bounceIn"></div>
+      <h1 id="hero-title">TechnologyAdvisors.com</h1>
+      <h2>See how TechnologyAdvisors.com integrated OnSched into their directory in order to power their bookings, and increase their revenue by 6% in the first year.</h2>
+      <button onclick="window.location.href='http://www.technologyadvisors.com'" class="book-cta">Visit Site</button>
+      <button onclick="window.location.href='#pg-content'" class="learn-cta">Learn More</button>
+    </div>
+  </div>
+</div>
+
+  <div class="tm-container">
+    <div class="row section">
+      <div class="col-sm-6" id="wwd-vid">
+        <video width="100%" autoplay muted loop playsinline class="video animated bounceInRight">
+          <source src="/video/techadvisorsintegration.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-sm-6" id="wwd-txt">
+        <h1 id="pg-content" class="section-header">What We Do</h1>
+        <p>At <a href="http://www.technologyadvisors.com">TechnologyAdvisors.com</a> we provide a wide variety of software solutions for any size of business. Search by category and take a look at customer reviews from all over the world. <br> </p>
+        <p>Select products to compare side by side, and when you're ready to learn more about a product book your demo right from the directory.</p>
+        </div>
+      </div>
+    <div class="row section">
+      <div class="col-sm-6" id="oi-vid">
+        <video width="100%" autoplay muted loop playsinline class="video animated bounceInLeft">
+          <source src="/video/techadvisors.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-sm-6" id="oi-txt">
+        <h1 class="section-header">OnSched Integration</h1>
+        <p>Our integration with OnSched was done with two core concepts in mind: Brand Consistency and Automation. We created a booking flow that fit our design concept, then called OnSched's API in order to pull availability from all of our vendors, straight out of their Google and Outlook Calendars.<br></p>
+        <p>When a demo is booked from <a href="http://www.technologyadvisors.com">TechnologyAdvisors.com</a> an appointment is created in OnSched's admin portal, then automatically sent to the vendors Google or Outlook Calendars along with a text-message and email notification.</p>
+      </div>
+    </div>
+    <div class="row section">
+      <div class="col-sm-6" id="ps-vid">
+        <video width="100%" autoplay muted loop playsinline class="video animated bounceInRight">
+          <source src="/video/timezones5.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-sm-6" id="ps-txt">
+        <h1 class="section-header">What We Do</h1>
+        <p>At <a href="technologyadvisors.com">TechnologyAdvisors.com</a> we provide a wide variety of software solutions for any size of business. Search by category and take a look at customer reviews from all over the world. <br> </p>
+        <p>Select products to compare side by side, and when you're ready to learn more about a product book your demo right from the directory.</p>
+      </div>
+    </div>
+    <div class="row section" id="apps">
+      <div class="col-12 apps">
+          <h1>Apps & Integrations</h1>
+          <img src="/img/integrations650.png" class="animated flipInX" style="display:block; margin-top:25px;">
+      </div>
+    </div>
+  </div>
+<div class="banner-container">
+  <div class="tm-container">
+    <div class="banner-text">
+      <img src="/img/asset2.png" class="rocket animated bounceInUp" alt="rocket" title="onsched rocket">
+      <h1>Get started with OnSched today</h1>
+      <h2>Start creating beatiful booking flows, notifications, and more with OnSched.</h2>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="tm-container">
+    <div class="row foot">
+      <div class="col-6 col-md-3">
+        <h2>Solutions</h2>
+          <ul>
+            <li><a href="#">Marketplaces</a></li>
+            <li><a href="#">PPC Directories</a></li>
+            <li><a href="#">B2B Sales Teams</a></li>
+          </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h2>Company</h2>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Chat With Us</a></li>
+            <li><a href="#">Book A Demo</a></li>
+          </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h2>Contact</h2>
+          <ul>
+            <li><a href="#">Sales Team</a></li>
+            <li><a href="#">Support Team</a></li>
+            <li><a href="#">Development Team</a></li>
+          </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h2>Resources</h2>
+          <ul>
+            <li><a href="#">Homepage</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="row foot-bottom">
+      <p>&copy; 2018 Tasman Technologies Inc.</p>
+      <a>Terms</a>
+      <a>Privacy</a>
+    </div>
+  </div>
+</footer>
+<script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      var pricedrop = document.getElementById("pricing-dropdown");
+      var api = document.getElementById("api-dropdown")
+      if (x.className == "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+          pricedrop.className = "dropdown-content";
+          api.className = "dropdown-content";
+      }
+  }
+</script>
+<script>
+  function dropFunction() {
+      var pricedrop = document.getElementById("pricing-dropdown");
+      var x = document.getElementById("myTopnav");
+      if (pricedrop.className == "dropdown-content") {
+          pricedrop.className += " respond animated flipInX";
+      } else {
+          pricedrop.className = "dropdown-content";
+      }
+  }
+</script>
+<script>
+  function apidropFunction() {
+      var api = document.getElementById("api-dropdown");
+      var x = document.getElementById("myTopnav");
+      if (api.className == "dropdown-content") {
+          api.className += " respond animated flipInX";
+      } else {
+          api.className = "dropdown-content";
+      }
+  }
+</script>
+<!--<script>
+  function pickupFunction() {
+      var pricedrop = document.getElementById("pricing-dropdown");
+      var x = document.getElementById("myTopnav");
+      if (pricedrop.className == "dropdown-content respond") {
+          pricedrop.className = "dropdown-content";
+      } else {
+      }
+  }
+</script> -->
+
+<script>
+  function flipNav() {
+      var book = document.getElementById("book-btn");
+      var chat = document.getElementById("chat-btn");
+      var login = document.getElementById("login");
+      var price = document.getElementById("price");
+      var api = document.getElementById("api");
+      if (book.className == "nav-btn") {
+          book.className += " animated flipInY";
+      } else {
+          book.className = "nav-btn";
+      }
+      if (chat.className == "nav-btn") {
+        chat.className += " animated flipInY";
+      } else {
+        chat.className = "nav-btn";
+      }
+      if (login.className == "nav-links") {
+        login.className += " animated flipInY";
+      } else {
+        login.className = "nav-links";
+      }
+      if (price.className == "nav-links") {
+        price.className += " animated flipInY";
+      } else {
+        price.className = "nav-links";
+      }
+      if (api.className == "nav-api") {
+        api.className += " animated flipInY";
+      } else {
+        api.className = "nav-api";
+      }
+  }
+</script>
+<script>
+  function animateLines() {
+    var line1 = document.getElementById("line1");
+    var line2 = document.getElementById("line2");
+    var line3 = document.getElementById("line3");
+
+    if (line1.className == "line") {
+        line1.className += " animateline1";
+    } else {
+      line1.className = "line";
+    }
+
+    if (line2.className == "line") {
+        line2.className += " animateline2";
+    } else {
+      line2.className = "line";
+    }
+
+    if (line3.className == "line") {
+        line3.className += " animateline3";
+    } else {
+      line3.className = "line";
+    }
+  }
+</script>
+
+<!-- <script>
+  function navIcon() {
+    var trigram = document.getElementById("trigram");
+    var line1 = document.getElementById("line1");
+    var line2 = document.getElementById("line2");
+    var line3 = document.getElementById("line3");
+    delete line1
+  }
+</script> -->
+<script>
+    window.intercomSettings = {
+      app_id: "q5lly5sv"
+    };
+  </script>
+  <script>
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q5lly5sv';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+  </script>
+
+<script>
+  $(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.learn-cta').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 10000); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+
+// Change the speed to whatever you want
+// Personally i think 1000 is too much
+// Try 800 or below, it seems not too much but it will make a difference
+</script>
+</body>
+</html>

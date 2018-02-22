@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+                <script>document.documentElement.setAttribute('data-useragent', navigator.userAgent);</script>
+        
+                <title>OnSched | Brilliantly Simple Appointment Scheduling Software</title>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<meta name="description" content="OnSched's robust online booking platform helps businesses of all kinds & sizes offer their clients the new age experience through online appointment scheduling. " />
+   
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1" />
+    <meta name="keywords" content="Appointment scheduling software, appointment scheduling software, appointment scheduling software for enterprise, resell online booking, online booking software that you can resell, white labeled online booking, white label scheduling software, API first online booking, appointment scheduling api, online booking api, api for online booking, API first online scheduling software, API online booking software, API for online booking software, booking software API, booking api, scheduling api, appointment software api, online booking for classes, online booking for events, event online booking software, online bookings for meetings software, software for booking meetings online, booking appointments online, appointment software, appointment scheduling, appointment scheduling software, scheduling software, scheduling, best appointment software, best scheduling software, best online booking solution">
+    <link href="assets/style/responsivehome.min.css" rel="stylesheet" />
+    <!--<link href="https://i3.campaignmonitor.com/assets/ico/favicon.ico?ver=9302" rel="shortcut icon" />-->
+	<link href="https://i3.campaignmonitor.com/assets/ico/apple-touch-icon.png?ver=9302" rel="apple-touch-icon-precomposed" />
+    
+    <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-70771079-1', 'auto');
+		ga('require', 'linkid', {
+			  'cookieName': '_ela',
+			  'duration': 45,
+			  'levels': 2
+		});
+		ga('send', 'pageview');
+	</script>
+    
+    <!--Start Heap Analytics --> 
+
+    <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("1116361331");
+</script>
+
+<!--Start Heap Analytics -->
+
+    </head>
+    
+    <body class="transparent headscroll">
+
+    
+	<header>
+            <div id="cookie-notification">
+                <div class="central">
+                    <p>We use cookies to provide the best site experience. <a href="policies/index.html#cookies">Find out more</a></p>
+                    <span id="confirm-cookies"></span>
+                </div>
+            </div>
+            
+            <nav>
+                <div class="fullwidth dark" id="darker">
+                    <div class="central">
+
+                        <div id="topBar">
+                            <div id="cmlogo" style="background-image:url('images/logo/logolight.png'); background-repeat:no-repeat; margin-top:11px;"><a href="index.html" title="OnSched" class="home-nav-link">
+                           <img src="images/logo/logolight.png">
+                            </a></div>
+                            <a href="index.html#mainNav" class="menu-link">
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                                <span class="line line-3"></span>
+                            </a>
+                        </div>
+                        
+                        <div id="mainNav">
+                            <ul id="primary">
+                                <li><a href="features/index.html" id="features" class="primary-nav-link">Features</a></li>
+                                <li><a href="pricing/index.html" id="pricing" class="primary-nav-link">Pricing</a></li>
+                                <!--<li><a href="our-story/index.html" id="customers" class="primary-nav-link">Our Story</a></li>-->
+                                <li><a class="fixed-click" href="javascript:void(0)" style="cursor:pointer;" id="contact_btn">Chat Now</a></li>
+                                
+                                <!--These are mobile only menu options--> 
+                                
+                                <li><a href="javascript:void(0)" style="cursor:pointer;" id="contact_btn1" class="primary-nav-link show-mobile">Support</a></li> <!--id="support & sales"-->
+                                <li><a class="primary-nav-link show-mobile" href="tel:18443998404">+1 844 399 8404</a>
+                                                                
+                            </ul>
+                            <ul id="second">
+                            	<!--This is the menu off to the right on desktop, also displays at the bottom of the mobile menu-->
+                                
+                                <li><a href="https://app.onsched.com/custom/onboarding/" class="signup cmbtn primary" id="menuSignUp">SIGN UP</a></li>
+                                <li><a href="https://app.onsched.com/portal" id="login" class="primary-nav-link">Log In</a></li>
+                                <li><a id="contact" class="primary-nav-link open-subnav hide-mobile">Contact us</a>
+                                
+                                	<!-- This is the desktop contact popup menu start --> 
+                                    
+                                    <div class='subnav'>
+                                        <div class='backing'></div>
+                                        <div class='central'>
+                                            <span class="logo">
+                                                <img src="https://onsched.com/logo/logo.png">
+                                            </span>
+                                            <span class="close"></span>
+                                            
+                                            <!--These are the list items--> 
+                                            
+                                            <div class="block">
+                                                <div class="title small">ASK US YOUR QUESTIONS</div>
+                                                <a class="sublink" target="_blank" href="https://app.onsched.com/BookOnline/availability/41/55/538/20161207/30?tz=-5" style="cursor:pointer;">Book Live Demo</a>
+                                                <a class="sublink" href="demorequest" style="cursor:pointer;">Request a demo</a>
+                                                <a class="sublink" href="javascript:void(0)" style="cursor:pointer;" id="contact_btn7">Contact Sales</a>
+                                                <a class="sublink" href="javascript:void(0)" style="cursor:pointer;" id="contact_btn8">Contact Support</a>
+                                                <a class="sublink" href="tel:18443998404" style="cursor:pointer;">Call Us +1 844 399 8404</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </li>
+                               <li><a class="primary-nav-link hide-mobile" href="tel:18443998404">+1 844 399 8404</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                                
+                            </nav>
+        </header>
+            
+<section class="fullwidth header-anchor" id="feature" data-poster="http://onsched.com/img/officebg.png" style="background-image:url('http://onsched.com/img/officebg.png')"><!--http://inksched.com/assets/img/homepagehero.png-->
+    <div class="blurry"></div>
+    <div class="overlay"></div>
+    <div class="inner">
+        <hgroup> <!--test 1: Flexible Online Booking Built for Enterprise? Well Isn't That Nice. .. Subheader: Online booking that makes sense - Trusted by 500,000+ customers worldwide. CTA Get started for free -->
+            <!--<h1>Meetings. Classes. Events. Appointments. Easily book appointments online</h1>
+            <p>Un-paralleled Customer Service, with Online booking That Makes Sense. - Trusted by thousands of Customers Worldwide</p>-->
+            
+            <h1><h1>#1 Booking software for Marketplaces &amp; Review platforms with <bold>high value</bold> appointments. </h1></h1>
+<p>Every booking paired with a lead profile report - who booked, what company they’re with, and a breakdown of everything you need to win high-value appointments. </p>
+            
+            <!--<a href="demo" class="primary cmbtn">Request a Demo</a>-->
+            <!--<div class="buttons video">
+                <a href="#" title="Request a live demo" class="secondary white cmbtn" >Request a live demo</a>
+                <a href="#" class="cmbtn primary">Get Booking</a>
+            </div>--> 
+            <div class="buttons video">
+                <!--<a href="demorequest" id="demoLive" title="Request a live demo" class="primary white cmbtn" style="background: linear-gradient(to bottom,#ffffff 0,#dadada 100%);
+    				color: #525252;">Request Demo</a>
+                <a href="https://app.onsched.com/custom/onboarding/" id="signupBtn" class="cmbtn primary hide-mobile" style="margin-left:9px;">Get Started For Free</a>-->
+                
+                <a href="demorequest" id="signupBtn" class="cmbtn primary hide-mobile" style="margin-left:9px;">Request Demo</a>
+                <a href="https://onsched.com/book-demo" id="demoLive" title="Request a live demo" class="primary white cmbtn" style="background: linear-gradient(to bottom,#ffffff 0,#dadada 100%);
+    				color: #525252; margin-left:10px;">Schedule Call</a>
+            </div>
+        </hgroup>
+    </div>
+</section>
+
+<!-- Powerhouse, images/powergrey.png; Chris price, images/chrisgrey.png; extreme needle, images/extremegrey.png; Underground ink, images/undegroundgrey.png; seven doors, images/sevengrey.png; the shop tattoo co, images/shopgrey.png; --> 
+
+<section class="fullwidth" id="logos">
+    <div class="inner">
+        <h3>Join hundreds of Businesses in 10+ countries who found a better way to book online</h3>
+        <ul class="logos">
+            <li class="buzzfeed"><img title="ING Direct" alt="ING Direct" width="100px" height="20px" src="img/ing.png" /></li>
+            <li class="ripcurl"><img title="Boston University" alt="Boston University" width="100px" height="20px" src="img/boston.png" /></li>
+            <li class="topshop"><img title="Audi" alt="Audi" width="100px" height="20px" src="img/audi2.png" /></li>
+            <li class="unicef"><img title="John Hancock" alt="John Hancock" width="100px" height="20px" src="img/hancock.png" /></li>
+            <li class="adidas"><img title="Montana University" alt="Montana University" width="100px	" height="20px" src="img/montana.png" /></li>
+            <li class="showtime"><img title="OneAmerica" alt="OneAmerica" width="110px" height="22px" src="img/one.png" /></li>
+        </ul>
+    </div>
+</section>
+
+<section class="fullwidth" id="campaigns">
+    <div class="inner">
+        <hgroup>
+            <h2>The No-Brainer solution for directories, sales teams, marketplaces & white labeling</h2>
+            <p>Our platform can be used out-of-the-box <a href="https://onsched.com/demo15a/ngonsched1/" target="_blank">(see example)</a>, but can be fully integrated via the API to power directories, marketplaces and more - or if you just want to have brand consistent booking.</p>
+            <div class="btn-container">
+                <a href="demorequest" class="secondary blue cmbtn">Request Demo</a>
+                <a id="demo-btn" href="http://onsched.com/book-demo/" class="tertiary cmbtn">Schedule a Call</a>
+            </div>
+            <div class="clear"></div>
+        </hgroup>
+        <div class="builder">
+            <div class="builder-monitor">
+                <div class="builder-screen">
+                    <img title="OnSched Desktop Portal" alt="OnSched Desktop Portal" src="images/portal.png" width="750" height="422" />
+                    <video id="builder-video" width="750" height="422" poster="images/portalfinal.png" muted autoplay loop>
+                        <source src="https://onsched.com/video/inkrecord.mp4"  type="video/mp4" />
+                        <source src="https://onsched.com/video/inkrecord.ogg"  type="video/ogg" />
+                        <source src="https://onsched.com/video/inkrecord.webm"  type="video/webm" />
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!--<source src="https://onsched.com/video/inkrecord.mp4"  type="video/ogg" />
+                        <source src="https://onsched.com/video/inkrecord.mp4"  type="video/webm" />-->
+                        <!-- <source src="https://i3.campaignmonitor.com/assets/images/home/videos/builder.ogv?ver=9302"  type="video/ogg" />
+                        <source src="https://i3.campaignmonitor.com/assets/images/home/videos/builder.webm?ver=9302"  type="video/webm" />-->
+            <ul class="features">
+                    <li class="create">
+                            <h4>Extend with API</h4>
+                            <p>Out of the box, you can customize nearly everything you'll need to get the perfect solution for your business. Additionally extend that functionality via the API</p>
+                    </li>
+                    <li class="lists">
+                            <h4>White Label & Re-sell</h4>
+                            <p>Agencies and businesses that want to offer scheduling as part of their product offering use OnSched to get up and running quickly</p>
+                    </li>
+                    <li class="send">
+                            <h4>Secret Sauce</h4>
+                            <p>OnSched's "secret sauce" is two fold. We risk score every lead, and do a complete breakdown on who booked by pulling data and sending you a report.</p>
+                    </li>
+            </ul>
+    </div>
+</section>
+
+
+<div class="cm-video-container" id="overview-video">
+    <span class="close-video"></span>
+    <iframe class="video" data-video-title="OnSched Features" src="https://player.vimeo.com/video/178991189" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<section data-type="background" data-speed="10" class="fullwidth" id="showcase">
+	<div class="inner">
+		<hgroup>
+			<h2>Top Down Architecture</h2>
+			<p>Are you an agregator, marketplace, directory, or business with many locations (or a lot of sales reps)? Then OnSched is a no-brainer. With our top down architecture you'll get a full view into every part of the business, and our roadmap is full of features just for you.  </p>
+			<a class="secondary white cmbtn" href="https://app.onsched.com/custom/onboarding/">Get Started Free</a>
+		</hgroup>
+		<div class="devices">
+			<div class="browser">
+				<div class="nav">
+					<div class="button"></div><div class="button"></div><div class="button"></div>
+				</div>
+				<div class="email">
+					<div class="avatar"></div>
+					<div class="lines short"></div>
+					<div class="lines long"></div>
+				</div>
+				<ul class="screen">
+					<li><img title="OnSched Example 1" alt="OnSched Example 1" src="images/cwsv1.png" /></li>
+					<li><img title="OnSched Example 1" alt="OnSched Example 2" src="images/cwsv2.png" /></li>
+					<li><img title="OnSched Example 1" alt="OnSched Example 3" src="images/cwsv3.png" /></li>
+				</ul>
+			</div>
+			<div class="tablet">
+				<div class="details">
+					<div class="camera"></div>
+					<div class="speaker"></div>
+				</div>
+				<ul class="screen">
+					<li><img title="OnSched Mobile Portal" alt="OnSched Web Portal Mobile" src="images/mobile/portal.png" /></li>
+					<li><img title="OnSched Customer View Mobile" alt="OnSched Customer View Mobile" src="images/mobile/email.png" /></li>
+					<li><img title="OnSched Customer Widgets" alt="OnSched Customer Widgets" src="images/mobile/widgets.png" /></li>
+				</ul>
+			</div>
+			<div class="mobile">
+				<div class="details">
+					<div class="camera"></div>
+					<div class="speaker"></div>
+				</div>
+				<ul class="screen">
+					<li><img title="OnSched Reports" alt="OnSched Reporting Charts" src="images/mobile/charts.png" /></li>
+					<li><img title="OnSched Mobile" alt="OnSched Mobile Version" src="images/mobile/portal.png" /></li>
+					<li><img title="OnSched Mobile Email" alt="OnSched Mobile Email" src="images/mobile/email.png" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!--<section class="fullwidth" id="success">
+	<div class="inner">
+		<hgroup>
+			<h2>Know your business</h2>
+			<p>Client data and management. Reporting &amp; Analytics.</p>
+		</hgroup>
+		<div class="tracking">
+			<div class="map">
+                            <div class="modal london">
+                                <div class="avatar brad"></div>
+                                <p><strong>Brad Rodgerson</strong><br>
+                                    <span>Booked in</span></p>
+                            </div>
+                            <div class="modal tokyo">
+                                <div class="avatar tanya"></div>
+                                <p><strong>Tanya Freedman</strong><br>
+                                    <span>Booked in</span></p>
+                            </div>
+                            <div class="modal africa">
+                                <div class="avatar tim"></div>
+                                    <p><strong>Tim Whiteside</strong><br>
+                                        <span>Booked in</span></p>
+                            </div>
+                            <div class="pin london"></div>
+                            <div class="pin tokyo"></div>
+                            <div class="pin sydney"></div>
+                            <div class="pin morocco"></div>
+                            <div class="pin africa"></div>
+                            <div class="pin newyork"></div>
+			</div>
+
+			<div class="monitor">
+				<div class="monitor-details">
+					<div class="monitor-camera"></div>
+					<div class="monitor-speaker"></div>
+				</div>
+				<div class="monitor-screen">
+					<img title="See how your business is doing on the go with OnScheds robust reporting" alt="OnSched Mobile Charts" src="images/mobile/charts.png" />
+				</div>
+			</div>
+		</div>
+
+		<ul class="features">
+			<li class="reporting">
+				<h4>Build your audience</h4>
+				<p>Detailed client profiles, cancellation lists</p>
+			</li>
+			<li class="analytics">
+				<h4>Monitor your business</h4>
+				<p>Appointment analysis and reporting</p>
+			</li>
+			<li class="social">
+				<h4>Track your success</h4>
+				<p>Detailed utilization reports</p>
+			</li>
+		</ul>
+	</div>
+</section>-->
+
+
+<!--<section class="fullwidth cm-customer-hero-wrap slideshow">
+
+        <div class="fullwidth cm-customer-hero left current" id="quote1" style="background-image:url('http://OnSched.com/images/glenbg.png');">
+        	<div class="inner">
+            	<div class="wrap">
+                	<img title="Glen Hartless" alt="The Shop Tattoo Co Logo" class="logo" src="http://OnSched.com/assets/img/theshoplogo.png" style="width: 245px;" />                <span class='quote withlogo'>OnSched is helping my business enormously.</span>
+               		<span class='author'>The Shop Tattoo Co, Owner</span>                <a href="http://onsched.com/book-demo/" class="secondary white cmbtn">Book live demo</a>            	</div>
+        	</div>
+   		</div>
+        
+        <!--<div class="fullwidth cm-customer-hero left" id="quote2" style="background-image:url('https://i3.campaignmonitor.com/assets/images/heroes/banner-ved.jpg?ver=9302');">
+        	<div class="inner">
+            	<div class="wrap">
+                	<img title="Virgin Experience Days" alt="Virgin Experience Days - Campaign Monitor Email Marketing Customer" class="logo" src="https://i3.campaignmonitor.com/assets/images/heroes/logo-ved.png?ver=9302" style="height: 48px; width: 122px;" />                <span class='quote withlogo'>Once we started using automation we found that we would keep those customers for so much longer.</span>
+                	<span class='author'>Liam Howard-Jones, Marketing Manager</span>                <a id="ved-video-btn" class="secondary white cmbtn">WATCH THE VIDEO</a>            	</div>
+       		</div>
+            
+    	</div>-->
+    
+  <!--<div class="fullwidth cm-customer-hero left" id="quote3" style="background-image:url('https://i3.campaignmonitor.com/assets/images/heroes/banner-ripcurl.jpg?ver=9302');">
+        <div class="inner">
+            <div class="wrap">
+                <img title="Rip Curl" alt="Rip Curl - Campaign Monitor Email Marketing Customer" class="logo" src="https://i3.campaignmonitor.com/assets/images/heroes/logo-ripcurl.png?ver=9302" style="height: 49px; width: 106px;" />                <span class='quote withlogo'>We partner with the world’s most innovative technology companies, and we choose Campaign Monitor.</span>
+                <span class='author'>James Taylor, Global Creative Director</span>                <a id="ripcurl-video-btn" class="secondary white cmbtn">WATCH THE VIDEO</a>            </div>
+        </div>
+  </div>-->
+  
+            <!--<div class="handles">
+            	<span class='handle quote1 current' data-target='quote1'></span><span class='handle quote2' data-target='quote2'></span><span class='handle quote3' data-target='quote3'>
+                </span>
+            </div>-->
+            
+    <!--</section>-->
+    
+    
+    
+<div class="cm-video-container" id="jaybird-video">
+    <span class="close-video"></span>
+    <iframe class="video" data-video-title="OnSched product highlight video" src="#" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="cm-video-container" id="ved-video">
+    <span class="close-video"></span>
+    <iframe class="video" data-video-title="OnSched Overview Video" src="#" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="cm-video-container" id="ripcurl-video">
+    <span class="close-video"></span>
+    <iframe class="video" data-video-title="Rip Curl Customer Video" src="#" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<section class="fullwidth" id="support">
+	<div class="inner">
+		<hgroup>
+			<h2>Award-winning customer support</h2>
+			<p>OnSched's team is there to help you from day 1. We'll setup your account, train your staff &amp; make sure you get off to the right start.</p>
+		</hgroup>
+		<div class="numbers">
+			<div class="column hours">
+				<div><span class="digits">24</span><span class="slash">/<span class="bold">7</span></span></div>
+				<h4>24/7 global customer support</h4>
+				<p>Our support team is up around the clock, making sure you stay OnSchedule</p>
+			</div>
+			<div class="column rating">
+				<div><span class="digits">99</span><span class="slash">%</span></div>
+				<h4>99% customer satisfaction</h4>
+				<p>Rated highest in customer success amongst all appointment scheduling companies</p>
+			</div>
+		</div>
+                <div id="testimonials">
+                    <div class="testimonials">
+			<div class="quote one">
+                            
+                            <div class=" first active">
+                                    <blockquote>There is pretty much nothing this app can't do. I unwittingly threw quite a few curve balls (e.g., providers in different international time zones with different schedules) and, with help from tech support, I was able to do everything I needed to do.</blockquote>
+                                    <div class="details">
+                                            <img title="Glen Hartless" alt="Glen Hartless - OnSched Testimonial" src="http://onsched.com/assets/img/bite.png" width="54" height="54" />
+                                            <h4>Gina Patterson</h4>
+                                            <h5>CEO, Bite Nutrition</h5>
+                                    </div>
+                            </div>
+                           <!-- <div class="tweet second">
+                                    <blockquote>I had a wonderful experience with OnSched. They worked with us to customize everything exactly how our company wanted, plus exceptional training and support. They were great to work with and I would definitely recommend this company.</blockquote>
+                                    <div class="details">
+                                            <img title="Ariella Brand" alt="Ariella Brand - OnSched Testimonial" src="http://onsched.com/assets/img/darcie.png" width="54" height="54" />
+                                            <h4>Darcie LeTendre</h4>
+                                            <h5>Team Lead, LTC Partners (John Hancock)</h5>
+                                             
+                                    </div>
+                            </div>-->
+                            <!--<div class="tweet third">
+                                    <blockquote>I don't know what I did before I started using OnSched. Whatever it was, I won't go back.</blockquote>
+                                    <div class="details">
+                                            <img title="Ali Springall" alt="Ali Springall - Campaign Monitor Email Marketing Testimonial" src="https://i3.campaignmonitor.com/assets/images/home/avatar-ali@2x.jpg?ver=9302" width="54" height="54" />
+                                            <h4>Shawn - Skinart</h4>
+                                    </div>
+                            </div>-->
+			</div>
+			<div class="quote two">
+                            <div class=" first active mobileactive">
+                                    <blockquote>OnSched is a huge upgrade from our previous booking software. The back end is incrediby intuitive and it just works. The service was great, and the help these guys give you is top notch</blockquote>
+                                    <div class="details">
+                                            <img title="Jaynie White" alt="Jaynie White - OnSched Testimonial" src="http://onsched.com/assets/img/nicole.png" width="54" height="54" />
+                                            <h4>Nicole Leogrande</h4>
+                                            <h5>Strategic Operations, Colliers International</h5>
+                                    </div>
+                            </div>
+                            <!--<div class="tweet second">
+                                    <blockquote>Easy to use, customizeable, great customer service.</blockquote>
+                                    <div class="details">
+                                            <img title="Grove Turtle" alt="Island Reporters Court Reporters Online Booking Testimonial" src="http://onsched.com/assets/img/islandreporters.png" width="54" height="54" />
+                                            <h4>Kelsey Fletcher</h4>
+                                            <h5>Island Reports</h5>
+                                    </div>
+                            </div>-->
+                           <!--<div class="tweet third">
+                                    <blockquote>OnSched is impressive. I don't like a lot of softwares, but this makes the cut</blockquote>
+                                    <div class="details">
+                                            <img title="Ana Tesovic" alt="Ana Tesovic - Campaign Monitor Email Marketing Testimonial" src="https://i3.campaignmonitor.com/assets/images/home/avatar-ana@2x.jpg?ver=9302" width="54" height="54" />
+                                            <h4>Ana Rider - Underground Ink</h4>
+                                    </div>
+                            </div>-->
+			</div>
+            
+            
+			<div class="quote three">
+                            <div class=" first active">
+                                    <blockquote>I had a wonderful experience with OnSched. They worked with us to customize everything exactly how our company wanted, plus exceptional training and support. They were great to work with and I would definitely recommend this company.</blockquote>
+                                    <div class="details">
+                                            <img title="John Hancock Testimonial" alt="John Hancock - Online booking for insurance Testimonial" src="http://onsched.com/assets/img/darcie.png" width="54" height="54" />
+                                            <h4>Darcie LeTendre</h4>
+                                            <h5>Team Lead, LTC Partners (John Hancock)</h5>
+                                    </div>
+                            </div>
+                           <!--<div class="tweet second">
+                                    <blockquote>You really can't beat the quality of support from OnSched.</blockquote>
+                                    <div class="details">
+                                            <img title="Ana Rider" alt="Ana Rider - OnSched Testimonial" src="images/testimonials/ana.png" width="54" height="54" />
+                                            <h4>Ana Rider - Underground Ink</h4>
+                                    </div>
+                            </div>
+                            <div class="tweet third">
+                                    <blockquote>OnSched team is world-class. Seriously</blockquote>
+                                    <div class="details">
+                                            <img title="Andy Howard" alt="Andy Howard - Campaign Monitor Email Marketing Testimonial" src="https://i3.campaignmonitor.com/assets/images/home/avatar-andy@2x.jpg?ver=9302" width="54" height="54" />
+                                            <h4>Andy Howard</h4>
+                                    </div>
+                            </div>-->
+			</div>
+                    </div>
+		</div>
+	</div>
+</section>
+
+<!--<script type="application/ld+json">
+  {
+	  "@context": "http://schema.org/",
+	  "@type": "Organization",
+	  "url": "https://www.campaignmonitor.com/",
+	  "logo": "https://i3.campaignmonitor.com/assets/brand/logotype/campaignmonitor_logotype_biggest_2.png",
+	  "sameAs": [ "https://en.wikipedia.org/wiki/Campaign_Monitor"]
+  }
+</script>-->
+
+    
+<section class="fullwidth" id="signup">
+    <div class="inner">
+        <h3>Join hundreds of Businesses in 10+ countries who found a better way to book online</h3>
+        <a href="demorequest" class="primary cmbtn" id="fullwidthGetStartedFreeCTA">Talk to a Human</a>
+        <br class="clear">
+    </div>
+</section>
+
+    <footer>
+
+        <div class="central" dynamic="true">
+            <div class="main-footer">
+                <div class="logo">
+                    <a href="index.html" title="OnSched" class="home-nav-link">
+                        <img src="https://onsched.com/logo/logo.png"><title>OnSched - Tasman Technologies Inc.</title>
+                    </a>
+                </div>
+                <div class="menu">
+                    <dl>
+                        <dt><a href="features/index.html">Product</a></dt>
+                            <dd><a href="features/index.html">Features</a></dd>
+                            <dd><a href="pricing/index.html">Pricing</a></dd>
+                            <dd><a href="http://onsched.com/book-demo/">Schedule Demo</a></dd>
+                            <dd><a href="https://app.onsched.com/custom/onboarding/">Try it Free</a></dd>
+                    </dl>
+                    <!--<dl>
+                        <dt><a href="email-marketing/index.html">Email Marketing</a></dt>
+                            <dd><a href="agencies/index.html">Agencies</a></dd>
+                            <dd><a href="retail/index.html">Retail</a></dd>
+                            <dd><a href="non-profits/index.html">Nonprofit</a></dd>
+                            <dd><a href="media-and-entertainment/index.html">Entertainment</a></dd>
+                            <dd><a href="publishing/index.html">Publishing</a></dd>
+                            <dd><a href="technology/index.html">Technology</a></dd>
+                    </dl>-->
+                    <dl>
+                        <dt><a href="javascript:void(0)" style="cursor:pointer;" id="contact_btn11">Support</a></dt>
+                            <dd><a href="javascript:void(0)" style="cursor:pointer;" id="contact_btn12">Talk to Us</a></dd>
+                            <dd><a href="javascript:void(0)" style="cursor:pointer;" id="contact_btn13">Chat with Us</a></dd>
+                            <dd><a href="javascript:void(0)" style="cursor:pointer;" id="contact_btn14">Ask us a Question</a></dd>
+                            
+                    </dl>
+                    <dl>
+                        <dt><a href="javascript:void(0)">Who Uses OnSched</a></dt>
+                            <dd><a href="whos-it-for/business-coach-online-booking" style="cursor:pointer;" id="contact_btn12">Business Coaches</a></dd>
+                            <dd><a href="whos-it-for/tutor-online-booking" style="cursor:pointer;" id="contact_btn13">Tutoring Companies</a></dd>
+                            <!--<dd><a href="javascript:void(0)" style="cursor:pointer;" id="contact_btn14">Ask us a Question</a></dd>-->
+                            
+                    </dl>
+                    <dl>
+                        <dt><a href="our-story/index.html">Company</a></dt>
+                            <dd><a href="our-story/index.html">Our Story</a></dd>
+                            <!--<dd><a href="our-story/meet-the-team/index.html">Meet the Team</a></dd>-->
+                            <!--<dd><a href="https://www.campaignmonitor.com/careers/">Careers</a></dd>-->
+                            <!--<dd><a href="in-the-news/index.html">In the News</a></dd>-->
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="sub-footer">
+
+                <form action="#" method="post" id="subForm" novalidate>
+                    <input type="email" autocomplete="off" name="cm-vuullj-vuullj" id="z-z" placeholder="Join our newsletter & Grow your business" />
+                    <input type="hidden" name="Source" value="Site Footer"/>
+                    <div id="subForm-check-alive">
+                        <input type="text" name="check-alive" placeholder="Robot check - leave blank" />
+                    </div>
+                    <span class="label">Enter your email address</span>
+                    <span class="subscribe cmbtn secondary grey">Subscribe</span>
+                    <img src="https://i3.campaignmonitor.com/assets/images/global/loader.gif?ver=9302" style="width: 0; height: 0; position: absolute;" />
+                    <span id="subResponse">&nbsp;</span>
+                </form>
+                
+                <div class="social">
+                                        <a href="https://www.facebook.com/onsched" target="_blank" class="facebook" title="Become a friend on Facebook">Facebook</a> 
+                    <a href="https://twitter.com/onsched" target="_blank" title="Follow us on Twitter" class="twitter">Twitter</a>
+                    <a href="https://www.linkedin.com/company/onsched" target="_blank" title="Follow us on LinkedIn" class="linkedin">LinkedIn</a>
+                </div>
+                
+                <div class="foot-line">
+                    <a href="policies/index.html" class="policies">Terms & Policies</a> <span class="sep"></span> &copy; 2016 OnSched - <a href="https://www.onsched.com">Appointment Scheduling Software</a>
+                </div>
+            </div>
+        </div>
+        <br class="clear" />
+    </footer>
+    
+    <script>
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		document.getElementById("demoLive").remove();  
+		document.getElementById("signupBtn").innerHTML = "Schedule Demo";  
+		document.getElementById("signupBtn").href = "http://onsched.com/book-demo/";    //change url
+		document.getElementById("signupBtn").target = "_blank";                         
+	}
+</script>
+
+   <!-- <script type="text/javascript" src="https://i3.campaignmonitor.com/assets/js/home.con.js?ver=9302"></script>-->
+   <script type="text/javascript" src="js/home.min.js"></script>
+   <!--<script type="text/javascript" src="js/homecon.js"></script>
+   <script type="text/javascript" src="js/conhome.js"></script>
+   <script type="text/javascript" src="js/global.js"></script>-->
+
+<!-- Intercom launcher --> 
+
+<script type="text/javascript">
+
+	$('#contact_btn').click(function () {
+		Intercom('show');
+	}); 
+	
+</script>
+<script type="text/javascript">
+
+	$('#contact_btn1').click(function () {
+		Intercom('show');
+	}); 
+	
+</script>
+<script type="text/javascript">
+
+	$('#contact_btn2').click(function () {
+		Intercom('show');
+	}); 
+</script>
+<script type="text/javascript">	
+	$('#contact_btn3').click(function () {
+		Intercom('show');
+	});
+</script>
+<script type="text/javascript">	 
+	$('#contact_btn4').click(function () {
+		Intercom('show');
+	}); 
+</script>
+<script type="text/javascript">	
+	$('#contact_btn5').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	 
+	$('#contact_btn6').click(function () {
+		Intercom('show');
+	}); 
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn7').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn8').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn9').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn10').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn11').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn12').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn13').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn14').click(function () {
+		Intercom('show');
+	});
+</script>
+<script defer type="text/javascript">	
+	$('#contact_btn15').click(function () {
+		Intercom('show');
+	});
+</script>
+
+<script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/q5lly5sv'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+
+<script>
+        window.intercomSettings = {
+            app_id: "q5lly5sv"
+        };
+</script>
+
+<!--<script defer>
+        var MTIProjectId = '4d9edf84-6e06-4c9f-8722-b6ff3d590f96';
+
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.net/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+</script>-->
+
+<!--<script defer charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/popover-v1.js"></script>-->
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" />
+
+<script>
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		document.getElementById("menuSignUp").innerHTML = "Request a Demo";  
+		document.getElementById("menuSignUp").href = "http://onsched.com/book-demo/";    //change url
+		document.getElementById("menuSignUp").target = "_blank";                        
+	}
+</script>
+
+<script defer type="text/javascript">
+        (function (d, s, i, r) {
+            if (d.getElementById(i)) { return; }
+            var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+            n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/2069102.js';
+            e.parentNode.insertBefore(n, e);
+        })(document, "script", "hs-analytics", 300000);
+    </script>
+	
+	<!-- Begin Inspectlet Embed Code -->
+            <script type="text/javascript" id="inspectletjs">
+            (function() {
+            window.__insp = window.__insp || [];
+            __insp.push(['wid', 1238288376]);
+            if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1238288376&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);
+            })();
+            </script>
+        <!-- End Inspectlet Embed Code -->
+</body>
+</html>
