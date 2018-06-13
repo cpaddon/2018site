@@ -12,15 +12,24 @@
     <!--<link rel="stylesheet" type="text/css" href="css/animate.min.css">-->
     <link rel="stylesheet" href="css/animations.css" type="text/css">
     <link rel='stylesheet' id='OnSched-fonts-css' href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='OnSched-fonts-css' href='fonts/CircularStd-Bold.woff2' type='text/css' media='all' />
+    <link rel='stylesheet' id='OnSched-fonts-css' href='fonts/CircularStd-Book.woff2' type='text/css' media='all' />
+    <link rel='stylesheet' id='OnSched-fonts-css' href='fonts/CircularStd-Medium.woff2' type='text/css' media='all' />
     
     <link type="text/css" media="all" href="css/swish.css" rel="stylesheet" />
     <title>OnSched | Brilliantly Simple Appointment Scheduling Software</title>
     <meta name="description" content="OnSched's robust online booking platform helps businesses of all kinds & sizes offer their clients the new age experience through online appointment scheduling." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="OnSched | Brilliantly Simple Appointment Scheduling Software" />
+    <meta property="og:title" content="OnSched | Brilliantly Simple Scheduling" />
     <meta property="og:description" content="OnSched's robust online booking platform helps businesses of all kinds & sizes offer their clients the new age experience through online appointment scheduling."/>
 
+    <!-- FAVicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.ico">
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -70,7 +79,7 @@
                             <ul role="menu" class=" dropdown-menu">
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
-                                    <a title="Calling" href="#" class="dropdown-item">API Docs</a>
+                                    <a title="Calling" href="https://www.onsched.com/api/docs/" class="dropdown-item">API Docs</a>
                                 </li>
                                 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
@@ -78,7 +87,7 @@
                             </li>
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4229"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4229 nav-item">
-                            <a title="Calling" style="color:black;" href="#" class="dropdown-item">API Examples</a>  
+                            <a title="Calling" style="color:black;" href="https://www.onsched.com/api/examples/" class="dropdown-item">API Examples</a>  
                             </li>
                             </ul>
                         <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-117"
@@ -126,7 +135,7 @@
                       padding-right:  17px;">Chat With Sales</a></li>
                         <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-17597" 
                         class="mitch.css">
-                      <a title="Book A Demo" href="http://www.onsched.com/book-demo/" class="nav-link" style="
+                      <a title="Book A Demo" href="http://www.onsched.com/book-demo-new/" class="nav-link" style="
                       background: #03c9a8;
                       margin-bottom:5px;
                       color:#fff;
@@ -146,7 +155,7 @@
       <style>
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: circular, sans-serif;
 }
 
   footer {
@@ -168,7 +177,7 @@ body {
   p,
   li,
   a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Circular std, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -183,7 +192,7 @@ body {
   }
   p,
   li {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Circular std, sans-serif;
     font-weight: normal;
     color: #808080;
   }
@@ -202,7 +211,7 @@ body {
     padding: 12px 20px;
     color: #FFF;
     font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Circular std, sans-serif;
     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -225,6 +234,13 @@ body {
   p.cta-button:active {
     background-color: #d19d00;
     color: #FFF;
+  }
+
+  .b2bcta {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
   }
   
   /*.fullscreen {
@@ -474,7 +490,7 @@ body {
   .hero-text {
     /*margin: 0 auto;*/
     padding: 175px 25px 75px 25px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Circular std, sans-serif;
   }
   
   @media (min-width: 992px) {
@@ -491,7 +507,7 @@ body {
   }
   @media (min-width: 1250px) {
    .hero-section {
-     background-position: right -150px; 
+     background-position: right -115px; 
      background-size: cover;
    }
   }
@@ -1005,7 +1021,7 @@ body {
   }
   
   .cta-product {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Circular std, sans-serif;
     display: inline-block;
     font-weight: bold;
     font-size: 0.875rem;
@@ -1067,7 +1083,7 @@ body {
     padding: 12px 20px;
     font-size: 18px;
     font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Circular std, sans-serif;
     border-radius: 3px;
     line-height: 27px;
     -webkit-transition: 0.2s ease-in-out all;
@@ -1096,7 +1112,7 @@ body {
                             Marketplaces, Directories, <br>
                             and B2B Sales Teams.</h1>
                     <p class="cta-paragraph">OnSched's customizable booking platform powers millions of bookings per year. Increase revenue, and push leads further down the funnel.</p>
-                    <a href="http://www.onsched.com/book-demo/" target="_blank" class="cta-button" id="herocta1">Schedule Demo</a>
+                    <a href="http://www.onsched.com/book-demo-new/" target="_blank" class="cta-button" id="herocta1">Book Demo</a>
                     <span class="wistia_embed wistia_async_49rpffwqoa popover=true popoverAnimateThumbnail=true popoverContent=link"
                         style="display:inline">
                         <a href="index.html#learn" class="video-button" id="herocta2">Learn More <!--CHAT WITH SALES-->
@@ -1112,16 +1128,11 @@ body {
     <div class="container-fluid plan-cards">
         <div class="row">
             <div class="col-sm-12">
-                <h2 id="learn" class="section-headline feature-card-headline">First, how are you looking to use booking:</h2>
-
-                    <div class="animatedParent">
-                        <button onclick="window.location.href='https://www.onsched.com/b2bsales/'" id="custom-animated-btn" class="animated tada">Are you a B2B Sales Team? Join our Sales Stack pilot</button>
-                    </div>
-
+                <h2 class="section-headline feature-card-headline">First, how are you looking to use booking:</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div id="learn" class="col-md-4">
                 <input class="d-none" type="radio" id="self-service" name="service-options"> <!--self-service-->
                 <a href="index.html#self-service" class="switch">
                     <div class="feature-card">
@@ -1146,7 +1157,7 @@ body {
                         </div>
                         <div class="card-description-container">
                             <h3>PPC Directory</h3>
-                            <p>Eliminate the ‘highest point of friction’ by adding a layer of commitment by booking online. Connect prospects directly to sales reps and remove the Lead Graveyard entirely.</p>
+                            <p>OnSched increases the value of new leads and uses features like Appointment Booking, Lead Routing, and Enriched Reports, to push them further down the funnel.</p>
                             <p class="cta-button">Learn More</p>
                         </div>
                     </div>
@@ -1154,21 +1165,24 @@ body {
             </div>
             <div class="col-md-4">
                     <input class="d-none" type="radio" id="custom-api" name="service-options">
-                    <a href="index.html#custom-api" class="switch">
+                    <a href="https://onsched.com/b2bsales/index.html" class="">
                         <div class="feature-card">
                             <div class="card-icon-container">
                                 <img src="img/customapi.png"
                                     alt="OnSched Authorized Dealer" title="OnSched Authorized Dealer setup" class="grayscale card-icon">
                             </div>
                             <div class="card-description-container">
-                                <h3>Authorized Dealer</h3>
+                                <h3>B2B Sales Team</h3>
                                 <!--<h5>Work With Us</h5>-->
-                                <p>Have OnSched's team of industry experts help build out your custom booking app or implementation. The flexibility our platform offers is unmatched.</p>
+                                <p>Capture new leads and distribute the bookings to the most appropriate sales representative based on lead qualifying questions.</p>
                                 <p class="cta-button">Learn More</p>
                             </div>
                         </div>
                     </a>
                 </div>
+                <!--<div class="animatedParent b2bcta">
+                    <button onclick="window.location.href='https://www.onsched.com/b2bsales/'" id="custom-animated-btn" class="animated tada">Are you a B2B Sales Team? Join our Sales Stack pilot</button>
+                </div> -->
         </div>
     </div>
 </div>
@@ -1212,9 +1226,9 @@ body {
                 <img src="img/customapi.png" alt="OnSched self service"
                 />
             </div>
-            <div class="col-8">
+           <!-- <div class="col-8">
                 <p></p>
-            </div>@
+            </div> -->
         </div>
     </div>
     <div class="container-fluid diy-headline">
@@ -1228,7 +1242,7 @@ body {
             <div class="col-sm-4 text-center">
                 <img src="img/capture.png" alt="Capture Bookings" title="Capture marketplace bookings">
                 <h5>Capture Bookings</h5>
-                <p>Capture bookings in your marketplace and route them directly to your vendors.</p>
+                <p>Capture bookings in your marketplace and route them directly to your users.</p>
                 <!--<p>Route to the right resources, email &amp; SMS reminders, cross time zone support and more. </p>-->
             </div>
             <div class="col-sm-4 text-center">
@@ -1239,7 +1253,7 @@ body {
             <div class="col-sm-4 text-center">
                 <img src="img/track.png" alt="Track and Analyze" title="Track and analyze your marketplace bookings">
                 <h5>Analyze</h5>
-                <p>Analyze data from your vendors' bookings to determine the value of their leads booked.</p>
+                <p>Analyze data from your users' bookings to determine the value of their leads booked.</p>
             </div>
         </div>
     </div>
@@ -1249,11 +1263,11 @@ body {
                 <h2 class="section-headline">Robust Features</h2>
                 <ul>
                     <li>
-                        <span>OnSched's API first booking software uses robust features such as Worldwide Time Zones, Custom Email Templates, and Calendar Sync in order to help you create the ultimate booking experience for your vendors and their clients.</span>
+                        <span>OnSched's API first booking software uses robust features such as Worldwide Time Zones, Custom Email Templates, and Calendar Sync in order to help you create the ultimate booking experience for your users and their customers.</span>
                     </li>
                 </ul>
                 <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about Marketplace booking features: ')" style="
-                color: #2196f3;">Learn More
+                color: #2196f3;">Chat with sales
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
@@ -1280,14 +1294,14 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-calendar" aria-hidden="true"></i>Calendar Sync</h5>
-                        <p>Keep track of your vendors' usage by accessing the comprehensive admin dashboard where you can see utilization and reports on each vendor.</p>
+                        <p>Keep personal and business calendars in sync so that a users true availability is presented on the booking calendar of the user.</p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="point">
                     <h5>
                         <i class="fa fa-envelope" aria-hidden="true"></i>Custom Email Templates</h5>
-                        <p>Each of your vendors engages with their customers in a different fashion. OnSched allows your vendors to customize email and text-message notifications in a way that suits their business.</p>
+                        <p>Each of your users engage with their customers in a different fashion. OnSched allows you to customize email and text-message notifications in a way that suits your business.</p>
                 </div>
             </div>
         </div>
@@ -1303,9 +1317,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>Multi-level Access</h5>
-                        <p>Have up to 5 levels of user permissions, that you customize. 
-
-</p>
+                        <p>Have up to 5 levels of user permissions so that different user types have access that they need to perform their roles regarding bookings.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -1320,7 +1332,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-credit-card" aria-hidden="true"></i>Flexible Payments</h5>
-                        <p>Variable hourly rates, fixed or packaged pricing. We integrate with <a style="font-size:18px;" href="https://stripe.com">Stripe</a> for payments.</p>
+                        <p>Variable hourly rates or fixed pricing based on service. We integrate with <a style="font-size:18px;" href="https://stripe.com">Stripe</a> for payments.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -1347,7 +1359,7 @@ body {
                     </li>
                 </ul>
                 <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about the benefits of Marketplace bookings: ')" style="
-                color: #2196f3;">Learn More
+                color: #2196f3;">Chat with sales
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
@@ -1372,7 +1384,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-usd" aria-hidden="true"></i>Increase lead value</h5>
-                        <p>Setting a meeting pushes a lead significantly further down the funnel for vendors in your marketplace.</p>
+                        <p>Setting a meeting pushes a lead significantly further down the funnel for customers in your marketplace.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -1388,7 +1400,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-user" aria-hidden="true"></i>Eliminate No-Shows</h5>
-                        <p>Engage leads with automated follow-ups and calendar reminders to eliminate no-shows and cancellations.</p>
+                        <p>Engage leads with automated Email and SMS follow-ups and calendar reminders to eliminate no-shows and cancellations.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -1402,7 +1414,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-code" aria-hidden="true"></i>Custom Implementations</h5>
-                        <p>We help get the right solution out the door. If there's anything out of the box we can't do, we can build it for you.</p>
+                        <p>We help you get the right solution out the door. If there's anything out of the box we can't do, we can build it for you.</p>
                 </div>
             </div>
         </div>
@@ -1411,14 +1423,14 @@ body {
                 <h2 class="section-headline">Brand Consistent Booking</h2>
                 <ul>
                     <li>
-                        <span>OnSched is an API first booking platform that allows you to build booking flows around your own UX while we work our magic behind the curtains.</span>
+                        <span>OnSched is an API first booking platform that allows you to build booking flows around your own UX while we work our magic behind the scenes.</span>
                     </li>
                     <li>
                         <span>Embed your OnSched booking flow onto any page of your website with an iFrame or Pop-Up Modal and your users will never leave your site to book an appointment.</span>
                     </li>
                 </ul>
                 <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about brand consistent booking: ')" style="
-                color: #2196f3;">Learn More
+                color: #2196f3;">Chat with sales
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
@@ -1468,7 +1480,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-user-plus" aria-hidden="true"></i>Resource OnBoarding</h5>
-                        <p>We build out a custom form that your vendors can send to their staff resources, depending on their access level, in order to onboard seamlessly while collecting the data that your business needs.</p>
+                        <p>We build out a custom form that your managers/users can send to their staff, depending on their access level, in order to onboard seamlessly while collecting the data that your business needs.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -1492,7 +1504,7 @@ body {
                     </li>
                 </ul>
                 <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about your out-of-the-box booking flows: ')" style="
-                color: #2196f3;">Learn More
+                color: #2196f3;">Chat with sales
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
@@ -1614,7 +1626,7 @@ body {
                             <img class="delay-250 animated bounceInUp" style="margin-top:40px;" id="rocket" src="img/asset2.png" alt="onsched rocket" title="onsched rocket"></img>
                             <h2>Get started with OnSched today</h2>
                             <p style="text-align:center;" class="cta-paragraph">Start creating online booking flows for your business with OnSched's appointment booking software.</p>
-                            <a href="https://onsched.typeform.com/to/R1f7V2" class="cta-button" style="margin-top:-100;">Get Started</a></div></div>
+                            <a href="http://www.onsched.com/book-demo-new/" class="cta-button" style="margin-top:-100;">Book Demo</a></div></div>
                             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                             <script src="js/css3-animate-it.js"></script></div></div>
         </div>
@@ -1677,12 +1689,12 @@ body {
                 <div class="col-sm-4 text-center">
                     <img src="img/convert.png" alt="Analyze Bookings" title="Analyze bookings in your PPC Directory">
                     <h5>Analyze</h5>
-                    <p>Used custom reporting to analyze datasets of leads generated</p>
+                    <p>Use custom reporting to analyze datasets of leads generated</p>
                 </div>
                 <div class="col-sm-4 text-center">
                     <img src="img/track.png" alt="Close The Loop" title="close the loop">
                     <h5>Close The Loop</h5>
-                    <p>Full visibility into the sales funnel. Identify close rates and increase your NPS</p>
+                    <p>With full visibility into the sales funnel, identify close rates and increase your NPS</p>
                 </div>
             </div>
         </div>
@@ -1692,12 +1704,12 @@ body {
                 <h2 class="section-headline">Robust Features</h2>
                 <ul>
                     <li>
-                        <span>Tired of leads getting lost in the Lead Graveyard? OnSched uses features like Lead Routing, Enriched Reports, and Customized Notifications to ensure that your vend leads always get the attention they need.</span>
+                        <span>Tired of leads getting lost in the Lead Graveyard? OnSched uses features like Lead Routing, Enriched Reports, and Customized Notifications to ensure that your vendors leads always get the attention they need.</span>
                     </li>
                 </ul>
             </ul>
             <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about B2B Sales Team Features: ')" style="
-            color: #2196f3;">Learn More
+            color: #2196f3;">Chat with sales
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
             </div>
@@ -1729,7 +1741,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-clock-o" aria-hidden="true"></i>Time Zones</h5>
-                        <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their time zone.</p>
+                        <p>Have separate views for vendors that are scattered across the globe. Vendors see all of their  bookings in one calendar, in their own time zone regardless of where the appointment came from.</p>
                 </div>
             </div>
         </div>
@@ -1745,7 +1757,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-usd" aria-hidden="true"></i>Increase Lead Value</h5>
-                        <p>Setting a meeting pushes a lead significantly further down the funnel for vendors in your marketplace.</p>
+                        <p>Scheduling a meeting pushes a lead significantly further down the sales funnel for all of your vendors.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -1774,7 +1786,7 @@ body {
                     <div class="point">
                         <h5>
                             <i class="fa fa-calendar" aria-hidden="true"></i>Calendar Sync</h5>
-                            <p>Keep track of your vendors' usage by accessing the comprehensive admin dashboard in order to see utilization and reports on each vendor individually.</p>
+                            <p>Keep personal and business calendars in sync so that a users true availability is presented on the booking calendar of the user.</p>
                     </div>
                 </div>
         </div>
@@ -1783,11 +1795,11 @@ body {
                 <h2 class="section-headline">Why Use OnSched?</h2>
                 <ul>
                     <li>
-                        <span>Using OnSched to power bookings in your Directory increases the value of leads you generate as they are moved down the funnel by booking. Closing the loop by understanding exactly where each lead is in your vendors buying cycle.</span>
+                        <span>Using OnSched to power bookings in your Directory increases the value of leads generated as they are instantly moved further down the sales funnel. Close the loop by understanding exactly where each lead is in your vendors buying cycle.</span>
                     </li>
                 </ul>
                 <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about the benefits of PPC Directory bookings: ')" style="
-                color: #2196f3;">Learn More
+                color: #2196f3;">Chat with sales
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
@@ -1842,7 +1854,7 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>Multi-Level Access</h5>
-                        <p>Choose up to 5 levels of user permissions, that you customize.</p>
+                        <p>Have up to 5 levels of user permissions so that different user types have access that they need to perform their roles regarding bookings.</p>
                 </div>
             </div>
         </div><div class="row product-points product-points-middle">
@@ -1850,21 +1862,21 @@ body {
                 <div class="point">
                     <h5>
                         <i class="fa fa-credit-card" aria-hidden="true"></i>Flexible Payments</h5>
-                        <p>Variable hourly rates, fixed or packaged pricing. We integrate with <a href="https://stripe.com">Stripe</a> for payments</p>
+                        <p>Variable hourly rates or fixed pricing based on service. We integrate with <a style="font-size:18px;" href="https://stripe.com">Stripe.com</a> for payments.</p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="point">
                     <h5>
                         <i class="fa fa-code" aria-hidden="true"></i>Development On-Hand</h5>
-                        <p>Need more tools to get off the ground? Our expert Development Team is available on-call to assist in the building stages.</p>
+                        <p>Need more tools to get off the ground? Our expert Product and Development Teams are available to assist if needed.</p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="point">
                     <h5>
                         <i class="fa fa-unlock-alt" aria-hidden="true"></i>Booking Restrictions</h5>
-                        <p>Eliminate surprises by controlling when and how clients can book, reschedule, and cancel their appointments.</p>
+                        <p>EEliminate surprises by managing when and how clients can book, reschedule, and cancel their appointments.</p>
                 </div>
             </div>
         </div>
@@ -1949,7 +1961,7 @@ body {
                 <img class="delay-250 animated bounceInUp" id="rocket" src="img/asset2.png" alt="onsched rocket" title="onsched rocket"></img>
                 <h2>Get started with OnSched today</h2>
                 <p style="text-align:center;" class="cta-paragraph">Start creating online booking flows for your business with OnSched's appointment booking software.</p>
-                <a href="http://www.onsched.com/book-demo/" class="cta-button" style="margin-top:0;">Book A Demo</a></div></div>
+                <a href="http://www.onsched.com/book-demo-new/" class="cta-button" style="margin-top:0;">Book A Demo</a></div></div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                 <script src="js/css3-animate-it.js"></script></div></div>
 </div>
@@ -2019,11 +2031,11 @@ body {
                     <h2 class="section-headline">Robust Features</h2>
                     <ul>
                         <li>
-                            <span>OnSched is an API first booking software that allows you to bring your design to life by creating your own booking flow. Using our robust API you can customize the interaction between your consumers and vendors while we do all the legwork behind the scenes. Want to offer online booking to your vendors? Ask about our white labeling solutions and rebrand our software as your own.</span>
+                            <span>OnSched is an API first booking software that allows you to bring your design to life by creating your own booking flow. Using our robust API you can customize the interaction between your Dealers and their Customers while we do all the legwork behind the scenes. Want to offer online booking to your Dealers? Ask about our white labeling solutions and rebrand our software as your own.</span>
                         </li>
                     </ul>
                     <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about the Rapid Growth pricing plan: ')" style="
-                    color: #2196f3;">Learn More
+                    color: #2196f3;">Chat with sales
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -2091,7 +2103,7 @@ body {
                         </li>
                     </ul>
                     <a class="cta-product text-uppercase" onclick="Intercom('showNewMessage', 'Hi there, I have a question about the Rapid Growth pricing plan: ')" style="
-                    color: #2196f3;">Learn More
+                    color: #2196f3;">Chat with sales
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -2237,7 +2249,7 @@ body {
                             <img class="delay-250 animated bounceInUp" id="rocket" src="img/asset2.png" alt="onsched rocket" title="onsched rocket"></img>
                             <h2>Get started with OnSched today</h2>
                             <p style="text-align:center;" class="cta-paragraph">Start creating online booking flows for your business with OnSched's appointment booking software.</p>
-                            <a href="http://www.onsched.com/book-demo/" class="cta-button" style="margin-top:-100;">Book A Demo</a></div></div>
+                            <a href="http://www.onsched.com/book-demo-new/" class="cta-button" style="margin-top:-100;">Book A Demo</a></div></div>
                             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                             <script src="js/css3-animate-it.js"></script></div></div>
 
@@ -2310,7 +2322,7 @@ body {
                                 <a onclick="Intercom('showNewMessage', 'Hi there, I have a question: ')">Chat With Us</a>
                             </li>
                             <li id="menu-item-29996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29996">
-                                <a href="http://www.onsched.com/book-demo/">Book A Demo</a>
+                                <a href="http://www.onsched.com/book-demo-new/">Book A Demo</a>
                             </li>
                           <!--  <li id="menu-item-2510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2510">
                                 <a href="#">Menu item</a>
@@ -2425,7 +2437,7 @@ body {
 		document.getElementById("herocta1").innerHTML = "Book Demo";  
         document.getElementById("herocta2").innerHTML = "Explore";  
         //document.getElementById("herocta1").remove();  
-		//document.getElementById("signupBtn").href = "http://onsched.com/book-demo/";    //change url
+		//document.getElementById("signupBtn").href = "http://onsched.com/book-demo-new/";    //change url
 		//document.getElementById("signupBtn").target = "_blank";                     
 	}
 </script>

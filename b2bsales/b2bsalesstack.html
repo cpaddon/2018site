@@ -542,45 +542,53 @@ body {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+  <!-- FAVicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="/img/apple-touch-icon-57x57-precomposed.ico">
+  <link rel="apple-touch-icon" type="image/x-icon" href="/img/apple-touch-icon-57x57-precomposed.ico">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.ico">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.ico">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.ico">
+
 </head>
 <body>
 
   <div class="tm-container">
-    <div class="topnav" id="myTopnav">
-      <img onclick="window.location.href='https://www.onsched.com/'" class="logo" src="/img/transdark.png">
-      <a class="nav-btn" id="book-btn" href="/book-demo/index.html">Book A Demo</a>
-      <a class="nav-btn" id="chat-btn" href="#" onclick="Intercom('showNewMessage', 'Hi there, I have a question: ')">Chat With Sales</a>
-      <a class="nav-links" id="login" href="https://app.onsched.com/portal">Login</a>
-      <a class="nav-api" id="api" onclick="apidropFunction();">API</a>
-      <a class="nav-links" style="cursor:pointer;" id="price" onclick="dropFunction();">Pricing</a>
-
-        <div onclick="myFunction();animateLines();flipNav();pickupFuntion();" class="nav-icon icon">
-          <div class="line" id="line1"></div>
-          <div class="line" id="line2"></div>
-          <div class="line" id="line3"></div>
+      <div class="topnav" id="myTopnav">
+          <img onclick="window.location.href='https://www.onsched.com/'" class="logo" src="/img/transdark.png">
+          <a class="nav-btn" id="book-btn" href="/book-demo/index.html">Book A Demo</a>
+          <a class="nav-btn" id="chat-btn" href="#" onclick="Intercom('showNewMessage', 'Hi there, I have a question: ')">Chat With Sales</a>
+          <a class="nav-links" id="login" href="https://app.onsched.com/portal">Login</a>
+          <a class="nav-api" id="api" onmouseover="apihoverFunction();" onclick="apidropFunction();">API</a>
+          <a class="nav-links" style="cursor:pointer;" id="price" onmouseover="hoverFunction();" onclick="dropFunction();">Pricing</a>
+    
+            <div onclick="myFunction();animateLines();flipNav();pickupFuntion();" class="nav-icon icon">
+              <div class="line" id="line1"></div>
+              <div class="line" id="line2"></div>
+              <div class="line" id="line3"></div>
+            </div>
         </div>
-    </div>
-
-  </div>
-  <div class="dropdown-content" id="pricing-dropdown">
-      <a href="/pricing-marketplace.html">Marketplace Pricing</a>
-      <a onclick="Intercom('showNewMessage', 'Hi there, I have a question about PPC Directory pricing: ')">PPC Directory Pricing</a>
-      <a onclick="Intercom('showNewMessage', 'Hi there, I have a question about Authorized Dealer pricing: ')">Authorized Dealer Pricing</a>
-      <a href="/pricing-sales.html">B2B Sales Stack<sup>BETA</sup> Pricing</a>
-    </div>
-  </div>
-  <div class="dropdown-content" id="api-dropdown">
-      <a href="#">API Docs</a>
-      <a href="#">About API</a>
-      <a href="#">API Examples</a>
-    </div>
+    
+      </div>
+      <div onmouseover="hoverFunction();" onmouseout="timeoutDrop();" class="dropdown-content" id="pricing-dropdown">
+          <a href="https://www.onsched.com/pricing/marketplace/">Marketplace Pricing</a>
+          <a onclick="Intercom('showNewMessage', 'Hi there, I have a question about PPC Directory pricing: ')">PPC Directory Pricing</a>
+          <a onclick="Intercom('showNewMessage', 'Hi there, I have a question about Authorized Dealer pricing: ')">Authorized Dealer Pricing</a>
+          <a href="https://www.onsched.com/pricing/b2bsales/">B2B Sales Stack<sup>BETA</sup> Pricing</a>
+        </div>
+      </div>
+      <div onmouseover="apihoverFunction();" onmouseout="apitimeoutDrop();" class="dropdown-content" id="api-dropdown">
+          <a href="https://www.onsched.com/api/docs/">API Docs</a>
+          <a href="https://www.onsched.com/api/about/">About API</a>
+          <a href="https://www.onsched.com/api/examples/">API Examples</a>
+        </div>
+      </div>
 
 <div class="hero-container">
   <div class="tm-container">
     <div class="hero-text">
       <h1 id="use-case">B2B Sales Stack <sup>BETA</sup></h1>
       <div class="hero-line animated bounceIn"></div>
-      <h2>Keep leads out of the lead graveyard. The OnSched engine books appointments with the right sales rep, enriches the appointment data and provides a report on the person who booked the demo.</h2>
+      <h2>Integrate the OnSched sales stack into your website and let prospects answer qualifying questions, and schedule demos directly into your sales reps calendar. Leads distributed to reps based on qualifying questions.</h2>
       <button onclick="window.location.href='https://www.onsched.com/pricing/b2bsales/'" class="book-cta">See Pricing</button>
       <button onclick="window.location.href='#pg-content'" class="learn-cta">Learn More</button>
     </div>
@@ -602,7 +610,7 @@ body {
       <div class="col-sm-4">
         <img alt="track bookings" title="track bookings with onsched" src="/img/track.png">
         <h2>Analyze Data</h2>
-        <p>Create reports and analytics based on lead engagement to push them further down the funnel.</p>
+        <p>Create reports and analytics based on lead engagement.</p>
       </div>
     </div>
     <div class="row section">
@@ -620,15 +628,15 @@ body {
     <div class="row product-section product-points">
       <div class="col-sm-4">
         <h5><i class="fa fa-sitemap"></i>Lead Routing</h5>
-        <p>Route leads automatically to the right sales rep by booking directly into their calendar.</p>
+        <p>Route leads automatically to the right sales rep by setting up your routing criteria and booking directly into their calendars.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-area-chart"></i>Lead Reports</h5>
-        <p>Every booking is paired with a booking profile report - who booked, what company they’re with, and a breakdown of everything you need to win high-value appointments.</p>
+        <p>Every booking is paired with a booking profile report - who booked, what company they are with, and a breakdown of everything you need to win high-value appointments.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-clock-o"></i>Timezones</h5>
-        <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+        <p>Have separate views for customers that are scattered across the globe. Customers see all of their bookings in one calendar, in their own time zone regardless of where it was booked.</p>
       </div>
     </div>
     <div class="row product-section product-points">
@@ -642,13 +650,13 @@ body {
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-envelope"></i>Custom Email Templates</h5>
-        <p>Customize email and text-message notifications in a way that suits their business.</p>
+        <p>Customize email and text-message notifications in a way that suits your business.</p>
       </div>
     </div>
     <div class="row product-section product-points">
       <div class="col-sm-4">
         <h5><i class="fa fa-group"></i>Group Teams</h5>
-        <p>Custom fields allow you to capture datasets, use them in email templates, and more.</p>
+        <p>Group your teams to assure leads go to the right team. This allows team round robin routing per service, product or other criteria.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-address-card-o"></i>Audit Trail</h5>
@@ -656,7 +664,7 @@ body {
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-calendar"></i>Calendar Sync</h5>
-        <p>Customize email and text-message notifications in a way that suits their business.</p>
+        <p>Keep personal and business calendars in sync so that a users true availability is presented on the booking calendar of the user.</p>
       </div>
     </div>
 
@@ -668,50 +676,50 @@ body {
       </div>
       <div class="col-sm-6">
         <h1 id="pg-content" class="section-header">Why Use OnSched</h1>
-        <p>OnSched is an API first booking platform which allows you to build booking flows around your own UX while staying brand consistent. With OnSched you can increase the value of leads by booking meetings directly into your sales teams calendars, pushing that lead further down the funnel.</p>
+        <p>OnSched is an API first booking platform which allows you to build booking flows around your own UX while staying brand consistent. With OnSched you can increase the value of leads by booking meetings directly into your sales teams calendars, pushing that lead further down the sales funnel.</p>
       </div>
     </div>
 
     <div class="row product-section product-points">
       <div class="col-sm-4">
         <h5><i class="fa fa-refresh"></i>Close The Loop</h5>
-        <p>Route leads automatically to the right sales rep by booking directly into their calendar.</p>
+        <p>With full visibility into the sales funnel, identify close rates and increase your NPS.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-usd"></i>Increased Lead Value</h5>
-        <p>Every booking is paired with a booking profile report - who booked, what company they’re with, and a breakdown of everything you need to win high-value appointments.</p>
+        <p>Every booking is paired with a booking profile report - who booked, what company they are with, and a breakdown of everything you need to win high-value appointments.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-code-fork"></i>Automation</h5>
-        <p>Have separate views for different users that are scattered across the globe. Users booking always see times in their timezone.</p>
+        <p>OnSched allows you to customize emails and text-message notifications in a way that suits your business while automating the delivery process, follow-up timeline and flow.</p>
       </div>
     </div>
     <div class="row product-section product-points">
       <div class="col-sm-4">
         <h5><i class="fa fa-user"></i>Eliminate No-Shows</h5>
-        <p>Custom fields allow you to capture datasets, use them in email templates, and more.</p>
+        <p>Engage leads with automated follow-ups and calendar reminders to eliminate no-shows and cancellations.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-rocket"></i>Scale Up Instantly</h5>
-        <p>Keep track of your leads by adding notes and custom attributes to the customer profile.</p>
+        <p>OnSched platform is built for scalability, instantly scale up your business at anytime without any loss of performance.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-sort-amount-desc"></i>Multi-Level Access</h5>
-        <p>Customize email and text-message notifications in a way that suits their business.</p>
+        <p>Have up to 5 levels of user permissions so that different user types have access that they need to perform their roles regarding bookings.</p>
       </div>
     </div>
     <div class="row product-section product-points">
       <div class="col-sm-4">
         <h5><i class="fa fa-credit-card"></i>Flexible Payments</h5>
-        <p>Custom fields allow you to capture datasets, use them in email templates, and more.</p>
+        <p>Variable hourly rates or fixed pricing based on service. We integrate with <a style="font-size:18px;" href="https://stripe.com">Stripe.com</a>for payments.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-code"></i>Development On-Hand</h5>
-        <p>Keep track of your leads by adding notes and custom attributes to the customer profile.</p>
+        <p>Need more tools to get off the ground? Our expert Product and Development Teams are available to assist if needed.</p>
       </div>
       <div class="col-sm-4">
         <h5><i class="fa fa-unlock-alt"></i>Booking Restrictions</h5>
-        <p>Customize email and text-message notifications in a way that suits their business.</p>
+        <p>Eliminate surprises by managing when and how clients can book, reschedule, and cancel their appointments.</p>
       </div>
     </div>
 
@@ -859,6 +867,58 @@ body {
       }
   }
 </script>
+<script>
+    function timeoutDrop() {
+        setTimeout(dropFunction, 500)
+    }
+  </script>
+  <script>
+    function hoverFunction() {
+      var pricedrop = document.getElementById("pricing-dropdown");
+      var x = document.getElementById("myTopnav");
+      if (pricedrop.className == "dropdown-content") {
+          pricedrop.className += " respond animated flipInX";
+      } else { 
+        pricedrop.className = "dropdown-content respond"
+      }
+    }
+  </script>
+  <script>
+    function apitimeoutDrop() {
+        setTimeout(apidropFunction, 500)
+    }
+  </script>
+  <script>
+    function apihoverFunction() {
+      var apidrop = document.getElementById("api-dropdown");
+      var x = document.getElementById("myTopnav");
+      if (apidrop.className == "dropdown-content") {
+          apidrop.className += " respond animated flipInX";
+      } else { 
+        apidrop.className = "dropdown-content respond"
+      }
+    }
+  </script>
+  <script>
+    function dropFunction() {
+        var pricedrop = document.getElementById("pricing-dropdown");
+        var x = document.getElementById("myTopnav");
+        if (pricedrop.className == "dropdown-content respond animated flipInX") {
+        } else {
+            pricedrop.className = "dropdown-content";
+        }
+    }
+  </script>
+  <script>
+    function apidropFunction() {
+        var apidrop = document.getElementById("api-dropdown");
+        var x = document.getElementById("myTopnav");
+        if (apidrop.className == "dropdown-content respond animated flipInX") {
+        } else {
+            apidrop.className = "dropdown-content";
+        }
+    }
+  </script>
 <script>
   function animateLines() {
     var line1 = document.getElementById("line1");

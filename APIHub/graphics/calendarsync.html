@@ -1,0 +1,284 @@
+<style>
+    @media only screen and (max-width:600px) {
+        .iPhone {
+            display: none !important;
+        }
+        .info {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: block;
+            width: 100%;
+        }
+        .info span {
+            display: none;
+        }
+    }
+    .all {
+        display: block;
+        margin: 0 auto;
+        max-height: 480px;
+    }
+    @media only screen and (min-width:601px) {
+        .info {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: calc(100% - 260px);
+            position: relative;
+            bottom: 770px;
+            margin-left: 260px;
+        }
+    }
+    .info h1 {
+        color: #555;
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .info p {
+        display: inline;
+        padding-left: 1px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747c84;
+        font-weight: 400;
+    }
+    .macbook {
+        display: none;
+        width: 30%;
+        position: relative;
+        bottom: 175px;
+    }
+    .iPhone {
+        display: inline-block;
+        width: 260px;
+        font-family: Avenir Next, Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    .screen-on {
+        display: block;
+    }
+    .screen-off {
+        display: none;
+    }
+    #ip-sc-1 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #ip-sc-2 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #ip-sc-3 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #ip-sc-4 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 412px;
+    }
+    #ip-sc-5 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #ip-sc-6 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #ip-sc-7 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #ip-sc-8 img {
+        position: relative;
+        z-index: 1;
+        width: 195px;
+        left: 27px;
+        bottom: 417px;
+    }
+    #mc-sc-1 img {
+        position: relative;
+        z-index: 1;
+        width: 442px;
+        bottom: 345px;
+        left: 87px;
+    }
+    #mc-sc-2 img {
+        position: relative;
+        z-index: 1;
+        width: 442px;
+        bottom: 345px;
+        left: 87px;
+    }
+    #tip1 {
+        position: relative;
+        bottom: 661px;
+        left: 147px;
+    }
+    #tip2 {
+        position: relative;
+        bottom: 581px;
+        left: 50px;
+    }
+    #tip3 {
+        position: relative;
+        bottom: 588px;
+        left: 18px;
+    }
+    #tip4 {
+        position: relative;
+        bottom: 495px;
+        left: 59px;
+    }
+    #tip5 {
+        position: relative;
+        bottom: 595px;
+        left: 155px;
+    }
+    #tip6 {
+        position: relative;
+        bottom: 706px;
+        left: 58px;
+    }
+    #tip7 {
+        position: relative;
+        bottom: 475px;
+        left: 81px;
+    }
+    #tip8 {
+        position: relative;
+        bottom: 361px;
+        left: 79px;
+    }
+    #tip9 {
+        position: relative;
+        bottom: 534px;
+        left: 70px;
+    }
+    #tip10 {
+        position: relative;
+        bottom: 432px;
+        left: 143px;
+    }
+    .tooltip {
+        width: 100px;
+        height: 25px;
+        background-color: #2F353F;
+        color: #fff;
+        text-align: center;
+        padding-top: 3px;
+        border-radius: 4px;
+        z-index: 2;
+        animation: pulse 1s infinite;
+        opacity: .9;
+    }
+    @keyframes pulse {
+        0% {box-shadow: 0px 0px 0px 0px #fff}
+        50% {box-shadow: 0px 0px 16px 0px #fff}
+        100% {box-shadow: 0px 0px 0px 0px #fff}
+    }
+    .toolarrowdown {
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #2F353F;
+        position: relative;
+        top: 2px;
+        left: 40%;
+    }
+    .toolarrowup {
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #2F353F;
+        position: relative;
+        bottom: 29px;
+        left: 40%;
+    }
+</style>
+<div class="all">
+    <div class="iPhone">
+        <img src="https://onsched.com/img/iphone.png" alt="iphone">
+        <div class="screen-on" onclick="" id="ip-sc-1">
+            <img src="https://onsched.com/img/ip-sc-1.png" alt="iPhone Screen 1">
+            <div id="tip1" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off" id="ip-sc-2">
+            <img src="https://onsched.com/img/ip-sc-2.png" alt="iPhone Screen 2">
+            <div id="tip2" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off" id="ip-sc-3">
+            <img src="https://onsched.com/img/ip-sc-3.png" alt="iPhone Screen 3">
+            <div id="tip3" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off" id="ip-sc-4">
+            <img src="https://onsched.com/img/ip-sc-4.png" alt="iPhone Screen 4">
+            <div id="tip4" style="width:135px;" class="tooltip">Google / Outlook<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off" id="ip-sc-5">
+            <img src="https://onsched.com/img/ip-sc-5.png" alt="iPhone Screen 5">
+            <div id="tip5" class="tooltip">Turn On<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off" onclick="" id="ip-sc-6">
+            <img src="https://onsched.com/img/ip-sc-1.png" alt="iPhone Screen 6">
+            <div id="tip6" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off" id="ip-sc-7">
+            <img src="https://onsched.com/img/ip-sc-6.png" alt="iPhone Screen 7">
+            <div id="tip7" class="tooltip">Press Here<div class="toolarrowdown"></div></div>
+        </div>
+        <div class="screen-off last" id="ip-sc-8">
+            <img src="https://onsched.com/img/ip-sc-7.png" alt="iPhone Screen 8">
+            <div id="tip8" class="tooltip">See Cal<div class="toolarrowup"></div></div>
+        </div>
+    </div>
+    <div class="macbook">
+        <img src="https://onsched.com/img/macbook.png" alt="macbook">
+        <div class="screen-on" id="mc-sc-1">
+            <img src="https://onsched.com/img/mc-sc-1.png" alt="Mac Screen 1">
+            <div id="tip9" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+        </div>
+        <div class="screen-off last" id="mc-sc-2">
+            <img src="https://onsched.com/img/mc-sc-2.png" alt="Mac Screen 2">
+            <div id="tip10" style="width:135px;" class="tooltip">Google / Outlook<div class="toolarrowup"></div></div>
+        </div>
+    </div>
+    <div class="info">
+        <h1>Apple iCal</h1>
+        <p>To synchronize your external calendar with Apple iCal it is a two-step process. First, you must add either a Google or Outlook Calendar ID with a corresponding Gmail or Outlook email address, then you may add this email address to iCal in order to sync the two calendars.<br></br><span>To see how to add your Calendar to iCal please follow the iPhone screen to the left.</span></p>
+    </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<script>
+  $(function(){
+    $(".iPhone, .macbook").click(function() {
+      $(this).children(".screen-on").not(".last").addClass("screen-off").removeClass("screen-on")
+      .next().addClass("screen-on").removeClass("screen-off");
+    });
+  });
+</script>

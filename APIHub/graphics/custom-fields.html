@@ -1,0 +1,302 @@
+<style>
+    @media only screen and (min-width:1000px){
+        .allContent {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            bottom: 50px;
+        }
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: 50%;
+            position: relative;
+            bottom: 700px;
+        }
+        .graphicContent {
+            height: 400px;
+            width: 49%;
+            font-family: avenir next, sans-serf;
+            position: relative;
+            top: 50px;
+            display: inline-block;
+        }
+    }
+    @media only screen and (max-width:1013px){
+        .allContent {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            bottom: 25px;
+        }
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: block;
+            width: 100%;
+            position: relative;
+            top: 25px;
+        }
+        .graphicContent {
+            height: 400px;
+            width: 100%;
+            font-family: avenir next, sans-serf;
+            position: relative;
+            top: 50px;
+            display: none;
+        }
+    }
+    .infoContent ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .infoContent ul li {
+        margin-bottom: 10px;
+    }
+    .infoContent h1 {
+        color: #555;
+        font-size: 23px;
+        font-weight: 400;
+        margin: -25px 0 25px;
+    }
+    .infoContent h2 {
+        margin: 15px 0 0 0;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        opacity: .8;
+        color: #2196f3;
+    }
+    .infoContent p {
+        display: inline;
+        padding-left: 1px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747c84;
+        font-weight: 400;
+    }
+    .graphicContent h1 {
+        font-size: 18px;
+        background-color: #2196f3;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        padding: 10px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 400;
+        margin-top: 0;
+    }
+    .graphicContent h1 span {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .graphicContent h2 {
+        font-size: 14px;
+        color: #2F353F;
+        position: relative;
+        top: 0;
+        left: 5px;
+        font-weight: 400;
+    }
+    .graphicContent h2 span {
+        font-weight: 400;
+        font-size: 12px;
+        color: #2196f3;
+    }
+    .screen1 {
+        height: 372px;
+        width: 287px;
+        background-color: #fff;
+        border-radius: 4px;
+        /*transform: skewY(6deg);*/
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 3;
+        transition-duration: 500ms;
+        box-shadow: 3px 11px 20px 0px #bbb;
+    }
+    .screen1:hover {
+        left: 50px;
+        transition-duration: 500ms;
+    }
+    .screen2 {
+        height: 372px;
+        width: 287px;
+        background-color: #fff;
+        border-radius: 4px;
+        /*transform: skewY(6deg);*/
+        position: relative;
+        bottom: 368px;
+        left: 75px;
+        z-index: 2;
+        transition-duration: 500ms;
+        box-shadow: 3px 11px 20px 0px #bbb, inset 1px 4px 7px 2px #2196f3;
+    }
+    .screen2:hover {
+        left: 220px;
+        transition-duration: 500ms;
+    }
+    .screen2 img {
+        height: 380px;
+        width: 287px;
+        border-radius: 4px;
+    }
+    .screen3 {
+        height: 371px;
+        width: 287px;
+        background-color: #fff;
+        border-radius: 4px;
+        /*transform: skewY(6deg);*/
+        position: relative;
+        bottom: 755px;
+        left: 130px;
+        z-index: 1;
+        transition-duration: 500ms;
+        box-shadow: 3px 11px 20px 0px #bbb;
+    }
+    .screen3:hover {
+        left: 285px;
+        transition-duration: 500ms;
+    }
+    .line-break {
+        height: 1px;
+        width: 180px;
+        display: block;
+        margin: 0 auto;
+        opacity: .6;
+        background-color: #2196f3;
+        transform: translate3d(1px, 1px, 1px)
+    }
+    .codeSnippet {
+        font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+        font-weight: 100;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+        background-color: #333b4f;
+    }
+    .leftSidebar {
+        background-color: #272f42;
+        display: inline-block;
+        width: 31px;
+        border-radius: 6px 0 0 6px;
+        padding: 10px 0;
+    }
+    .leftSidebar ul {
+        padding-left: 0;
+    }
+    .leftSidebar ul li {
+        list-style-type: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+    .rightContent {
+        background-color: #333b4f;
+        display: inline-block;
+        position: relative;
+        left: -1px;
+        width: 255px;
+        border-radius: 0 6px 6px 0;
+        margin: 0px 0 0 -8px;
+    }
+    .rightContent ul {
+        padding-left: 25px;
+    }
+    .rightContent ul li {
+        list-style-type: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 10px;
+        line-height: 12px;
+        padding: 2px 10px;
+    }
+</style>
+<div class="allContent">
+    <div class="infoContent">
+        <ul>
+            <li>
+                <h2>Create</h2>
+                <p> custom booking fields within the OnSched Portal. Customize your field types the way you want them (i.e. Text entry, Dropdown, Date selection, etc.) and add them to the services for which you would like to collect responses.</p>
+            </li>
+            <li>
+                <h2>Collect</h2>
+                <p> responses to the custom fields on the booking page, these responses will then be attached to the Appointment within the OnSched Portal. For custom fields that attach to the Customer Profile please see <a href="https://onsched.readme.io/docs/custom-fields">Customer Custom Fields</a>.</p>
+            </li>
+            <li>
+                <h2>Notify</h2>
+                <p> your team as soon as an appointment is booked. The responses to all custom fields will be readily available within the OnSched Portal, in the resource email notification, and in the notes section of the event on your synchronized calendar.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="graphicContent">
+        <div class="screen1">
+            <h1>May 13, 2018 - 3:00<span>PM</span></h1>
+            <h2>Name: <span>Bruce Wayne</span></h2>
+            <h2>Company: <span>Wayne Enterprises</span></h2>
+            <h2>Annual Revenue: <span>$8m</span></h2>
+            <div class="line-break"></div>
+            <h2>Strengths: <span>Stealth Combat</span></h2>
+            <h2>Weaknesses: <span>Attack Dogs</span></h2>
+            <h2>Vehicle: <span>Tumbler (BatMobile)</span></h2>
+        </div>
+        <div class="screen2">
+            <img src="https://onsched.com/img/customFields.png" alt="Custom Fields">
+        </div>
+        <div class="screen3">
+            <div class="codeSnippet">
+                <div class="leftSidebar">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                    </ul>
+                </div>
+                <div class="rightContent">
+                    <ul>
+                        <li style="margin-left:5px;color:#52b1ff;">{</li>
+                        <li style="margin-left:15px;color:#ff9800;">"object": "string",</li>
+                        <li style="margin-left:15px;color:#ff9800;">"url": "/consumer/v1/appointments",</li>
+                        <li style="margin-left:15px;color:#ff9800;">"total": 3,</li>
+                        <li style="margin-left:15px;color:#ff9800;">"customFields": [</li>
+                        <li style="margin-left:25px;color:#c36ffc;">{</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"object": "string",</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"id": "string",</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"fieldName": "Strengths"</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"fieldPublic": "true"</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"fieldRequired": true,</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"leadAnswerScore": 0,</li>
+                        <li style="margin-left:30px;color:#c36ffc;">"leadRoutingEntityId": 0</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:transparent;">|</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>OnSchedule Email Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/a159b8ac-b5cf-4596-95c0-b27c556fc49e.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--Stylesheets-->
+  <style>
+
+	body {
+		font-family: Arial, Helvetica, sans-serif; 
+	}
+	
+	body a:visited{
+     color:none;
+	}
+	
+	.header {
+		color:white;
+		font-family: Arial, Helvetica, sans-serif; 
+	}
+	.section2 {
+		color:black;
+		font-family: Arial, Helvetica, sans-serif; 
+	}
+	.section3 {
+		color:black;
+		font-family: Arial, Helvetica, sans-serif; 
+	}
+
+a:visited {
+   text-decoration: none;
+   border: none;
+   color: black; /* change to your desired color */
+}
+
+.emailContainer {
+	-webkit-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);
+	-moz-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);
+	box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);
+}
+
+.outsideContainer {
+	color:#5A5A5A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:300;
+	font-size:12px;
+	width:70%;
+	text-align:center;
+}
+
+.fullwidth {
+	width:100%;
+}
+
+.footer {
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.emailWidth {
+	width:628px;
+}
+
+.paddedP {
+	padding-top:15px;
+}
+.emailHeader h1{
+    font-size: 18px;
+    text-align: right;
+
+}
+.emailHeader h2{
+    text-align: right;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+.emailHeader img{
+    margin: 14px 0px;
+}
+.emailcontent h1{
+    font-size: 20px;
+    display: inline-block;
+    float: left;
+}
+.emailcontent span{
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: text-top;
+}
+.emailcontent i{
+    font-size: 3em;
+    font-weight: 200;
+    padding: 0px 5px;
+    color: #2196f3;
+}
+.legend h1{
+    font-size: 20px;
+    display: inline-block;
+    float: left;
+}
+.legend span{
+    float: right;
+    margin-top: 20px;
+    font-weight: 200;
+    vertical-align: text-top;
+}
+.legend{
+    font-size: 18px;
+}
+.legend i{
+    font-size: 1em;
+    margin: 5px 5px;
+}
+.emailcontent h2{
+    padding: 0px 5px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.emailcontent h3{
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    opacity: .6;
+}
+
+.bar-graph {
+  padding: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 75px;
+  margin: 20px 0;
+}
+
+.bar-graph li {
+  display: block;
+  padding: 1px 0;
+  position: relative;
+  bottom: 16px;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 4px 4px 0 0;
+  max-width: 20%;
+  margin: 0 1.8% 0 0;
+  -webkit-flex: 1 1 15%;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+}
+
+
+.bar-graph .description {
+  font-weight: 800;
+  opacity: 0.5;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 14px;
+  bottom: -16px;
+  position: absolute;
+  font-size: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bar-graph .bar.primary {
+  border: none;
+  background: #99d6ff;
+}
+
+.bar-graph .bar.secondary {
+  border: none;
+  background: #2196f3;
+}
+
+.bookingpercentages i{
+    font-size: 6em;
+}
+.block {
+	display: block;
+	height: 30px;
+	color: #fff;
+	font-size: .75em;
+	float: left;
+	background-color: #99d6ff;
+	position: relative;
+	overflow: hidden;
+	opacity: 1;
+	transition: opacity, .3s ease;
+	cursor: pointer;
+    margin: 20px 0px;
+}
+.block:nth-of-type(2),
+.legend li:nth-of-type(2):before {
+	background-color: #2196f3;
+}
+.block:nth-of-type(3),
+.legend li:nth-of-type(3):before {
+	background-color: #005999;
+}
+
+.value {
+	display: block;
+	line-height: 1em;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%);
+    opacity: .8;
+}
+.heatlegend{
+    height: 14px;
+    width: 115px;
+    background: linear-gradient(to right, #d8efff, #2196f3);
+    display: inline-block;
+    margin: 0px 5px;
+}
+.heatmap {
+    margin-bottom: 20px;
+}
+.heatmap h1{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.heatmap .description{
+    display: inline-block;
+    margin: 0px 7px;
+    font-size: 1rem;
+    opacity: .5;
+    font-weight: 800;
+}
+.weekheat {
+    display: block;
+}
+.weekday{
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    border-radius: 2px;
+    background-color: #d8efff;
+    margin: 0px 2px;
+}
+</style>
+
+</head>
+<body style="margin:0; padding:0;">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f3f7fa" style="color:#2f333d">
+    	<tr>
+        	<td>
+                <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 628px;color:white;border-collapse:collapse;-webkit-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);-moz-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);">
+                    <tr>
+                        <td class="emailHeader" align="center" bgcolor="#2196f3" height="100px">
+                            <div class="col-md-4">
+                                <img src="https://onsched.com/img/translight.png" alt="OnSched Logo" style="height:50px;"/>
+                            </div>
+                            <div class="col-md-8">
+                                <h1>Weekly Update for G2Crowd</h1>
+                                <h2>March 12th - March 19th</h2>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 628px;color:#2f333d;background-color:white;border-collapse:collapse;-webkit-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);-moz-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);">
+                    <tr><td class="emailContent" align="center" style="width:100%;display:inline-block">
+                            <div class="col-md-12 emailcontent">
+                                <h1>This Weeks Bookings</h1>
+                            </div>
+                            <div class="col-md-4 emailcontent">
+                                <ul class="bar-graph">
+                                    <li class="bar primary" style="height: 45%;">
+                                        <div class="description">M</div>
+                                    </li>
+                                    <li class="bar primary" style="height: 60%;">
+                                        <div class="description">T</div>
+                                    </li>
+                                    <li class="bar primary" style="height: 20%;">
+                                        <div class="description">W</div>
+                                    </li>
+                                    <li class="bar primary" style="height: 95%;">
+                                        <div class="description">T</div>
+                                    </li>
+                                    <li class="bar primary" style="height: 50%;">
+                                        <div class="description">F</div>
+                                    </li>
+                                    <li class="bar primary" style="height: 10%;">
+                                        <div class="description">S</div>
+                                    </li>
+                                    <li class="bar primary" style="height: 0%;">
+                                        <div class="description">S</div>
+                                    </li>
+                                </ul>             
+                            </div>
+                            <div class="col-md-4 emailcontent">
+                                <div class="booking-percentages">
+                                    <i class="fa fa-angle-down fa-4x"></i><h2>8.5%</h2>
+                                    <h3>fewer than last week</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4 emailcontent">
+                                <div class="booking-percentages">
+                                    <i class="fa fa-angle-up fa-4x"></i><h2>23.8%</h2>
+                                    <h3>more than weekly avg.</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 legend">
+                                <h1>Remaining Bookings</h1>
+                                <span><i style="color:#99d6ff" class="fa fa-circle fa-2x"></i>NEW<i style="color:#2196f3" class="fa fa-circle fa-2x"></i>OLD<i style="color:#005999" class="fa fa-circle fa-2x"></i>CLOSED</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="chart">
+                                    <span class="block" title="Category A">
+                                        <span class="value">70%</span>
+                                    </span>
+                                    <span class="block" title="Category B">
+                                        <span class="value">16%</span>
+                                    </span>
+                                    <span class="block" title="Category C">
+                                        <span class="value">14%</span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 emailcontent">
+                                <h1>Bookings by Agent</h1>
+                            </div>
+                            <div class="col-md-12 emailcontent">
+                                    <ul class="bar-graph">
+                                        <li class="bar secondary" style="height: 45%;">
+                                            <div class="description">MJ</div>
+                                        </li>
+                                        <li class="bar secondary" style="height: 60%;">
+                                            <div class="description">JP</div>
+                                        </li>
+                                        <li class="bar secondary" style="height: 20%;">
+                                            <div class="description">CP</div>
+                                        </li>
+                                        <li class="bar secondary" style="height: 95%;">
+                                            <div class="description">JS</div>
+                                        </li>
+                                        <li class="bar secondary" style="height: 50%;">
+                                            <div class="description">TB</div>
+                                        </li>
+                                        <li class="bar secondary" style="height: 10%;">
+                                            <div class="description">Other</div>
+                                        </li>
+                                    </ul>             
+                                </div>
+                            <div class="col-md-12 legend">
+                                <h1>3 Month History</h1>
+                                <span>LESS<div class="heatlegend"></div>MORE</span>
+                            </div>
+                            <div class="col-md-4 heatmap">
+                                <h1>January 2018</h1>
+                                <div>
+                                    <div class="description">S</div>
+                                    <div class="description">M</div>
+                                    <div class="description">T</div>
+                                    <div class="description">W</div>
+                                    <div class="description">T</div>
+                                    <div class="description">F</div>
+                                    <div class="description">S</div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day1"></div>
+                                    <div class="weekday" id="day2"></div>
+                                    <div class="weekday" id="day3"></div>
+                                    <div class="weekday" id="day4"></div>
+                                    <div class="weekday" id="day5"></div>
+                                    <div class="weekday" id="day6"></div>
+                                    <div class="weekday" id="day7"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day8"></div>
+                                    <div class="weekday" id="day9"></div>
+                                    <div class="weekday" id="day10"></div>
+                                    <div class="weekday" id="day11"></div>
+                                    <div class="weekday" id="day12"></div>
+                                    <div class="weekday" id="day13"></div>
+                                    <div class="weekday" id="day14"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day15"></div>
+                                    <div class="weekday" id="day16"></div>
+                                    <div class="weekday" id="day17"></div>
+                                    <div class="weekday" id="day18"></div>
+                                    <div class="weekday" id="day19"></div>
+                                    <div class="weekday" id="day20"></div>
+                                    <div class="weekday" id="day21"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day22"></div>
+                                    <div class="weekday" id="day23"></div>
+                                    <div class="weekday" id="day24"></div>
+                                    <div class="weekday" id="day25"></div>
+                                    <div class="weekday" id="day26"></div>
+                                    <div class="weekday" id="day27"></div>
+                                    <div class="weekday" id="day28"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day29"></div>
+                                    <div class="weekday" id="day30"></div>
+                                    <div class="weekday" id="day31"></div>
+                                    <div class="weekday" id="day32"></div>
+                                    <div class="weekday" id="day33"></div>
+                                    <div class="weekday" id="day34"></div>
+                                    <div class="weekday" id="day35"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 heatmap">
+                                <h1>February 2018</h1>
+                                <div>
+                                    <div class="description">S</div>
+                                    <div class="description">M</div>
+                                    <div class="description">T</div>
+                                    <div class="description">W</div>
+                                    <div class="description">T</div>
+                                    <div class="description">F</div>
+                                    <div class="description">S</div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day1"></div>
+                                    <div class="weekday" id="day2"></div>
+                                    <div class="weekday" id="day3"></div>
+                                    <div class="weekday" id="day4"></div>
+                                    <div class="weekday" id="day5"></div>
+                                    <div class="weekday" id="day6"></div>
+                                    <div class="weekday" id="day7"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day8"></div>
+                                    <div class="weekday" id="day9"></div>
+                                    <div class="weekday" id="day10"></div>
+                                    <div class="weekday" id="day11"></div>
+                                    <div class="weekday" id="day12"></div>
+                                    <div class="weekday" id="day13"></div>
+                                    <div class="weekday" id="day14"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day15"></div>
+                                    <div class="weekday" id="day16"></div>
+                                    <div class="weekday" id="day17"></div>
+                                    <div class="weekday" id="day18"></div>
+                                    <div class="weekday" id="day19"></div>
+                                    <div class="weekday" id="day20"></div>
+                                    <div class="weekday" id="day21"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day22"></div>
+                                    <div class="weekday" id="day23"></div>
+                                    <div class="weekday" id="day24"></div>
+                                    <div class="weekday" id="day25"></div>
+                                    <div class="weekday" id="day26"></div>
+                                    <div class="weekday" id="day27"></div>
+                                    <div class="weekday" id="day28"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day29"></div>
+                                    <div class="weekday" id="day30"></div>
+                                    <div class="weekday" id="day31"></div>
+                                    <div class="weekday" id="day32"></div>
+                                    <div class="weekday" id="day33"></div>
+                                    <div class="weekday" id="day34"></div>
+                                    <div class="weekday" id="day35"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 heatmap">
+                                <h1>March 2018</h1>
+                                <div>
+                                    <div class="description">S</div>
+                                    <div class="description">M</div>
+                                    <div class="description">T</div>
+                                    <div class="description">W</div>
+                                    <div class="description">T</div>
+                                    <div class="description">F</div>
+                                    <div class="description">S</div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day1"></div>
+                                    <div class="weekday" id="day2"></div>
+                                    <div class="weekday" id="day3"></div>
+                                    <div class="weekday" id="day4"></div>
+                                    <div class="weekday" id="day5"></div>
+                                    <div class="weekday" id="day6"></div>
+                                    <div class="weekday" id="day7"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day8"></div>
+                                    <div class="weekday" id="day9"></div>
+                                    <div class="weekday" id="day10"></div>
+                                    <div class="weekday" id="day11"></div>
+                                    <div class="weekday" id="day12"></div>
+                                    <div class="weekday" id="day13"></div>
+                                    <div class="weekday" id="day14"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day15"></div>
+                                    <div class="weekday" id="day16"></div>
+                                    <div class="weekday" id="day17"></div>
+                                    <div class="weekday" id="day18"></div>
+                                    <div class="weekday" id="day19"></div>
+                                    <div class="weekday" id="day20"></div>
+                                    <div class="weekday" id="day21"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day22"></div>
+                                    <div class="weekday" id="day23"></div>
+                                    <div class="weekday" id="day24"></div>
+                                    <div class="weekday" id="day25"></div>
+                                    <div class="weekday" id="day26"></div>
+                                    <div class="weekday" id="day27"></div>
+                                    <div class="weekday" id="day28"></div>
+                                </div>
+                                <div class="weekheat">
+                                    <div class="weekday" id="day29"></div>
+                                    <div class="weekday" id="day30"></div>
+                                    <div class="weekday" id="day31"></div>
+                                    <div class="weekday" id="day32"></div>
+                                    <div class="weekday" id="day33"></div>
+                                    <div class="weekday" id="day34"></div>
+                                    <div class="weekday" id="day35"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>               
+                <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 628px;border-collapse:collapse;-webkit-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);-moz-box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);box-shadow: 0px 1px 6px 0px rgba(92,92,92,0.39);">
+                    <tr>
+                        <td class="contactUs" align="center" bgcolor="#ffffff" style="width:100%;display:inline-block;padding-bottom:15px;">
+                            <h3>IMPORTANT</h3>
+                            <p>Do not reply to this email, this is an unattended mailbox.</p>
+                            <p><%ContactUsAt%></p>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" cellpadding="0" cellspacing="0" border="0" style="width: 628px;border-collapse:collapse;">
+                    <tr>
+                        <td class="footer" align="center">
+                            <!-- bgcolor="#f3f7fa" style="padding: 40px 0 30px 0;" height="345px"-->
+                            <p class="outsideContainer">
+                                You are receiving this email because you opted in on our website, or during your visit. Please click 
+                                <a class="email-link" href="<%UnsubscribeUrl%>" style="text-decoration: none;">here</a> to unsubscribe. Our mailing address is:<br />
+                                <%BusinessName%> <%BusinessAddressLine1%>, <%BusinessCity%>, <%BusinessState%> <%BusinessPostalCode%>
+                            </p>
+                            <p class="outsideContainer paddedP">
+                                <img src="https://onsched.com/img/transdark.png" alt="OnSched Logo" width="auto" height="35px" style="display: inline-block; opacity:0.8;" /><br />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- Fonts.com required tracking -->
+    <script>
+        var MTIProjectId = '4d9edf84-6e06-4c9f-8722-b6ff3d590f96';
+
+        (function () {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type = 'text/javascript';
+            mtiTracking.async = 'true';
+            mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.net/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+        })();
+</script>
+<script>
+    $('.value').each(function() {
+	var text = $(this).text();
+	$(this).parent().css('width', text);
+});
+
+$('.block').tooltip();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,651 @@
+<style>
+    .allContent {
+        max-width: 985px;
+        margin: 0 auto 0px;
+        position: relative;
+        top: 0px;
+    }
+    @media only screen and (min-width:1000px){
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: 30%;
+            position: relative;
+            top: 0px;
+        }
+        .graphicContent {
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            width: 70%;
+            top: 20px;
+            float: right;
+        }
+        .codeSnippet {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            width: 435px;
+            height: 304px;
+            border-radius: 4px;
+            perspective: 1000px;
+        }
+        .codeSnippet:hover .flipper, .codeSnippet.hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .codeSnippet, .front, .back {
+            width: 435px;
+            height: 304px;
+        }
+        .rightContent {
+            background-color: #333b4f;
+            display: inline-block;
+            position: relative;
+            left: -1px;
+            width: 400px;
+            border-radius: 0 6px 6px 0;
+            margin: 0px 0 0 -8px;
+        }
+        .rightContent ul {
+            padding-left: 25px;
+        }
+        .rightContent ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            line-height: 12px;
+            padding: 2px 0px;
+        }
+        #wrapper { width: 435px; height: 304px; padding: 0; overflow: hidden; }
+        #scaled-frame { width: 613px; height: 2000px; border: 0px; }
+        #scaled-frame {
+        zoom: 0.5;
+        -moz-transform: scale(0.71);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.71);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.71);
+        -webkit-transform-origin: 0 0;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #scaled-frame  { zoom: 0.5;  }
+        }
+    }
+    @media only screen and (max-width:999px){
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: block;
+            width: 100%;
+            position: relative;
+            top: 30px;
+        }
+        .graphicContent {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+        .codeSnippet {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            width: 435px;
+            height: 304px;
+            border-radius: 4px;
+            perspective: 1000px;
+        }
+        .codeSnippet:hover .flipper, .codeSnippet.hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .codeSnippet, .front, .back {
+            width: 435px;
+            height: 304px;
+        }
+        .rightContent {
+            background-color: #333b4f;
+            display: inline-block;
+            position: relative;
+            left: -1px;
+            width: 400px;
+            border-radius: 0 6px 6px 0;
+            margin: 0px 0 0 -8px;
+        }
+        .rightContent ul {
+            padding-left: 25px;
+        }
+        .rightContent ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            line-height: 12px;
+            padding: 2px 0px;
+        }
+        #wrapper { width: 435px; height: 304px; padding: 0; overflow: hidden; }
+        #scaled-frame { width: 613px; height: 2000px; border: 0px; }
+        #scaled-frame {
+        zoom: 0.5;
+        -moz-transform: scale(0.71);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.71);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.71);
+        -webkit-transform-origin: 0 0;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #scaled-frame  { zoom: 0.5;  }
+        }
+    }
+    @media only screen and (max-width:480px){
+        .codeSnippet {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            width: 315px;
+            height: 304px;
+            border-radius: 4px;
+            margin-left: 0;
+            perspective: 1000px;
+        }
+        .codeSnippet:hover .flipper, .codeSnippet.hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .codeSnippet, .front, .back {
+            width: 315px;
+            height: 304px;
+        }
+        .rightContent {
+            background-color: #333b4f;
+            display: inline-block;
+            position: relative;
+            left: -1px;
+            width: 283px;
+            border-radius: 0 6px 6px 0;
+            margin: 0px 0 0 -8px;
+        }
+        .rightContent ul {
+            padding-left: 25px;
+        }
+        .rightContent ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            line-height: 12px;
+            padding: 2px 0px;
+        }
+        #wrapper { width: 315px; height: 304px; padding: 0; overflow: hidden; }
+        #scaled-frame { width: 449px; height: 2000px; border: 0px; }
+        #scaled-frame {
+        zoom: 0.5;
+        -moz-transform: scale(0.71);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.71);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.71);
+        -webkit-transform-origin: 0 0;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #scaled-frame  { zoom: 0.5;  }
+        }
+    }
+    .infoContent ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .infoContent ul li {
+        margin-bottom: 10px;
+    }
+    .infoContent h1 {
+        color: #555;
+        font-size: 23px;
+        font-weight: 400;
+        margin: 0 0 25px;
+    }
+    .infoContent h2 {
+        margin: 15px 0 0 0;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        opacity: .8;
+        color: #2196f3;
+    }
+    .infoContent p {
+        display: inline;
+        padding-left: 1px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747c84;
+        font-weight: 400;
+    }
+    .infoContent svg {
+        margin: 1px 5px;
+        color: #2196f3;
+    }
+    .leftSidebar {
+        background-color: #272f42;
+        display: inline-block;
+        width: 31px;
+        border-radius: 6px 0 0 6px;
+    }
+    .leftSidebar ul {
+        padding: 16px 0;
+        margin: 0;
+    }
+    .leftSidebar ul li {
+        list-style-type: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+    #initialStatus {
+        position: relative;
+        top: 185px;
+        left: -30px;
+        z-index: 999;
+        background-color: rgba(238, 143, 0, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #reservedStatus {
+        position: relative;
+        top: 180px;
+        left: -10px;
+        z-index: 999;
+        background-color: rgba(127, 212, 110, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #bookedStatus {
+        position: relative;
+        top: 177px;
+        left: 10px;
+        z-index: 999;
+        background-color: #2195f3f1;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #cancelledStatus {
+        position: relative;
+        top: 174px;
+        left: 30px;
+        z-index: 999;
+        background-color: rgba(253, 74, 74, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #rescheduledStatus {
+        position: relative;
+        top: 171px;
+        left: 50px;
+        z-index: 999;
+        background-color: rgba(198, 128, 255, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    .apptInfo {
+        font: 300 15px/21px avenir next,sans-serif;
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+    }
+    .apptInfo h1 {
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0 0 0 10px;
+    }
+    .apptInfo h2 {
+        font-weight: 200;
+        opacity: .8;
+        font-size: 12px;
+        margin: -2px 0 0 10px;
+    }
+    .flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+    }
+    .front, .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .front {
+        z-index: 2;
+        transform: rotateY(0deg);
+        background-color: #333b4f;
+        border-radius: 4px;
+        box-shadow: 7px 11px 20px 4px #bbbbbb;
+    }
+    .back {
+        transform: rotateY(180deg);
+        background-color: #333b4f;
+        border-radius: 4px;
+        box-shadow: 7px 11px 20px 4px #bbbbbb;
+    }
+    #typeLine1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 2s steps(30, end),
+          blink-caret .5s step-end 7;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        0% { width: 0 }
+        100% { width: 40% }
+      }
+      
+      /* The typewriter cursor effect 
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine2 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing2 6s steps(30, end),
+          blink-caret2 .5s step-end 7;
+      }
+      
+      /* The typing effect */
+      @keyframes typing2 {
+        0% { width: 0px }
+        40% { width: 0px }
+        100% { width: 100% }
+      }
+      
+      /* The typewriter cursor effect 
+      @keyframes blink-caret2 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine3 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing3 6.1s steps(30, end),
+          blink-caret3 .5s step-end 1;
+      }
+      
+      /* The typing effect */
+      @keyframes typing3 {
+        0% { width: 0 }
+        99% { width: 0 }
+        100% { width: 5px }
+      }
+      
+      /* The typewriter cursor effect 
+      @keyframes blink-caret3 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine4 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing4 6.3s steps(30, end),
+          blink-caret4 .5s step-end 1;
+      }
+      
+      /* The typing effect */
+      @keyframes typing4 {
+        0% { width: 0 }
+        99% { width: 0 }
+        100% { width: 5px }
+      }
+      
+      /* The typewriter cursor effect 
+      @keyframes blink-caret4 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine5 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing5 8s steps(30, end),
+          blink-caret5 .5s step-end 4;
+      }
+      
+      /* The typing effect */
+      @keyframes typing5 {
+        0% { width: 0 }
+        80% { width: 0 }
+        100% { width: 30% }
+      }
+      
+      /* The typewriter cursor effect 
+      @keyframes blink-caret5 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine6 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing6 9.5s steps(30, end),
+          blink-caret6 .5s step-end 7;
+      }
+      
+      /* The typing effect */
+      @keyframes typing6 {
+        0% { width: 0 }
+        90% { width: 0 }
+        100% { width: 70% }
+      }
+      
+      /* The typewriter cursor effect
+      @keyframes blink-caret6 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine7 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing7 10s steps(30, end),
+          blink-caret7 .5s step-end 4;
+      }
+      
+      /* The typing effect */
+      @keyframes typing7 {
+        0% { width: 0 }
+        95% { width: 0 }
+        100% { width: 30% }
+      }
+      
+      /* The typewriter cursor effect
+      @keyframes blink-caret7 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine8 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing8 11s steps(30, end),
+          blink-caret8 .5s step-end 3;
+      }
+      
+      /* The typing effect */
+      @keyframes typing8 {
+        0% { width: 0 }
+        95% { width: 0 }
+        100% { width: 30% }
+      }
+      
+      /* The typewriter cursor effect
+      @keyframes blink-caret8 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine9 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing9 12s steps(30, end),
+          blink-caret9 .5s step-end 3;
+      }
+      
+      /* The typing effect */
+      @keyframes typing9 {
+        0% { width: 0 }
+        95% { width: 0 }
+        100% { width: 30% }
+      }
+      
+      /* The typewriter cursor effect
+      @keyframes blink-caret9 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+    #typeLine10 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /*margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing10 13s steps(30, end),
+          blink-caret10 .5s step-end 3;
+      }
+      
+      /* The typing effect */
+      @keyframes typing10 {
+        0% { width: 0 }
+        95% { width: 0 }
+        100% { width: 30% }
+      }
+      
+      /* The typewriter cursor effect
+      @keyframes blink-caret10 {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(233, 233, 233) }
+      }*/
+</style>
+</style>
+    <div class="allContent">
+        <div class="graphicContent">
+            <div class="codeSnippet" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="leftSidebar">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                            </ul>
+                        </div>
+                        <div class="rightContent">
+                            <ul>
+                                    <li id="typeLine1" style="color:#52b1ff;">curl --request GET \</li>
+                                    <li id="typeLine2" style="margin-left:10px;color:#52b1ff;">--url http://example.com//consumer/v1/appointments</li>
+                                <li style="color:transparent;">|</li>
+                                <li id="typeLine3" style="color:#52b1ff;">[</li>
+                                <li id="typeLine4" style="padding-left:25px;color:#52b1ff;">{</li>
+                                <li id="typeLine5" style="margin-left:50px;color:#ff9800;">"object": "list",</li>
+                                <li id="typeLine6" style="margin-left:50px;color:#ff9800;">"url": "/consumer/v1/appointments",</li>
+                                <li id="typeLine7" style="margin-left:50px;color:#ff9800;">"hasMore": true,</li>
+                                <li id="typeLine8" style="margin-left:50px;color:#ff9800;">"count": 20,</li>
+                                <li id="typeLine9" style="margin-left:50px;color:#ff9800;">"total": 148,</li>
+                                <li id="typeLine10" style="margin-left:50px;color:#ff9800;">"data": [</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="wrapper" class="back">
+                        <iframe id="scaled-frame" src="https://sandbox-booking.onsched.com/booking/F27A6D0D-1163-4ACF-8813-511041521327/3e22189d-f948-48ab-843a-8c50b5442c9a/2129/4978"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infoContent">
+            <ul>
+                <li>
+                    <h2>Step 1</h2>
+                    <p> step 1 info here Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sequi nisi pe</p>
+                </li>
+                <li>
+                    <h2>Step 2</h2>
+                    <p> step 1 info here Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias tenetur non placeat praesentium molestiae accusantium, quos similique iste? Quisquam perspiciatis voluptate at accusantium nisi alias ducimus, sint ratione quia?</p>
+                </li>
+                <li>
+                    <h2>Step 3</h2>
+                    <p> step 1 info here Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ab esse veniam aperiam mollitia eos perspiciatis voluptatem suscipit, possimus </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>

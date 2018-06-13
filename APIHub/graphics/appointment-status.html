@@ -1,0 +1,503 @@
+<style>
+    .allContent {
+        margin: 0 auto -150px;
+        position: relative;
+        top: -125px;
+    }
+    @media only screen and (min-width:1000px) {
+        .allContent {
+            min-width: 985px;
+        }
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: 30%;
+            position: relative;
+            top: -50px;
+        }
+        .infoContent ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        .infoContent ul li {
+            margin-bottom: 10px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin: -25px 0 25px;
+        }
+        .infoContent h2 {
+            margin: 15px 0 0 0;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: .8;
+            color: #2196f3;
+        }
+        .infoContent p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+        .infoContent svg {
+            margin: 1px 5px;
+            color: #2196f3;
+        }
+        .graphicContent {
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            top: -20px;
+            left: 10px;
+        }
+        .codeSnippet {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            box-shadow: -13px 20px 13px -5px #bbbbbb;
+            border-radius: 4px;
+            background-color: #333b4f;
+        }
+        .leftSidebar {
+            background-color: #272f42;
+            display: inline-block;
+            width: 31px;
+            border-radius: 6px 0 0 6px;
+        }
+        .leftSidebar ul {
+            padding-left: 0;
+        }
+        .leftSidebar ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            padding: 2px 10px;
+        }
+        .rightContent {
+            background-color: #333b4f;
+            display: inline-block;
+            position: relative;
+            left: -1px;
+            width: 400px;
+            border-radius: 0 6px 6px 0;
+            margin: 0px 0 0 -8px;
+        }
+        .rightContent ul {
+            padding-left: 25px;
+        }
+        .rightContent ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            line-height: 12px;
+            padding: 2px 10px;
+        }
+        #rescheduledStatus {
+            position: relative;
+            top: 171px;
+            left: 50px;
+            z-index: 1;
+            background-color: rgba(198, 128, 255, 0.966);
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            height: 50px;
+            box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+        }
+    }
+    @media only screen and (max-width:999px) {
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: block;
+            width: 100%;
+            position: relative;
+            top: 145px;
+        }
+        .infoContent ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        .infoContent ul li {
+            margin-bottom: 10px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin: -25px 0 25px;
+        }
+        .infoContent h2 {
+            margin: 15px 0 0 0;
+            display: block !important;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: .8;
+            color: #2196f3;
+        }
+        .infoContent p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+        .infoContent svg {
+            margin: 1px 5px;
+            color: #2196f3;
+        }
+        .graphicContent {
+            display: block;
+            width: 431.8px;
+            margin: 0 auto;
+            position: relative;
+            top: -40px;
+            left: 10px;
+        }
+        .codeSnippet {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            box-shadow: -13px 20px 13px -5px #bbbbbb;
+            border-radius: 4px;
+            background-color: #333b4f;
+        }
+        .leftSidebar {
+            background-color: #272f42;
+            display: inline-block;
+            width: 31px;
+            border-radius: 6px 0 0 6px;
+        }
+        .leftSidebar ul {
+            padding-left: 0;
+        }
+        .leftSidebar ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            padding: 2px 10px;
+        }
+        .rightContent {
+            background-color: #333b4f;
+            display: inline-block;
+            position: relative;
+            left: -1px;
+            width: 400px;
+            border-radius: 0 6px 6px 0;
+            margin: 0px 0 0 -8px;
+        }
+        .rightContent ul {
+            padding-left: 25px;
+        }
+        .rightContent ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 10px;
+            line-height: 12px;
+            padding: 2px 10px;
+        }
+        #rescheduledStatus {
+            position: relative;
+            top: 171px;
+            left: 50px;
+            z-index: 1;
+            background-color: rgba(198, 128, 255, 0.966);
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            height: 50px;
+            box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+        }
+    }
+    @media only screen and (max-width:480px) {
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: block;
+            width: 100%;
+            position: relative;
+            top: 145px;
+        }
+        .infoContent ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        .infoContent ul li {
+            margin-bottom: 10px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin: -25px 0 25px;
+        }
+        .infoContent h2 {
+            margin: 15px 0 0 0;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: .8;
+            color: #2196f3;
+        }
+        .infoContent p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+        .infoContent svg {
+            margin: 1px 5px;
+            color: #2196f3;
+        }
+        .graphicContent {
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            top: -40px;
+            left: 10px;
+        }
+        .codeSnippet {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            width: 315px;
+            height: 337px;
+            border-radius: 4px;
+            margin-left: 0;
+            perspective: 1000px;
+        }
+        .codeSnippet:hover .flipper, .codeSnippet.hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .codeSnippet, .front, .back {
+            width: 315px;
+            height: 337px;
+        }
+        .rightContent {
+            background-color: #333b4f;
+            display: inline-block;
+            position: relative;
+            left: -1px;
+            width: 283px;
+            border-radius: 0 6px 6px 0;
+            margin: 0px 0 0 -8px;
+        }
+        .rightContent ul {
+            padding-left: 25px;
+        }
+        .rightContent ul li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 7px;
+            line-height: 12px;
+            padding: 2px 0px;
+        }
+        #rescheduledStatus {
+            position: relative;
+            top: 171px;
+            left: 40px;
+            z-index: 1;
+            background-color: rgba(198, 128, 255, 0.966);
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            height: 50px;
+            box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+        }
+    }
+    #initialStatus {
+        position: relative;
+        top: 185px;
+        left: -30px;
+        z-index: 1;
+        background-color: rgba(238, 143, 0, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #reservedStatus {
+        position: relative;
+        top: 180px;
+        left: -10px;
+        z-index: 1;
+        background-color: rgba(127, 212, 110, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #bookedStatus {
+        position: relative;
+        top: 177px;
+        left: 10px;
+        z-index: 1;
+        background-color: #2195f3f1;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+    #cancelledStatus {
+        position: relative;
+        top: 174px;
+        left: 30px;
+        z-index: 1;
+        background-color: rgba(253, 74, 74, 0.966);
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        height: 50px;
+        box-shadow: inset 3px 3px 9px 0 rgba(0,0,0,.15);
+    }
+
+    .apptInfo {
+        font: 300 15px/21px avenir next,sans-serif;
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+    }
+    .apptInfo h1 {
+        font-weight: 400;
+        font-size: 14px;
+        opacity: .8;
+        margin: 0 0 0 10px;
+    }
+    .apptInfo h2 {
+        font-weight: 200;
+        opacity: .8;
+        font-size: 12px;
+        margin: -2px 0 0 10px;
+    }
+</style>
+    <div class="allContent">
+        <div class="infoContent">
+            <ul>
+                <li><h1>Appointment Status</h1></li>
+                <li>
+                    <h2>Inital</h2>
+                    <p> status is an appointment that is currently being entered. Holding the initial status restricts the potential for double booking.</p>
+                </li>
+                <li>
+                    <h2>Reserved</h2>
+                    <p> status allows you to hold a timeslot and add the appointment details at a later date.</p>
+                </li>
+                <li>
+                    <h2>Booked</h2>
+                    <p> status is once an appointment has been confirmed.</p>
+                </li>
+                <li>
+                    <h2>Cancelled</h2>
+                    <p> status removes the appointment from the calendar once it has been cancelled, but will still appear in the records to be searched and edited later.</p>
+                </li>
+                <li>
+                    <h2>Rescheduled</h2>
+                    <p> status indicates an appointment that has previously been rescheduled.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="graphicContent">
+            <div id="initialStatus">
+                <div class="apptInfo">
+                    <h1>Initial Status</h1>
+                    <h2>Meeting - 30 mins</h2>
+                </div>
+            </div>
+            <div id="reservedStatus">
+                <div class="apptInfo">
+                    <h1>Reserved Status</h1>
+                    <h2>Meeting - 30 mins</h2>
+                </div>
+            </div>
+            <div id="bookedStatus">
+                <div class="apptInfo">
+                    <h1>Booked Appt</h1>
+                    <h2>Meeting - 30 mins</h2>
+                </div>
+            </div>
+            <div id="cancelledStatus">
+                <div class="apptInfo">
+                    <h1>Cancelled</h1>
+                    <h2>Meeting - 30 mins</h2>
+                </div>
+            </div>
+            <div id="rescheduledStatus">
+                <div class="apptInfo">
+                    <h1>Rescheduled</h1>
+                    <h2>Meeting - 30 mins</h2>
+                </div>
+            </div>
+            <div class="codeSnippet">
+                <div class="leftSidebar">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                    </ul>
+                </div>
+                <div class="rightContent">
+                    <ul>
+                            <li style="color:#52b1ff;">curl --request GET \</li>
+                            <li style="margin-left:50px;color:#52b1ff;">--url http://example.com//consumer/v1/appointments</li>
+                        <li style="color:transparent;">|</li>
+                        <li style="color:#52b1ff;">[</li>
+                        <li style="margin-left:25px;color:#52b1ff;">{</li>
+                        <li style="margin-left:50px;color:#ff9800;">"object": "list",</li>
+                        <li style="margin-left:50px;color:#ff9800;">"url": "/consumer/v1/appointments",</li>
+                        <li style="margin-left:50px;color:#ff9800;">"hasMore": true,</li>
+                        <li style="margin-left:50px;color:#ff9800;">"count": 20,</li>
+                        <li style="margin-left:50px;color:#ff9800;">"total": 148,</li>
+                        <li style="margin-left:50px;color:#ff9800;">"data": [</li>
+                        <li style="margin-left:75px;color:#c36ffc;">{</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"onlineBooking": "true",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"object": "appointment",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"id": "281280",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"locationId": "5E737C4B-379F-481D-B075-</li>
+                        <li style="margin-left:120px;color:#c36ffc;">1C7CAB1AC822",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"calendarId": "1806",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"serviceId": "1695",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"resourceId": "4937",</li>
+                        <li style="margin-left:100px;color:#c36ffc;">"status": "BK",</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

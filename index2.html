@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OnSched's enterprise online booking API enables simple integration of online scheduling into modern applications and helps sales teams book more qualified demos" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />  
+    <meta property="og:title" content=" The Enterprise Online Booking API you've been waiting for | OnSched" />
+    <meta property="og:description" content="OnSched's enterprise online booking API enables simple integration of scheduling into modern applications and helps sales teams book more qualified demos"/>
+    <meta property="og:keywords" content="online booking api, enterprise scheduling api, enterprise online booking, enterprise online booking api, online booking for sales teams, online booking for sales, sales demos online booking software, online booking software for sales teams, online booking for marketplaces, scheduling for enterprise, integrate online booking, online scheduling API, scheduling API" /> 
+    <title>The Enterprise Online Booking API you've been waiting for | OnSched</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/mitch2.css">
+</head>
+<body>
+    
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <iframe src="https://booking.onsched.com/online/34B172F6-AC6B-493E-A9CB-4B62CC958A14/e4d61bd8-cdf3-4fc9-887e-2320dce041e0/55/0" frameborder="0"></iframe>
+    </div>
+</div>
+
+<!-- Features Dropdown Structure -->
+<ul id="features-dropdown" class="dropdown-content">
+    <li><a class="features-list-point-team" href="#teams-content"><i class="fas fa-users"></i> CRM Integration</a></li>
+    <li><a class="features-list-point-team" href="#calSync-info"><i class="fas fa-calendar-alt"></i> Calendar Sync</a></li>
+    <li><a class="features-list-point-lead" href="#customNotifications-content"><i class="fas fa-envelope"></i> Custom Notifications</a></li>
+    <li id="li-right1"><a class="features-list-point-team" href="#leadrouting-graphic"><i class="fas fa-sitemap"></i> Lead Routing</a></li>
+    <li id="li-right2"><a class="features-list-point-lead" href="#ppa-content"><i class="fas fa-magic"></i> Lead Enrichment</a></li>
+    <li id="li-right3"><a class="features-list-point" href="#enterprise-content"><i class="fas fa-location-arrow"></i> Multiple Locations</a></li>
+    <li id="li-right4"><a class="features-list-point-lead" href="#apps-section"><i class="fas fa-rocket"></i> OnSched Apps</a></li>
+    <li id="li-right5"><a class="features-list-point-lead" href="#customNotifications-content"><i class="fas fa-envelope"></i> Custom Notifications</a></li>
+    <li id="li-right6"><a class="features-list-point-lead" href="#customNotifications-content"><i class="fas fa-envelope"></i> Custom Notifications</a></li>
+</ul>
+<!-- Features Mobile Dropdown Structure
+<ul id="features-dropdown-mobile" class="dropdown-content">
+    <a href="#!">one</a>
+    <a href="#!">two</a>
+    <a href="#!">three</a>
+</ul>-->
+
+<!-- Desktop Nav Bar -->
+<nav class="transparent">
+    <div class="nav-wrapper transparent">
+        <a href="#!" class="brand-logo"><img src="img/translight.png" alt="OnSched Logo" title="OnSched Appointment Booking Logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="#!" data-target="features-dropdown">Features<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="https://onsched.readme.io/">Developers</a></li>
+        <li><a href="pricing/index.html">Pricing</a></li>
+        <li><a target="_blank" href="https://blog.onsched.com/">Blog</a></li>
+        <li><a href="https://app.onsched.com/portal/calendar">Login</a></li>
+        <li><a data-target="modal1" class="modal-trigger waves-effect waves-light btn teal accent-4">Book Demo</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Mobile Nav Bar -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="https://onsched.readme.io/">Developers</a></li>
+    <!--<li><a class="dropdown-trigger" href="#!" data-target="features-dropdown-mobile">Features<i class="material-icons right">arrow_drop_down</i></a></li>-->
+    <li><a href="pricing/index.html">Pricing</a></li>
+    <li><a target="_blank" href="https://blog.onsched.com/">Blog</a></li>
+    <li><a href="https://app.onsched.com/portal/calendar">Login</a></li>
+    <li><a data-target="modal1" class="modal-trigger waves-effect waves-light btn blue">Book Demo</a></li>
+</ul>
+
+<!-- Hero Section -->
+<div class="hero-row row">
+    <div class="col s12">
+        <div class="hero white-text">
+            <div class="hero-text">
+                <h3>Simple, Scalable, API First Online Booking.</h3>
+                <h6>OnSched's customizable booking platform powers millions of bookings per year. Increase revenue, and push leads further down the funnel.</h6>
+                <a data-target="modal1" class="modal-trigger waves-effect waves-light btn btn-large teal accent-4">Book Demo</a>
+                <a id="enterprise-learn" href="#enterprise-content" class="waves-effect waves-light btn btn-large orange">Learn More</a>
+            </div>
+        </div>
+        <div class="graphicContent-code">
+            <div class="codeSnippet" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="leftSidebar">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                            </ul>
+                        </div>
+                        <div class="rightContent">
+                            <ul>
+                                    <li id="typeLine1" style="color:#52b1ff;">curl --request GET \</li>
+                                    <li id="typeLine2" style="margin-left:10px;color:#52b1ff;">--url http://example.com//consumer/v1/appointments</li>
+                                <li style="color:transparent;">|</li>
+                                <li id="typeLine3" style="color:#52b1ff;">[</li>
+                                <li id="typeLine4" style="padding-left:25px;color:#52b1ff;">{</li>
+                                <li id="typeLine5" style="margin-left:50px;color:#ff9800;">"object": "list",</li>
+                                <li id="typeLine6" style="margin-left:50px;color:#ff9800;">"url": "/consumer/v1/appointments",</li>
+                                <li id="typeLine7" style="margin-left:50px;color:#ff9800;">"hasMore": true,</li>
+                                <li id="typeLine8" style="margin-left:50px;color:#ff9800;">"count": 20,</li>
+                                <li id="typeLine9" style="margin-left:50px;color:#ff9800;">"total": 148,</li>
+                                <li id="typeLine10" style="margin-left:50px;color:#ff9800;">"data": [</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                                <li style="color:transparent;">|</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="wrapper" class="back">
+                        <iframe id="scaled-frame" src="https://booking.onsched.com/online/C252D1FD-B99B-45B6-B7CD-5DCE947DAE0B/bfb13658-cb08-4fa5-a05f-5687a1a80f6b/2178/6918"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cards Section -->
+<div class="cardsrow row">
+    <div class="col s12 m4 l4">
+        <div id="teams" class="card">
+            <div class="card-image">
+                <i class="fas fa-paper-plane fa-4x"></i>
+            </div>
+            <div class="card-content">
+                <p>Create booking flows for small to mid-size sales teams and start automating your sales process with online booking.</p>
+            </div>
+            <div id="teams-cta" class="card-action">
+                <a href="#teams-content">OnSched Teams</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4 l4">
+        <div id="enterprise" class="card">
+            <div class="card-image">
+                <i class="fas fa-rocket fa-4x"></i>
+            </div>
+            <div class="card-content">
+                <p>Build brand consistent booking into your companies workflow. blah blah blah blah blah blah.</p>
+            </div>
+            <div id="enterprise-cta" class="card-action">
+                <a href="#enterprise-content">OnSched Enterprise</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4 l4">
+        <div id="api" class="card">
+            <div class="card-image">
+                <i class="fas fa-space-shuttle fa-4x"></i>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require.</p>
+            </div>
+            <div id="api-id" class="card-action">
+                <a>Enterprise LEAD</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Teams -->
+<div id="teams-content" class="">
+    <div class="row section-header">
+        <div class="col s12">
+            <h4>OnSched for Teams</h4>
+            <h6>Manage your team like a champion with OnSched. Tailor new bookings to your workflow and choose how to route your new leads, then let us take care of the rest!</h6>
+        </div>
+    </div>
+    <div class="crm row">
+        <div id="crmGraphic" class="graphicContent-crm col s12 m6 l4">
+            <div id="salesforce-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/salesforce-app.png" alt="Salesforce CRM">
+            </div>
+            <div id="hubspot-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/hubspot-app.png" alt="HubSpot CRM">                    
+            </div>
+            <div id="base-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/base-app.png" alt="Base CRM">
+            </div>
+            <div id="pipedrive-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/pipedrive-app.png" alt="Pipedrive CRM">
+            </div>
+            <div id="zapier-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/zapier-app.png" alt="Zapier App">
+            </div>
+            <div id="prosper-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/prosper-app.png" alt="ProsperWorks CRM">
+            </div>
+            <div id="zoho-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/zoho-app.png" alt="ZOHO CRM">
+            </div>
+            <div id="agile-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/agile-app.png" alt="Agile CRM">
+            </div>
+            <div id="gro-app" class="app">
+                <div class="inset-shadow"></div>
+                <img src="img/gro-app.png" alt="Gro CRM">
+            </div>
+        </div>
+        <div id="crmInfo" class="col s12 m6 l8">
+            <h5>CRM Integration</h5>
+            <h6>Track leads the same way you always have, connect OnSched to your CRM and add a whole new layer of commitment by booking online appointments. Connect to major CRMs like Salesforce and HubSpot in the OnSched Portal, or create a free <a href="https://zapier.com/" class="orange-text">Zapier</a> account and connect to many more!</h6>
+            <h6>Connecting OnSched with your current CRM opens up a breadth of opportunities within your workflow, incorporate OnSched booking into your automated email follow ups in order to add a human element and move them further down your funnel.</h6>
+            <!--<div class="l4 crm-bubble">
+                <h6><i class="fas fa-info-circle"></i>This point should tell you a little more about the crm integration, how its done, and what type of information you can track</h6>
+            </div>
+            <div class="crm-bubble">
+                <h6><i class="fas fa-info-circle"></i>This point should tell you a little more about the crm integration, how its done, and what type of information you can track</h6>
+            </div>
+            <div class="l4 crm-bubble">
+                <h6><i class="fas fa-info-circle"></i>This point should tell you a little more about the crm integration, how its done, and what type of information you can track</h6>
+            </div>
+            <div class="l4 crm-bubble">
+                <h6><i class="fas fa-info-circle"></i>This point should tell you a little more about the crm integration, how its done, and what type of information you can track</h6>
+            </div>
+            <div class="l4 crm-bubble">
+                <h6><i class="fas fa-info-circle"></i>This point should tell you a little more about the crm integration, how its done, and what type of information you can track</h6>
+            </div>
+            <div class="l4 crm-bubble">
+                <h6><i class="fas fa-info-circle"></i>This point should tell you a little more about the crm integration, how its done, and what type of information you can track</h6>
+            </div>-->
+        </div>
+    </div>
+    <div class="row features">
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-sitemap"></i>Lead Routing</h6>
+                <p>Route leads automatically to your vendor's sales team by booking directly into their calendars.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-clock"></i>Time Zones</h6>
+                <p>Have separate views for different users that are scattered across the globe. Users always see times in their local time zone.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-envelope"></i>Custom Notifications</h6>
+                <p>Each of your users engage with their customers in a different fashion. OnSched allows you to customize email notifications.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-sort-amount-down"></i>Multi-Level Access</h6>
+                <p>Have up to 5 levels of user permissions so that different user types have access that they need and nothing more.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-eye"></i>Audit Trails</h6>
+                <p>Every Appointment is timestamped with an audit trail of actions taken against it, and who performed each action.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-chart-line"></i>Custom Reporting</h6>
+                <p>Export filtered search results to Excel and create reports using the attributes you collect during the booking flow.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row leadRouting">
+        <div id="leadrouting-graphic" class="col s12 m6">
+            <div class="graphicContent-leadrouting">
+                <div id="companySize">
+                    <div class="apptInfo">
+                        <h1>Company Size</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>40%</span>
+                    </div>
+                </div>
+                <div id="jobTitle">
+                    <div class="apptInfo">
+                        <h1>Job Title</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>10%</span>
+                    </div>
+                </div>
+                <div id="allocatedBudget">
+                    <div class="apptInfo">
+                        <h1>Allocated Budget</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>30%</span>
+                    </div>
+                </div>
+                <div id="timeline">
+                    <div class="apptInfo">
+                        <h1>Timeline</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>20%</span>
+                    </div>
+                </div>
+                <div id="piece1"></div>
+                <div id="piece2"></div>
+                <div id="piece3"></div>
+                <div id="piece4"></div>
+                <div id="piece5"></div>
+                <div id="piece6"></div>
+                <div id="piece7"></div>
+                <div id="piece8"></div>
+                <div id="piece9"></div>
+                <div id="piece10"></div>
+                <div class="onschedEngine">
+                    <div class="onschedClock">
+                        <img src="https://onsched.com/img/onsched-square-logo.png" alt="logo">
+                    </div>
+                </div>
+                <!--<div class="routingPipe">
+                    <div class="downPipe"></div>
+                    <div class="acrossPipe"></div>
+                    <img id="batman" src="https://onsched.com/img/batman-bobble.png" alt="profile">
+                    <img id="robin" src="https://onsched.com/img/robin-bobble.png" alt="profile">
+                    <img id="bain" src="https://onsched.com/img/bain-bobble.png" alt="profile">
+                    <img id="joker" src="https://onsched.com/img/joker-bobble.png" alt="profile">
+                    <div id="lead-1"></div>
+                </div>-->
+            </div>
+        </div>
+        <div id="leadrouting-info" class="col s12 m6">
+            <h5>Lead Routing</h5>
+            <h6><span class="lr-headers blue-text text-lighten-3">QUALIFY</span> Create qualifying questions to determine the best matched sales associate to be scheduled for each appointment.</h6>
+            <h6><span class="lr-headers blue-text text-lighten-3">SCORE</span> Score each of your qualifying questions out of 100 in order to match the best leads with the best sales associates.</h6>
+            <h6><span class="lr-headers blue-text text-lighten-3">NOTIFY</span> Your team as soon as an appointment is booked. The responses to all custom fields will be readily available within the OnSched Portal, in the resource email notification, and in the notes section of the event on your synchronized calendar.</h6>
+        </div>
+    </div>
+    <div class="row resources">
+        <div id="resources-bubble-col" class="col s12 l6">
+            <h4>Build Your Team</h4>
+            <h6>Grow your business with OnSched Teams, add as many users as you need and group them together into teams in order to manage them within the OnSched Portal.</h6>
+            <div class="resource-bubble">
+                <h6><span><i class="fas fa-clock"></i></span> Each user can set their own unique time zone, and all bookings will be converted to local time, wherever you're sitting.</h6>
+            </div>
+            <div class="resource-bubble">
+                <h6><span><i class="fas fa-link"></i></span> Make sure that your users are only booked for the appointments they can handle by attaching specific appointments to their profile.</h6>
+            </div>
+            <div class="resource-bubble">
+                <h6><span><i class="fas fa-user-circle"></i></span> Allow you to add contact information (i.e. Address, Skype, Bio Link, etc.) attached to the Resource for internal records. These fields can then be added to your online booking flow in order to tell the customer more about who they are booking with.</h6>
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <div class="graphicContent-resources">
+                <div class="resourceCard">
+                    <img class="profilePic" src="https://onsched.com/img/brucewayne.png" alt="profile">
+                    <div class="resourceInfo">
+                        <h1>Bruce Wayne</h1>
+                        <h2>CEO Wayne Enterprises</h2>
+                        <h3>Bruce@onsched.com</h3>
+                        <div class="hidden-resourceInfo">
+                            <h2>Time Zone: <span>EST</span></h2>
+                            <h2>Skype: <span>@batman</span></h2>
+                            <h2>Conference Room: <span>/thebatcave</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="connector"><div class="endpoint"></div></div>
+                <div class="codeSnippet">
+                    <div class="leftSidebar">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                        </ul>
+                    </div>
+                    <div class="rightContent">
+                        <ul>
+                                <li style="color:#52b1ff;">curl --request GET \</li>
+                                <li style="margin-left:50px;color:#52b1ff;">--url http://example.com//consumer/v1/appointments</li>
+                            <li style="color:transparent;">|</li>
+                            <li style="color:#52b1ff;">[</li>
+                            <li style="margin-left:25px;color:#52b1ff;">{</li>
+                            <li style="margin-left:50px;color:#ff9800;">"object": "resource",</li>
+                            <li style="margin-left:50px;color:#ff9800;">"url": "/consumer/v1/resources",</li>
+                            <li style="margin-left:50px;color:#ff9800;">"hasMore": false,</li>
+                            <span class="small-snippet-hide"><li style="margin-left:50px;color:#ff9800;">"count": 6,</li></span>
+                            <li style="margin-left:50px;color:#ff9800;">"total": 6,</li>
+                            <li style="margin-left:50px;color:#ff9800;">"data": [</li>
+                            <li style="margin-left:75px;color:#c36ffc;">{</li>
+                            <li style="margin-left:100px;color:#c36ffc;">"object": "resource",</li>
+                            <span class="small-snippet-hide"><li style="margin-left:100px;color:#c36ffc;">"id": "4937",</li></span>
+                            <span class="small-snippet-hide"><li style="margin-left:100px;color:#c36ffc;">"locationId": "A6D0D-1163-4ACF-8813-511041521327",</li></span>
+                            <li style="margin-left:100px;color:#c36ffc;">"name": "Bruce Wayne",</li>
+                            <li style="margin-left:100px;color:#c36ffc;">"email": "bruce@onsched.com",</li>
+                            <li id="lastline-1" style="margin-left:100px;color:#c36ffc;">"googleCalendarId": "bruce@onsched.com",</li>
+                            <li id="lastline-2" style="margin-left:100px;color:#c36ffc;">"timezoneId": "Eastern Standard Time",</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row calSync">
+        <div style="min-width: 263px;max-height: 600px;" class="col s12 m4">
+            <div class="iPhone">
+                    <img id="iphone-case" src="https://onsched.com/img/iphone.png" alt="iphone">
+                    <div class="screen-on" onclick="" id="ip-sc-1">
+                        <img src="https://onsched.com/img/ip-sc-1.png" alt="iPhone Screen 1">
+                        <div id="tip1" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-2">
+                        <img src="https://onsched.com/img/ip-sc-2.png" alt="iPhone Screen 2">
+                        <div id="tip2" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-3">
+                        <img src="https://onsched.com/img/ip-sc-3.png" alt="iPhone Screen 3">
+                        <div id="tip3" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-4">
+                        <img src="https://onsched.com/img/ip-sc-4.png" alt="iPhone Screen 4">
+                        <div id="tip4" style="width:135px;" class="tooltip">Google / Outlook<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-5">
+                        <img src="https://onsched.com/img/ip-sc-5.png" alt="iPhone Screen 5">
+                        <div id="tip5" class="tooltip">Turn On<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" onclick="" id="ip-sc-6">
+                        <img src="https://onsched.com/img/ip-sc-1.png" alt="iPhone Screen 6">
+                        <div id="tip6" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-7">
+                        <img src="https://onsched.com/img/ip-sc-6.png" alt="iPhone Screen 7">
+                        <div id="tip7" class="tooltip">Press Here<div class="toolarrowdown"></div></div>
+                    </div>
+                    <div class="screen-off last" id="ip-sc-8">
+                        <img src="https://onsched.com/img/ip-sc-7.png" alt="iPhone Screen 8">
+                        <div id="tip8" class="tooltip">See Cal<div class="toolarrowup"></div></div>
+                    </div>
+                    <div id="iphone-shadow"></div>
+                </div>
+        </div>
+        <div id="calSync-info" class="col s12 m8">
+            <h5>2-Way Calendar Sync</h5>
+            <h6>OnSched uses a 2-way synchronization process which allows you to either send all booked appointments to your external calendar and/or allow OnSched to read the availability from your external calendar. Using the 2-way option you may add events to your external calendar in order to block out times within the OnSched Portal, without the need to visit OnSched at all!</h6>
+            <h4><i class="fab fa-google"></i> <i class="fab fa-windows"></i></h4>
+            <h5><i class="fab fa-apple"></i> iCal</h5>
+            <h6>To synchronize your external calendar with Apple iCal it is a two-step process. First, you must add either a Google or Outlook Calendar ID with a corresponding Gmail or Outlook email address, then you may add this email address to iCal in order to sync the two calendars.<span> To see how to add your Calendar to iCal please follow the iPhone screen to the left.</span></h6>
+        </div>
+    </div>
+    <div class="apps-section">
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item white-text" href="#one!">
+                <h2>Agent Online</h2>
+                <img src="img/agentonline.png" style="padding: 0;" alt="Agent Online">
+                <p class="white-text">Agent Online allows you to harness the power of online booking internally, by allowing call centre agents to book, edit, and cancel appointments on behalf of customers without entering the OnSched Portal.</p>
+                <a target="_blank" href="https://sandbox.onsched.com/agentonline" class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+            <div class="carousel-item white-text" href="#two!">
+                <h2>Geo Mapping</h2>
+                <img src="img/worldmapwhite.png" alt="World Map">
+                <p class="white-text">Book with the right location based on your customers zip/postal code, allow your clients to search their location and OnSched's Geo Mapping app will route them to the closest business location.</p>
+                <a class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+                <a class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+            <div class="carousel-item white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+                <a class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enterprise -->
+<div id="enterprise-content">
+    <div class="row section-header">
+        <div class="col s12">
+            <h4>OnSched for Enterprise</h4>
+            <h6>Keep leads out of the Lead Graveyard. The OnSched engine routes leads directly into the best-fit sales rep's calendar, enriches that appointment data and arms the sales rep with a report on the person who booked the demo.</h6>
+        </div>
+    </div>
+    <div class="locations row">
+        <div id="locGraphic" class="col s12 m6 l4">
+            <div class="graphicContent-locations">
+                <div id="location1"><i class="fas fa-box fa-2x"></i></div>
+                <div id="location2"><i class="fab fa-blogger-b fa-2x"></i></div>
+                <div id="location3"><i class="fas fa-clipboard-list fa-2x"></i></div>
+                <div id="location4"><i class="fas fa-database fa-2x"></i></div>
+                <div id="companyLocation"><i class="fas fa-building fa-2x"></i></div>
+                <div class="solarCircle">
+                    <div id="atom1"></div>
+                    <div id="atom2"></div>
+                    <div id="atom3"></div>
+                    <div id="atom4"></div>
+                    <div id="atom5"></div>
+                    <div id="atom6"></div>
+                    <div id="atom7"></div>
+                    <div id="atom8"></div>
+                </div>
+                <div class="innerCircle"></div>
+            </div>
+        </div>
+        <div class="col s12 m6 l8">
+            <h5>Multi-Location Support</h5>
+            <h6>A Business Location is the second layer of the "Top - Down" setup. By default, the Business Location will assume the Company level settings but may be customized specifically to that location. When a new account is created, both a Company and Business Location will be created.</h6>
+        </div>
+    </div>
+    <div id="features-content" class="row features">
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-sitemap"></i>Lead Routing</h6>
+                <p>Route leads automatically to your vendor's sales team by booking directly into their calendars.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-clock"></i>Time Zones</h6>
+                <p>Have separate views for different users that are scattered across the globe. Users always see times in their local time zone.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-envelope"></i>Custom Notifications</h6>
+                <p>Each of your users engage with their customers in a different fashion. OnSched allows you to customize email notifications.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-sort-amount-down"></i>Multi-Level Access</h6>
+                <p>Have up to 5 levels of user permissions so that different user types have access that they need and nothing more.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-eye"></i>Audit Trails</h6>
+                <p>Every Appointment is timestamped with an audit trail of actions taken against it, and who performed each action.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-chart-line"></i>Custom Reporting</h6>
+                <p>Export filtered search results to Excel and create reports using the attributes you collect during the booking flow.</p>
+            </div>
+        </div>
+    </div>
+    <div id="leadRouting-content" class="row leadRouting">
+        <div id="leadrouting-graphic" class="col s12 m6">
+            <div class="graphicContent-leadrouting">
+                <div id="companySize">
+                    <div class="apptInfo">
+                        <h1>Company Size</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>40%</span>
+                    </div>
+                </div>
+                <div id="jobTitle">
+                    <div class="apptInfo">
+                        <h1>Job Title</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>10%</span>
+                    </div>
+                </div>
+                <div id="allocatedBudget">
+                    <div class="apptInfo">
+                        <h1>Allocated Budget</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>30%</span>
+                    </div>
+                </div>
+                <div id="timeline">
+                    <div class="apptInfo">
+                        <h1>Timeline</h1>
+                    </div>
+                    <div class="percentage">
+                        <span>20%</span>
+                    </div>
+                </div>
+                <div id="piece1"></div>
+                <div id="piece2"></div>
+                <div id="piece3"></div>
+                <div id="piece4"></div>
+                <div id="piece5"></div>
+                <div id="piece6"></div>
+                <div id="piece7"></div>
+                <div id="piece8"></div>
+                <div id="piece9"></div>
+                <div id="piece10"></div>
+                <div class="onschedEngine">
+                    <div class="onschedClock">
+                        <img src="https://onsched.com/img/onsched-square-logo.png" alt="logo">
+                    </div>
+                </div>
+                <!--<div class="routingPipe">
+                    <div class="downPipe"></div>
+                    <div class="acrossPipe"></div>
+                    <img id="batman" src="https://onsched.com/img/batman-bobble.png" alt="profile">
+                    <img id="robin" src="https://onsched.com/img/robin-bobble.png" alt="profile">
+                    <img id="bain" src="https://onsched.com/img/bain-bobble.png" alt="profile">
+                    <img id="joker" src="https://onsched.com/img/joker-bobble.png" alt="profile">
+                    <div id="lead-1"></div>
+                </div>-->
+            </div>
+        </div>
+        <div id="leadrouting-info" class="col s12 m6">
+            <h5>Lead Routing</h5>
+            <h6><span class="lr-headers blue-text text-lighten-3">QUALIFY</span> Create qualifying questions to determine the best matched sales associate to be scheduled for each appointment.</h6>
+            <h6><span class="lr-headers blue-text text-lighten-3">SCORE</span> Score each of your qualifying questions out of 100 in order to match the best leads with the best sales associates.</h6>
+            <h6><span class="lr-headers blue-text text-lighten-3">NOTIFY</span> Your team as soon as an appointment is booked. The responses to all custom fields will be readily available within the OnSched Portal, in the resource email notification, and in the notes section of the event on your synchronized calendar.</h6>
+        </div>
+    </div>
+    <div id="resources-content" class="resources row">
+        <div id="resources-bubble-col" class="col s12 l6">
+            <h4>Build Your Team</h4>
+            <h6>Grow your business with OnSched Teams, add as many users as you need and group them together into teams in order to manage them within the OnSched Portal.</h6>
+            <div class="resource-bubble">
+                <h6><span><i class="fas fa-clock"></i></span> Each user can set their own unique time zone, and all bookings will be converted to local time, wherever you're sitting.</h6>
+            </div>
+            <div class="resource-bubble">
+                <h6><span><i class="fas fa-link"></i></span> Make sure that your users are only booked for the appointments they can handle by attaching specific appointments to their profile.</h6>
+            </div>
+            <div class="resource-bubble">
+                <h6><span><i class="fas fa-user-circle"></i></span> Allow you to add contact information (i.e. Address, Skype, Bio Link, etc.) attached to the Resource for internal records. These fields can then be added to your online booking flow in order to tell the customer more about who they are booking with.</h6>
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <div class="graphicContent-resources">
+                <div class="resourceCard">
+                    <img class="profilePic" src="https://onsched.com/img/brucewayne.png" alt="profile">
+                    <div class="resourceInfo">
+                        <h1>Bruce Wayne</h1>
+                        <h2>CEO Wayne Enterprises</h2>
+                        <h3>Bruce@onsched.com</h3>
+                        <div class="hidden-resourceInfo">
+                            <h2>Time Zone: <span>EST</span></h2>
+                            <h2>Skype: <span>@batman</span></h2>
+                            <h2>Conference Room: <span>/thebatcave</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="connector"><div class="endpoint"></div></div>
+                <div class="codeSnippet">
+                    <div class="leftSidebar">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                        </ul>
+                    </div>
+                    <div class="rightContent">
+                        <ul>
+                                <li style="color:#52b1ff;">curl --request GET \</li>
+                                <li style="margin-left:50px;color:#52b1ff;">--url http://example.com//consumer/v1/appointments</li>
+                            <li style="color:transparent;">|</li>
+                            <li style="color:#52b1ff;">[</li>
+                            <li style="margin-left:25px;color:#52b1ff;">{</li>
+                            <li style="margin-left:50px;color:#ff9800;">"object": "resource",</li>
+                            <li style="margin-left:50px;color:#ff9800;">"url": "/consumer/v1/resources",</li>
+                            <li style="margin-left:50px;color:#ff9800;">"hasMore": false,</li>
+                            <span class="small-snippet-hide"><li style="margin-left:50px;color:#ff9800;">"count": 6,</li></span>
+                            <li style="margin-left:50px;color:#ff9800;">"total": 6,</li>
+                            <li style="margin-left:50px;color:#ff9800;">"data": [</li>
+                            <li style="margin-left:75px;color:#c36ffc;">{</li>
+                            <li style="margin-left:100px;color:#c36ffc;">"object": "resource",</li>
+                            <span class="small-snippet-hide"><li style="margin-left:100px;color:#c36ffc;">"id": "4937",</li></span>
+                            <span class="small-snippet-hide"><li style="margin-left:100px;color:#c36ffc;">"locationId": "A6D0D-1163-4ACF-8813-511041521327",</li></span>
+                            <li style="margin-left:100px;color:#c36ffc;">"name": "Bruce Wayne",</li>
+                            <li style="margin-left:100px;color:#c36ffc;">"email": "bruce@onsched.com",</li>
+                            <li id="lastline-1" style="margin-left:100px;color:#c36ffc;">"googleCalendarId": "bruce@onsched.com",</li>
+                            <li id="lastline-2" style="margin-left:100px;color:#c36ffc;">"timezoneId": "Eastern Standard Time",</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="calSync-content" class="row calSync">
+        <div style="min-width: 263px;max-height: 600px;" class="col s12 m4">
+            <div class="iPhone">
+                    <img id="iphone-case" src="https://onsched.com/img/iphone.png" alt="iphone">
+                    <div class="screen-on" onclick="" id="ip-sc-1">
+                        <img src="https://onsched.com/img/ip-sc-1.png" alt="iPhone Screen 1">
+                        <div id="tip1" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-2">
+                        <img src="https://onsched.com/img/ip-sc-2.png" alt="iPhone Screen 2">
+                        <div id="tip2" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-3">
+                        <img src="https://onsched.com/img/ip-sc-3.png" alt="iPhone Screen 3">
+                        <div id="tip3" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-4">
+                        <img src="https://onsched.com/img/ip-sc-4.png" alt="iPhone Screen 4">
+                        <div id="tip4" style="width:135px;" class="tooltip">Google / Outlook<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-5">
+                        <img src="https://onsched.com/img/ip-sc-5.png" alt="iPhone Screen 5">
+                        <div id="tip5" class="tooltip">Turn On<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" onclick="" id="ip-sc-6">
+                        <img src="https://onsched.com/img/ip-sc-1.png" alt="iPhone Screen 6">
+                        <div id="tip6" class="tooltip">Press Here<div class="toolarrowup"></div></div>
+                    </div>
+                    <div class="screen-off" id="ip-sc-7">
+                        <img src="https://onsched.com/img/ip-sc-6.png" alt="iPhone Screen 7">
+                        <div id="tip7" class="tooltip">Press Here<div class="toolarrowdown"></div></div>
+                    </div>
+                    <div class="screen-off last" id="ip-sc-8">
+                        <img src="https://onsched.com/img/ip-sc-7.png" alt="iPhone Screen 8">
+                        <div id="tip8" class="tooltip">See Cal<div class="toolarrowup"></div></div>
+                    </div>
+                    <div id="iphone-shadow"></div>
+                </div>
+        </div>
+        <div id="calSync-info" class="col s12 m8">
+            <h5>2-Way Calendar Sync</h5>
+            <h6>OnSched uses a 2-way synchronization process which allows you to either send all booked appointments to your external calendar and/or allow OnSched to read the availability from your external calendar. Using the 2-way option you may add events to your external calendar in order to block out times within the OnSched Portal, without the need to visit OnSched at all!</h6>
+            <h4><i class="fab fa-google"></i> <i class="fab fa-windows"></i></h4>
+            <h5><i class="fab fa-apple"></i> iCal</h5>
+            <h6>To synchronize your external calendar with Apple iCal it is a two-step process. First, you must add either a Google or Outlook Calendar ID with a corresponding Gmail or Outlook email address, then you may add this email address to iCal in order to sync the two calendars.<span> To see how to add your Calendar to iCal please follow the iPhone screen to the left.</span></h6>
+        </div>
+    </div>
+    <div class="row brand-consistent">
+        <div class="col m12 l7">
+        <h4>Brand Consistent Booking</h4>
+        <h6>OnSched is an API first booking platform that allows you to build booking flows around your own UX while we work our magic behind the scenes. Take your platform to the next level by creating your own booking flows to match your brand using the OnSched API.</h6>
+        <div class="col m12 l6">
+            <div class="feature-point">
+                <h6><i class="fas fa-sitemap"></i>Lead Routing</h6>
+                <p>Route leads automatically to your vendor's sales team by booking directly into their calendars.</p>
+            </div>
+        </div>
+        <div class="col m12 l6">
+            <div class="feature-point">
+                <h6><i class="fas fa-clock"></i>Time Zones</h6>
+                <p>Have separate views for different users that are scattered across the globe. Users always see times in their local time zone.</p>
+            </div>
+        </div>
+        <div class="col m12 l6">
+            <div class="feature-point">
+                <h6><i class="fas fa-sitemap"></i>Lead Routing</h6>
+                <p>Route leads automatically to your vendor's sales team by booking directly into their calendars.</p>
+            </div>
+        </div>
+        <div class="col m12 l6">
+            <div class="feature-point">
+                <h6><i class="fas fa-clock"></i>Time Zones</h6>
+                <p>Have separate views for different users that are scattered across the globe. Users always see times in their local time zone.</p>
+            </div>
+        </div>
+        </div>
+        <div class="col m12 l5">
+            <img id="rypeapp-img" src="img/rypeapp.png" alt="RypeApp API Integration">
+        </div>
+    </div>
+</div>
+
+<!-- PPA -->
+<div id="ppa-content">
+    <div class="row section-header">
+        <div class="col s12">
+            <h4>OnSched Pay Per Appointment</h4>
+            <h6>Genertate higher-value leads and enriched sales reports with OnSched's Pay Per Appointment method. Push your leads further down the funnel by adding a layer of commitment rather than just collecting static data.</h6>
+        </div>
+    </div>
+    <div class="row leadEnrichment-content">
+        <div class="col s12 l6">
+            <h5>Lead Enrichment</h5>
+            <h6>Generate higher value leads for your Vendors using OnSched's Lead Enrichment. OnSched Lead Enrichment attaches a lead report to each booking that is captured, the lead report contains pertinent information about the lead and their company.</h6>
+            <h6>Try out OnSched's Lead Enrichment app for yourself, enter your email address then click "Book Now" to see what information is generated about you!</h6>
+            <h2>Try it out <i class="fas fa-arrow-down blue-text"></i></h2>
+        </div>
+        <div class="col s12 l6 enrichment">
+            <div id="enrichment-booking-page">
+                <div id="enrichment-booking-header"></div>
+                <div id="enrichment-booking-form">
+                    Enter Your Email
+                    <form class="col s12">
+                        <!--<div class="row">
+                            <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                            </div>
+                        </div>-->
+                        <div class="row">
+                            <div class="input-field col s12" style="margin-top: 50px;">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <a class="btn blue" id="enrich-booking">Book Now</a>
+                        Click 'Book Now' above to see your enriched lead info
+                    </form>
+                </div>
+                <div id="enriched-data" class="row">
+                    <div style="text-align: center;" class="col s4">
+                        <img src="" alt="" id="enriched-avatar">
+                    </div>
+                    <div class="col s8">
+                        <h1 id="person-fullname"></h1>
+                        <h2 id="company-name"></h2>
+                    </div>
+                    <div class="col s12" style="padding: 0 12px; margin-top: -25px;">
+                        <a id="enrich-again"><i class="fas fa-reply fa-2x"></i></a>
+                        <h3><span id="company-website"></span></h3>
+                        <h3><span id="company-category"></span></h3>
+                        <h3><span id="company-location"></span></h3>
+                        <h3><span id="twitter-handle"></span></h3>
+                        <h3><span id="facebook-handle"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features-content" class="row features">
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-sitemap"></i>Lead Routing</h6>
+                <p>Route leads automatically to your vendor's sales team by booking directly into their calendars.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-clock"></i>Time Zones</h6>
+                <p>Have separate views for different users that are scattered across the globe. Users always see times in their local time zone.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-envelope"></i>Custom Notifications</h6>
+                <p>Each of your users engage with their customers in a different fashion. OnSched allows you to customize email notifications.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-sort-amount-down"></i>Multi-Level Access</h6>
+                <p>Have up to 5 levels of user permissions so that different user types have access that they need and nothing more.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-eye"></i>Audit Trails</h6>
+                <p>Every Appointment is timestamped with an audit trail of actions taken against it, and who performed each action.</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="feature-point">
+                <h6><i class="fas fa-chart-line"></i>Custom Reporting</h6>
+                <p>Export filtered search results to Excel and create reports using the attributes you collect during the booking flow.</p>
+            </div>
+        </div>
+    </div>
+    <div id="customNotifications-content" class="row customNotifications">
+        <div id="customNotifications-info" class="col s12 l6">
+            <h5>Custom Notifications</h5>
+            <h6><span class="lr-headers blue-text text-lighten-3">CREATE</span> Create your own Email confirmations and reminders within the OnSched Portal to keep your customers in the loop at all times.</h6>
+            <h6><span class="lr-headers blue-text text-lighten-3">CUSTOMIZE</span> Customize up to 2 Email or Text-Message reminders and when they should be delivered (example: 2 days prior to appointment, 1 hour prior to appointment).</h6>
+            <h6><span class="lr-headers blue-text text-lighten-3">NOTIFY</span> Try out our custom email editor for yourself, click anywhere within the email to edit what you would like it to tell your lead.</h6>
+            <h2><i class="fas fa-arrow-down "></i> Try it out</h2>
+        </div>
+        <div id="customNotifications-graphic" class="col s12 l6">
+            <div class="email-template">
+                <div class="email-header">
+                        <img src="img/translight.png" alt="Business Logo">
+                </div>
+                <div class="email-body input-field col s12">
+                    <textarea id="apptdescription" class="materialize-textarea"></textarea><span id="firstname-placeholder"> John Doe,</span><div id="email-firstname"></div> </br>
+                    <textarea id="apptdescription2" class="materialize-textarea"></textarea>
+                    <textarea id="apptdescription3" class="materialize-textarea"></textarea><span id="companyname-placeholder"> Your Company</span><div id="email-companyname"></div>
+                    <textarea id="apptdescription4" class="materialize-textarea"></textarea><span id="companydomain-placeholder"> company.com</span><div id="email-companydomain"></div>
+                    <textarea id="apptdescription5" class="materialize-textarea"></textarea>
+                    <textarea id="apptdescription6" class="materialize-textarea"></textarea><span></span>
+                    <textarea id="apptdescription7" class="materialize-textarea"></textarea>
+                    <div style="text-align: center;">
+                        <span>Add To Calendar</span>
+                        <div class="addtocal"><img src="http://onsched.com/emailtemplates/assets/img/addtogooglecal.png" alt="Google"></div>
+                        <div class="addtocal"><img src="http://onsched.com/emailtemplates/assets/img/ologo.png" alt="Google"></div>
+                        <div class="addtocal"><img src="http://onsched.com/emailtemplates/assets/img/calplusicon.png" alt="Google"></div>
+                    </div>
+                </div>
+            <div id="customNotifications-input" class="input-field col s6">
+                <input id="customNotifications-email" type="email" class="validate">
+                <label for="customNotifications-email">Email</label>
+            </div>
+            <div class="col s6 email-send">
+                <a id="email-sendbtn" class="btn blue">Book Now</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="apps-section" class="apps-section">
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item white-text" href="#one!">
+                <h2>Agent Online</h2>
+                <img src="img/agentonline.png" style="padding: 0;" alt="Agent Online">
+                <p class="white-text">Agent Online allows you to harness the power of online booking internally, by allowing call centre agents to book, edit, and cancel appointments on behalf of customers without entering the OnSched Portal.</p>
+                <a target="_blank" href="https://sandbox.onsched.com/agentonline" class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+            <div class="carousel-item white-text" href="#two!">
+                <h2>Geo Mapping</h2>
+                <img src="img/worldmapwhite.png" alt="World Map">
+                <p class="white-text">Book with the right location based on your customers zip/postal code, allow your clients to search their location and OnSched's Geo Mapping app will route them to the closest business location.</p>
+                <a class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+                <a class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+            <div class="carousel-item white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+                <a class="btn waves-effect white blue-text">Try It Out</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 s12">
+                <h5 class="white-text"><img style="margin-top:20px;height: 50px;" src="img/translight.png" alt="OnSched Logo"></h5>
+            </div>
+            <div class="col l2 offset-l2 s6">
+                <h5 class="white-text">Company</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Our Story</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Book a Demo</a></li>
+                </ul>
+            </div>
+            <div class="col l2 offset-l2 s6">
+                <h5 class="white-text">Solutions</h5>
+                <ul>
+                    <li><a style="cursor: pointer;" class="grey-text text-lighten-3" id="teams-foot">Teams</a></li>
+                    <li><a style="cursor: pointer;" class="grey-text text-lighten-3" id="enterprise-foot">Enterprise</a></li>
+                    <li><a style="cursor: pointer;" class="grey-text text-lighten-3" id="api-foot">Custom API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        © 2018 Tasman Technologies Inc
+        <a class="grey-text text-lighten-4 right" href="#!">Login</a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script>
+    //iPhone
+  $(function(){
+    $(".iPhone").click(function() {
+      $(this).children(".screen-on").not(".last").addClass("screen-off").removeClass("screen-on")
+      .next().addClass("screen-on").removeClass("screen-off");
+    });
+  });
+</script>
+<script>
+    //Card Swap
+    $('#teams, #api, #enterprise').click(
+       function(){ $(this).addClass('card-selected') }
+)
+    $('#teams').click(
+       function(){ $("#enterprise, #api").removeClass('card-selected') }
+)
+    $('#teams').click(
+       function(){ $("#teams-content").addClass('selected') }
+)
+    $('#teams').click(
+       function(){ $("#enterprise-content, #ppa-content").removeClass('selected') }
+)
+    $('#enterprise').click(
+       function(){ $("#teams, #api").removeClass('card-selected') }
+)
+    $('#enterprise').click(
+       function(){ $("#enterprise-content").addClass('selected') }
+)
+    $('#enterprise').click(
+       function(){ $("#teams-content, #ppa-content").removeClass('selected') }
+)
+    $('#api').click(
+       function(){ $("#enterprise, #teams").removeClass('card-selected') }
+)
+    $('#api').click(
+       function(){ $("#ppa-content").addClass('selected') }
+)
+    $('#api').click(
+       function(){ $("#teams-content, #enterprise-content").removeClass('selected') }
+)
+    $('#teams-foot').click(
+       function(){ $("#teams-content").addClass('selected') }
+)
+    $('#teams-foot').click(
+       function(){ $("#enterprise-content, #ppa-content").removeClass('selected') }
+)
+    $('#enterprise-foot').click(
+       function(){ $("#enterprise-content").addClass('selected') }
+)
+    $('#enterprise-foot').click(
+       function(){ $("#teams-content, #ppa-content").removeClass('selected') }
+)
+    $('#enterprise-learn').click(
+       function(){ $("#enterprise-content").addClass('selected') }
+)
+    $('#enterprise-learn').click(
+       function(){ $("#teams-content, #ppa-content").removeClass('selected') }
+)
+    $('.features-list-point').click(
+       function(){ $("#enterprise-content").addClass('selected') }
+)
+    $('.features-list-point').click(
+       function(){ $("#teams-content, #ppa-content").removeClass('selected') }
+)
+    $('.features-list-point-team').click(
+       function(){ $("#teams-content").addClass('selected') }
+)
+    $('.features-list-point-team').click(
+       function(){ $("#ppa-content, #enterprise-content").removeClass('selected') }
+)
+    $('.features-list-point-lead').click(
+       function(){ $("#ppa-content").addClass('selected') }
+)
+    $('.features-list-point-lead').click(
+       function(){ $("#teams-content, #enterprise-content").removeClass('selected') }
+)
+    $('#api-foot').click(
+       function(){ $("#ppa-content").addClass('selected') }
+)
+    $('#api-foot').click(
+       function(){ $("#teams-content, #enterprise-content").removeClass('selected') }
+)
+    $('#enrich-booking').click(
+       function(){ $("#enriched-data").addClass('enrichdata') }
+)
+    $('#enrich-again').click(
+       function(){ $("#enriched-data").removeClass('enrichdata') }
+)
+    $('#email-sendbtn').click(
+       function(){ $("#companyname-placeholder, #companydomain-placeholder, #firstname-placeholder").addClass('dissapear') }
+)
+
+</script>
+<script>
+    //Scroll Smoothly
+    $('a[href^="#"]').on('click', function(event) {
+var target = $(this.getAttribute('href'));
+if( target.length ) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+        scrollTop: target.offset().top
+    }, 1000);
+}
+});
+</script>
+<script>
+$( '#enrich-booking' ).click(function() {
+    $.ajax({
+        url: 'https://person-stream.clearbit.com/v2/combined/find',
+        data: { email: $('#email').val() },
+        type: 'GET',
+        beforeSend: function(xhr){xhr.setRequestHeader("Authorization", "Bearer sk_989cd2fa079c774b407d00287c2c52a1");},
+        success: function(data) { console.log(data);
+        $("#person-fullname").html(data.person.name.fullName);
+        $("#enriched-avatar").attr("src", data.person.avatar);
+        $("#company-name").html(data.company.name);
+        $("#company-website").html("Website: " + data.company.domain);
+        $("#company-category").html("Category: " + data.company.category.sector);
+        $("#company-location").html("Address: " + data.company.location);
+        $("#twitter-handle").html("Twitter: " + data.person.twitter.handle);
+        $("#facebook-handle").html("Facebook: " + data.person.facebook.handle);
+        }
+     });
+});
+$( '#email-sendbtn' ).click(function() {
+    $.ajax({
+        url: 'https://person-stream.clearbit.com/v2/combined/find',
+        data: { email: $('#customNotifications-email').val() },
+        type: 'GET',
+        beforeSend: function(xhr){xhr.setRequestHeader("Authorization", "Bearer sk_989cd2fa079c774b407d00287c2c52a1");},
+        success: function(data) { console.log(data);
+        $("#email-firstname").html(data.person.name.fullName + ",");
+        $("#email-companyname").html(data.company.name);
+        $("#email-companydomain").html(data.company.domain);
+        }
+     });
+});
+</script>
+
+</body>
+</html>

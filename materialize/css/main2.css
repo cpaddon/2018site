@@ -1,0 +1,120 @@
+.dashboard-menu {
+    width: 70px;
+    background-color: #2196f3;
+    min-height: 100%;
+    position: fixed;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+.nav-line{
+    width: 60%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: .7;
+    margin: 0 auto;
+}
+
+.menu-links ul li button svg {
+    opacity: .7;
+}
+
+.menu-links ul li button.active svg {
+    opacity: 1;
+}
+
+.menu-links ul li button svg {
+}
+
+.menu-links ul li button {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 10px;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.menu-links ul li button.active {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 13px;
+    background-color: #90caf9;
+    border: none;
+    border-radius: 4px;
+}
+
+.menu-links ul li button.active:hover {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 13px;
+    background-color: #90caf9;
+    border: none;
+    border-radius: 4px;
+}
+
+.menu-links ul li button:hover {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 10px;
+    background-color: #90caf9;
+    border: none;
+    border-radius: 4px;
+}
+
+.profile {
+    position: fixed;
+    bottom: 0;
+}
+
+.profile svg {
+    color: #00ff80;
+    font-size: 8px;
+    position: fixed;
+    bottom: 8px;
+    left: 48px;
+}
+
+.profile img {
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #2F353F;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .dashboard-menu {
+        display: none;
+        transition-duration: 500ms;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        border: none;
+        box-shadow: 0px 0px 10px #2f353f36;
+    }
+}
+@media (min-width:768px) {
+    .navbar {
+        position: fixed;
+        left: 70px;
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        border: none;
+        box-shadow: 0px 0px 10px #2f353f36;
+    }
+}

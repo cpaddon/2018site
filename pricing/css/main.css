@@ -1,0 +1,329 @@
+body {
+    font: 300 15px/21px avenir next,sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+.page-footer {
+    background: linear-gradient(to bottom right, #42a5f5, #1565c0);
+}
+.selected {
+    background-color: #2196f3 !important;
+    color: #fff !important;
+}
+.show {
+    display: block !important;
+}
+@media only screen and (max-width: 750px) {
+    .hide-element {
+        display: none;
+    }
+}
+/* Materialize Updates */
+
+nav .nav-wrapper {
+    z-index: 1;
+}
+.btn {
+    -webkit-box-shadow: 6px 6px 7px 0px #2f353f7a;
+    box-shadow: 6px 6px 7px 0px #2f353f7a;
+}
+.brand-logo img {
+    width: 150px;
+    margin: 10.475px 25px;
+}
+.dropdown-trigger:focus {
+    outline: none;
+}
+#dropdown1 {
+    width: 168px !important;
+    height: 203px !important;
+    top: 55px !important;
+}
+#dropdown2 {
+    top: 121px !important;
+}
+#dropdown1 li a {
+    font-size: 14px;
+    padding: 14px 10px;
+}
+.dropdown-trigger i.right {
+    margin-left: 0 !important;
+}
+.sidenav {
+    background-color: #2F353F;
+    padding-top: 25px;
+}
+.sidenav li>a {
+    color: #fff;
+    font-size: 16px;
+}
+.sidenav li>a>i, .sidenav li>a>[class^="mdi-"], .sidenav li>a li>a>[class*="mdi-"], .sidenav li>a>i.material-icons {
+    color: #fff;
+    margin: 0 0 0 0;
+}
+.hero .col {
+    padding: 0;
+}
+.hero {
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.hero-text h6 {
+    line-height: 160%;
+}
+.modal {
+    outline: none;
+    height: 800px;
+    border-radius: 4px;
+    border-right: 4px solid #1867a7fc;
+    border-bottom: 4px solid #1867a7fc;
+    box-shadow: 20px 26px 20px #22282d2b;
+}
+.modal-content {
+    padding: 0 !important;
+}
+.modal-content iframe {
+    width: 100%;
+    height: 800px;
+}
+@media screen and (max-width:400px) {
+    .modal {
+        width: 95%;
+        max-height: 85%;
+    }
+}
+@media screen and (max-width:1300px) {
+    .hero-text {
+        padding-top: 25px;
+    } 
+}
+@media screen and (min-width:926px) {
+    .hero-row {
+        height: 336px;
+    }
+    .hero {
+        background: linear-gradient(to bottom right, #1565c0, #42a5f5);
+        height: 336px;
+        background: linear-gradient(to bottom right, #1565c0, #42a5f5);
+        height: 410px;
+    }
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 4%;
+    }
+    .hero-text .btn {
+        margin: 10px 10px 0 0;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width:925px) {
+    .hero-row {
+        height: 350px;
+    }
+    .hero {
+        background: linear-gradient(to bottom right, #1565c0, #42a5f5);
+        height: 425px;
+        top: 0;
+        left: 0;
+    }
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 4%;
+    }
+    .hero-text .btn {
+        margin: 10px;
+        padding: 0;
+        width: 140px;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width:500px) {
+    .hero h3 {
+        margin: 15% 0 25px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .hero h3 {
+        margin: 150px 0 25px !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .hero h3 {
+        margin: 23% 0 25px;
+    }
+}
+.hero h6 {
+    opacity: .8;
+}
+nav {
+    box-shadow: none;
+}
+
+/* Column CTA's */
+
+.column-cta {
+    text-align: center;
+}
+.column-cta a {
+    display: inline-block;
+    width: 118px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+@media screen and (max-width: 422px) {
+    .column-cta a {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+        transition-duration: 500ms;
+    }
+}
+@media screen and (min-width: 751px) {
+    .column-cta a {
+        display: none;
+    }
+}
+
+/* API Banner */
+
+#api-banner {
+    opacity: .9;
+    width: 80%;
+    height: 80px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 80px;
+    text-align: center;
+    margin: 20px auto 50px;
+    background-color: #2196f3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../img/apibanner.png);
+    box-shadow: 2px 2px 4px 0px #2f353f7a, inset 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+}
+#api-banner:active {
+    top: 1px;
+    left: 1px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0px #2f353f7a, inset 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+}
+#api-banner h4 {
+    padding: 21.5px 0;
+    margin: 0;
+}
+@media only screen and (max-width: 1200px) {
+    #api-banner h4 {
+        padding: 25px 0;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #api-banner {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 535px) {
+    #api-banner h4 {
+        padding: 15px 0;
+    }
+}
+
+/* Pricing Table */
+
+#pricing-table {
+    margin-top: -20px;
+    background: linear-gradient(to bottom, #bee3ff, #fff);
+    padding: 30px 0;
+}
+#pricing-table table {
+    margin: 50px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px 2px #bbbbbb8f;
+}
+#pricing-table table td:first-child {
+    min-width: 188px;
+}
+#pricing-table table thead tr th {
+    color: #2f353f;
+    text-shadow: 1px 1px 1px #bbbbbb66;
+    font-size: 18px;
+    font-weight: 600;
+}
+#pricing-table table thead tr th svg {
+    display: block;
+    color: #2196f3;
+    margin: 10px auto;
+}
+#pricing-table table thead tr th span {
+    display: block;
+    color: rgba(0,0,0,0.87);
+    opacity: .5;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+#pricing-table table thead tr th a {
+    font-weight: 400;
+    margin: 10px 0 0;
+    box-shadow: 2px 2px 4px 0px #2f353f7a;
+}
+#pricing-table table thead tr th a:hover {
+    box-shadow: 1px 1px 4px 0px #2f353f7a;
+}
+#pricing-table table tr {
+    background: rgba(255, 255, 255, 0.658);
+    border-bottom: 1px solid rgba(189, 189, 189, 0.16);
+}
+#pricing-table table tr:first-child {
+    border-bottom: none;
+}
+#pricing-table table tr td {
+    padding: 15px 10px;
+    font-weight: 600;
+    color: #2f353f7a;
+}
+.pricing-title {
+    background: transparent !important;
+}
+.pricing-title td {
+    background: transparent;
+    font-weight: 600;
+    color: rgba(0,0,0,0.87) !important;
+}
+
+/* Pricing Columns */
+
+.teams-col, .enterprise-col, .api-col {
+    min-width: 120px;
+    text-align: center;
+}
+@media screen and (min-width: 751px) {
+    
+}
+@media only screen and (max-width: 750px) {
+    #pricing-table .teams-col {
+        display: none;
+    }
+    #pricing-table .enterprise-col {
+        display: none;
+    }
+    #pricing-table .api-col {
+        display: none;
+    }
+    #pricing-table thead th:first-child {
+
+    }
+    #pricing-table thead th:not(:first-child) {
+        width: 100%;
+    }
+    #pricing-table table thead tr th svg {
+        display: none;
+    }
+}

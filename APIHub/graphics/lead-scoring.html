@@ -1,0 +1,911 @@
+<style>
+    @media only screen and (min-width:1000px){
+        .allContent {
+            max-width: 850px;
+            min-width: 850px;
+            margin: 0 auto;
+            margin-left: -58px;
+            height: 425px;
+            display: block;
+        }
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: 45%;
+            position: relative;
+            top: 0px;
+            left: 60px;
+        }
+        .infoContent ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        .infoContent ul li {
+            margin-bottom: 10px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin: -25px 0 25px;
+        }
+        .infoContent h2 {
+            margin: 15px 0 0 0;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: .8;
+            color: #2196f3;
+        }
+        .infoContent p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+        .infoContent svg {
+            margin: 1px 5px;
+            color: #2196f3;
+        }
+        .graphicContent {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+                top: -400px;
+                left: 175px;
+        }
+        #companySize {
+            position: relative;
+            top: 20px;
+            left: -130px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #companySize .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 20px;
+        }
+        #jobTitle {
+            position: relative;
+            top: 100px;
+            left: -130px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #jobTitle .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 40px;
+        }
+        #allocatedBudget {
+            position: relative;
+            top: -35px;
+            left: 25px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #allocatedBudget .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+        #timeline {
+            position: relative;
+            top: -25px;
+            left: 110px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #timeline .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 40px;
+        }
+        .onschedEngine {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 0px;
+            left: 40px;
+            width: 300px;
+            height: 150px;
+            box-shadow: -13px 20px 13px -5px #bbbbbb;
+            border-radius: 4px;
+            border-bottom: 4px solid #ebebeb;
+            border-left: 6px solid #ebebeb;
+            background-color: #fff;
+            transform: skewX(35deg) rotate(-18deg);
+            box-shadow: -80px 50px 20px 2px rgba(0,0,0,.15);
+            z-index: 3;
+        }
+        #lead-1 {
+            height: 15px;
+            width: 10px;
+            background-color: #fff;
+            opacity: .7;
+            border-radius: 1px;
+            box-shadow: inset 2px 0px 5px 0px #2196f3, inset -2px 0px 3px 1px #0174d0;
+            position: relative;
+            bottom: 350px;
+            left: 435px;
+            z-index: 2;
+        }
+        #lead-1 {
+            animation: leadfunneldown 2s infinite;
+        }
+        @keyframes leadfunneldown {
+            0% {}
+            12% {bottom: 320px; left: 435px; transform: rotate(0deg);}
+            18% {bottom: 312px; left: 428px; transform: rotate(73deg);}
+            100% {bottom: 273px; left: 300px; transform: rotate(73deg);}
+        }
+        .downPipe {
+            height: 50px;
+            width: 10px;
+            margin: 0 auto;
+            background-color: #2196f3;
+            position: relative;
+            top: 30px;
+            left: 15px;
+            z-index: 1;
+            border-radius: 0 0 10px 0px;
+            box-shadow: inset -4px -3px 6px #0174d0, 0px 20px 8px #bbb;
+        }
+        .acrossPipe {
+            height: 145px;
+            width: 10px;
+            margin: 0 auto;
+            background-color: #2196f3;
+            position: relative;
+            bottom: 26px;
+            right: 58px;
+            transform: rotate(73deg);
+            z-index: 1;
+            border-radius: 0 0 10px 10px;
+            box-shadow: inset -3px -4px 6px #0174d0, 20px 6px 9px #bbb;
+        }
+    }
+    @media only screen and (max-width:999px){
+        .allContent {
+            margin: 0 auto;
+            display: block;
+        }
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: 90%;
+            position: relative;
+            top: 0px;
+        }
+        .infoContent ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        .infoContent ul li {
+            margin-bottom: 10px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin: -25px 0 25px;
+        }
+        .infoContent h2 {
+            margin: 15px 0 0 0;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: .8;
+            color: #2196f3;
+        }
+        .infoContent p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+        .infoContent svg {
+            margin: 1px 5px;
+            color: #2196f3;
+        }
+        .graphicContent {
+            display: block;
+            margin: 25px auto;
+        }
+        #companySize {
+            position: relative;
+            top: 20px;
+            left: -130px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #companySize .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 20px;
+        }
+        #jobTitle {
+            position: relative;
+            top: 100px;
+            left: -130px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #jobTitle .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 40px;
+        }
+        #allocatedBudget {
+            position: relative;
+            top: -35px;
+            left: 25px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #allocatedBudget .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+        #timeline {
+            position: relative;
+            top: -25px;
+            left: 110px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #timeline .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 40px;
+        }
+        .onschedEngine {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 0px;
+            left: 40px;
+            width: 300px;
+            height: 150px;
+            box-shadow: -13px 20px 13px -5px #bbbbbb;
+            border-radius: 4px;
+            border-bottom: 4px solid #ebebeb;
+            border-left: 6px solid #ebebeb;
+            background-color: #fff;
+            transform: skewX(35deg) rotate(-18deg);
+            box-shadow: -80px 50px 20px 2px rgba(0,0,0,.15);
+            z-index: 3;
+        }
+        #lead-1 {
+            height: 15px;
+            width: 10px;
+            background-color: #fff;
+            opacity: .7;
+            border-radius: 1px;
+            box-shadow: inset 2px 0px 5px 0px #2196f3, inset -2px 0px 3px 1px #0174d0;
+            position: relative;
+            bottom: 350px;
+            left: 51.5%;
+            z-index: 2;
+        }
+        #lead-1 {
+            animation: leadfunneldown 2s infinite;
+        }
+        @keyframes leadfunneldown {
+            0% {}
+            12% {bottom: 320px; left: 51.5%; transform: rotate(0deg);}
+            18% {bottom: 312px; left: 51%; transform: rotate(73deg);}
+            100% {bottom: 273px; left: 29%; transform: rotate(73deg);}
+        }
+        .downPipe {
+            height: 50px;
+            width: 10px;
+            margin: 0 auto;
+            background-color: #2196f3;
+            position: relative;
+            top: 30px;
+            left: 15px;
+            z-index: 1;
+            border-radius: 0 0 10px 0px;
+            box-shadow: inset -4px -3px 6px #0174d0, 0px 20px 8px #bbb;
+        }
+        .acrossPipe {
+            height: 145px;
+            width: 10px;
+            margin: 0 auto;
+            background-color: #2196f3;
+            position: relative;
+            bottom: 26px;
+            right: 58px;
+            transform: rotate(73deg);
+            z-index: 1;
+            border-radius: 0 0 10px 10px;
+            box-shadow: inset -3px -4px 6px #0174d0, 20px 6px 9px #bbb;
+        }
+    }
+    @media only screen and (max-width: 480px){
+        .allContent {
+            margin: 0 auto;
+            display: block;
+        }
+        .infoContent {
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            display: inline-block;
+            width: 90%;
+            position: relative;
+            top: 0px;
+        }
+        .infoContent ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        .infoContent ul li {
+            margin-bottom: 10px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin: -25px 0 25px;
+        }
+        .infoContent h2 {
+            margin: 15px 0 0 0;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: .8;
+            color: #2196f3;
+        }
+        .infoContent p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+        .infoContent svg {
+            margin: 1px 5px;
+            color: #2196f3;
+        }
+        .graphicContent {
+            display: block;
+            margin: 25px auto;
+        }
+        #companySize {
+            position: relative;
+            top: 20px;
+            left: -105px;
+            z-index: 1;
+            background-color: #fff;
+            width: 160px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #companySize .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+        #jobTitle {
+            position: relative;
+            top: 95px;
+            left: -121px;
+            z-index: 1;
+            background-color: #fff;
+            width: 160px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #jobTitle .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 25px;
+        }
+        #allocatedBudget {
+            position: relative;
+            top: -45px;
+            left: 45px;
+            z-index: 1;
+            background-color: #fff;
+            width: 185px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #allocatedBudget .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+        #timeline {
+            position: relative;
+            top: -15px;
+            left: 98px;
+            z-index: 1;
+            background-color: #fff;
+            width: 160px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            transform: skewX(25deg) rotate(-20deg);
+            box-shadow: -16px 15px 20px 2px rgba(0,0,0,.15);
+        }
+        #timeline .apptInfo h1 {
+            position: relative;
+            top: 5px;
+            left: 25px;
+        }
+        .onschedEngine {
+            font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+            font-weight: 100;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 0px;
+            left: -14px;
+            width: 300px;
+            height: 150px;
+            box-shadow: -13px 20px 13px -5px #bbbbbb;
+            border-radius: 4px;
+            border-bottom: 4px solid #ebebeb;
+            border-left: 6px solid #ebebeb;
+            background-color: #fff;
+            transform: skewX(35deg) rotate(-18deg);
+            box-shadow: -80px 50px 20px 2px rgba(0,0,0,.15);
+            z-index: 3;
+        }
+        #lead-1 {
+            height: 15px;
+            width: 10px;
+            background-color: #fff;
+            opacity: .7;
+            border-radius: 1px;
+            box-shadow: inset 2px 0px 5px 0px #2196f3, inset -2px 0px 3px 1px #0174d0;
+            position: relative;
+            bottom: 410px;
+            left: 53%;
+            z-index: 2;
+        }
+        #lead-1 {
+            animation: leadfunneldown 2s infinite;
+        }
+        @keyframes leadfunneldown {
+            0% {}
+            12% {bottom: 340px; left: 53%; transform: rotate(0deg);}
+            18% {bottom: 335px; left: 52%; transform: rotate(73deg);}
+            100% {bottom: 293px; left: 14%; transform: rotate(73deg);}
+        }
+        .downPipe {
+            height: 80px;
+            width: 10px;
+            margin: 0 auto;
+            background-color: #2196f3;
+            position: relative;
+            top: 10px;
+            left: 15px;
+            z-index: 1;
+            border-radius: 0 0 10px 0px;
+            box-shadow: inset -4px -3px 6px #0174d0, 0px 20px 8px #bbb;
+        }
+        .acrossPipe {
+            height: 145px;
+            width: 10px;
+            margin: 0 auto;
+            background-color: #2196f3;
+            position: relative;
+            bottom: 46px;
+            right: 58px;
+            transform: rotate(73deg);
+            z-index: 1;
+            border-radius: 0 0 10px 10px;
+            box-shadow: inset -3px -4px 6px #0174d0, 20px 6px 9px #bbb;
+        }
+    }
+    .onschedClock img {
+        display: block;
+        position: relative;
+        top: 25px;
+        left: 65px;
+        z-index: 9999;
+        width: 195px;
+        height: 100px;
+        margin: 0px 0 0 -8px;
+    }
+    .routingPipe {
+        height: 165px;
+    }
+    
+    #piece1 {
+        height: 5px;
+        width: 10px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #f8fcff;
+        opacity: 1;
+        position: relative;
+        margin: 0 auto;
+        top: 4px;
+        left: -51px;
+        z-index: 3;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece2 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #2196f3;
+        opacity: .7;
+        position: relative;
+        margin: 0 auto;
+        top: 0px;
+        left: -40px;
+        z-index: 3;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece3 {
+        height: 10px;
+        width: 20px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #fff;
+        opacity: .5;
+        position: relative;
+        margin: 0 auto;
+        top: -10px;
+        left: 50px;
+        z-index: 3;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece4 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #2196f3;
+        opacity: .3;
+        position: relative;
+        margin: 0 auto;
+        top: 5px;
+        left: -35px;
+        z-index: 3;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece5 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #fff;
+        opacity: .8;
+        position: relative;
+        margin: 0 auto;
+        top: -5px;
+        left: 20px;
+        z-index: 3;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece6 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #a9d8ff;
+        opacity: .5;
+        position: relative;
+        margin: 0 auto;
+        top: 15px;
+        left: -10px;
+        z-index: 3;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece7 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #a9d8ff;
+        opacity: .5;
+        position: relative;
+        margin: 0 auto;
+        top: 40px;
+        left: -20px;
+        z-index: 4;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece8 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #a9d8ff;
+        opacity: .5;
+        position: relative;
+        margin: 0 auto;
+        top: 10px;
+        left: 20px;
+        z-index: 4;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece9 {
+        height: 8px;
+        width: 16px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #fff;
+        opacity: .6;
+        position: relative;
+        margin: 0 auto;
+        top: 50px;
+        left: 10px;
+        z-index: 4;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    #piece10 {
+        height: 10px;
+        width: 20px;
+        transform: skewX(35deg) rotate(-18deg);
+        background-color: #a9d8ff;
+        opacity: .5;
+        position: relative;
+        margin: 0 auto;
+        top: 50px;
+        left: -20px;
+        z-index: 4;
+        box-shadow: -2px 1px 18px 0px rgba(0,0,0,.15);
+    }
+    .apptInfo {
+        font: 300 15px/21px avenir next,sans-serif;
+        color: #bbb;
+        display: inline-block;
+    }
+    .apptInfo h1 {
+        font-weight: 600;
+        margin: 0 0 0 10px;
+        font-size: 14px;
+    }
+    .percentage {
+        font: 300 15px/21px avenir next,sans-serif;
+        background-color: #2196f3;
+        color: #fff;
+        display: inline-block;
+        float: right;
+        font-size: 14px;
+        height: 30px;
+        width: 40px;
+    }
+    .percentage span {
+        position: relative;
+        top: 5px;
+        right: -6px;
+    }
+  	.resourceCard {
+      height: 0px;
+    }
+    .resourceCard img {
+        z-index: 999;
+    }
+    #batman {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: 146px;
+        right: 41px;
+        z-index: 3;
+    }
+    /*#robin {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: 286px;
+        left: 52px;
+        transform: skewX(-2deg);
+        z-index: 1;
+        opacity: 0;
+    }
+    #bain {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: 389px;
+        right: 36px;
+        z-index: 0;
+        opacity: 0;
+    }*/
+    #joker {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: 254px;
+        right: 114px;
+        z-index: 0;
+    }
+    @media only screen and (min-width:1000px) {
+        #scoring-header {
+            display: block !important;
+            width: 100% !important;
+            font-family: 'Proxima Nova','Open Sans',sans-serif;
+            margin: 0px 0 40px 60px;
+        }
+        #scoring-header h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+        }
+        #scoring-header p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+    }
+    @media only screen and (max-width:999px) {
+        #scoring-header {
+            display: block !important;
+            width: 100% !important;
+            font-family: 'Proxima Nova','Open Sans',sans-serif;
+            margin: 0px 0 40px 0px;
+        }
+        #scoring-header h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+        }
+        #scoring-header p {
+            display: inline;
+            padding-left: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #747c84;
+            font-weight: 400;
+        }
+    }
+</style>
+    <div class="allContent">
+        <div id="scoring-header">
+            <h1>Lead Scoring</h1>
+            <p>Score your new leads with qualifying questions and find the best matched sales rep for your Vendors.</p>
+        </div>
+        <div class="infoContent">
+            <ul>
+                <li style="width:78%;">
+                    <h2>Qualify Leads</h2>
+                    <p> by gathering qualifying questions on the booking page to determine the best matched sales associate to be scheduled for each appointment.</p>
+                </li>
+                <li style="width:76%;">
+                    <h2>Score Questions</h2>
+                    <p> Score each of your qualifying questions out of 100 in order to match the best leads with the best sales associates.</p>
+                </li>
+                <li>
+                    <h2>Group Sales Reps</h2>
+                    <p> Group your sales associates based on lead scoring, and send your most high priority leads to the right team.</p>
+                </li>
+                <li>
+                    <h2>Enriched Data Scoring</h2>
+                    <p> Lead reports are enriched using data collected from the prospects email and used to help score your high value appointments.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="graphicContent">
+            <div id="companySize">
+                <div class="apptInfo">
+                    <h1>Company Size</h1>
+                </div>
+                <div class="percentage">
+                    <span>40%</span>
+                </div>
+            </div>
+            <div id="jobTitle">
+                <div class="apptInfo">
+                    <h1>Job Title</h1>
+                </div>
+                <div class="percentage">
+                    <span>10%</span>
+                </div>
+            </div>
+            <div id="allocatedBudget">
+                <div class="apptInfo">
+                    <h1>Allocated Budget</h1>
+                </div>
+                <div class="percentage">
+                    <span>30%</span>
+                </div>
+            </div>
+            <div id="timeline">
+                <div class="apptInfo">
+                    <h1>Timeline</h1>
+                </div>
+                <div class="percentage">
+                    <span>20%</span>
+                </div>
+            </div>
+            <div id="piece1"></div>
+            <div id="piece2"></div>
+            <div id="piece3"></div>
+            <div id="piece4"></div>
+            <div id="piece5"></div>
+            <div id="piece6"></div>
+            <div id="piece7"></div>
+            <div id="piece8"></div>
+            <div id="piece9"></div>
+            <div id="piece10"></div>
+            <div class="onschedEngine">
+                <div class="onschedClock">
+                    <img src="https://onsched.com/img/onsched-square-logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="routingPipe">
+                <div class="downPipe"></div>
+                <div class="acrossPipe"></div>
+                <img id="batman" src="https://onsched.com/img/batman-bobble.png" alt="profile">
+                <!--<img id="robin" src="https://onsched.com/img/robin-bobble.png" alt="profile">
+                <img id="bain" src="https://onsched.com/img/bain-bobble.png" alt="profile">-->
+                <img id="joker" src="https://onsched.com/img/joker-bobble.png" alt="profile">
+                <div id="lead-1"></div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,117 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Infiniti Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+    .body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .body h1{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.header{
+    background-color: #171717;
+}
+.tm-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.book-btn{
+    position: absolute;
+    top: 830px;
+    border: none;
+    color: #fff;
+    background-color: #002bff;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 100;
+    margin: -15px 526px;
+    width: 167.45px;
+    outline: none;
+    cursor: pointer;
+    z-index: 5;
+}
+.newinventory{
+    background-color: rgb(243, 243, 243);
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 8px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    padding: 2px;
+    width: 800px; /* Could be more or less, depending on screen size */
+    height: 600px;
+    border-radius: 8px;
+}
+</style>
+<body>
+    <div class="col-md-12 header">
+        <img style="display:block;margin-left:auto;margin-right:auto;" src="img/header.png">
+    </div>
+    <div class="newinventory">
+        <div class="tm-container">
+            <div class="col-md-12">
+                    <h1 style="line-height:36px;font-weight:400;font-size: 22px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">NEW INVENTORY</h1>
+            </div>
+        </div>
+    </div>
+    <div class="tm-container">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+        <iframe src="https://app.onsched.com/BookOnline/availability/999/2171/0/20180312/15" style="overflow:hidden;border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="600px" width="800px" allowfullscreen></iframe>
+  </div>
+
+</div>
+        <div class="col-md-12">
+            <img style="display:inline-block;margin-top:30px;max-width:250px;" src="img/filter.png">
+            <img style="display:inline-block;max-width:700px;z-index:1;position:absolute;" src="img/matching.png"><button id="myBtn" class="book-btn">BOOK TEST DRIVE</button>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<style>
+    @media only screen and (min-width:600px){
+        .infoContent {
+            width: calc(100% - 280px);
+            display: inline-block;
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            position: relative;
+            float: right;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin-left: -50px;
+        }
+        .graphicContent {
+            width: 280px;
+            display: inline-block;
+        }
+    }
+    @media only screen and (max-width:599px){
+        .infoContent {
+            width: 100%;
+            display: inline-block;
+            font: 300 15px/21px 'Proxima Nova','Open Sans',sans-serif;
+            position: relative;
+            float: right;
+            margin-bottom: 30px;
+        }
+        .infoContent h1 {
+            color: #555;
+            font-size: 23px;
+            font-weight: 400;
+            margin-left: 0px;
+        }
+        .graphicContent {
+            width: 280px;
+            display: none;
+        }
+    }
+    .infoContent ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .infoContent ul li {
+
+    }
+    .infoContent h2 {
+        margin: 15px 0 0 0;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        opacity: .8;
+        color: #2196f3;
+    }
+    .infoContent p {
+        display: inline;
+        padding-left: 1px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747c84;
+        font-weight: 400;
+    }
+    .infoContent svg {
+        margin: 1px 5px;
+        color: #2196f3;
+    }
+    .speedometer {
+        height: 300px;
+        width: 300px;
+        border-top: 18px dashed;
+        border-radius: 50%;
+        border-color: #ff0000ba;
+        transform: skewX(27deg) skewY(-17deg);
+        position: relative;
+        top: 25px;
+    }
+    .needle {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 148px solid rgb(189, 189, 189);
+        transform: rotate(-60deg);
+        position: relative;
+        bottom: 0px;
+        left: 88px;
+        -webkit-animation-name: rev; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 120s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 120s;
+        animation-delay: 1s;
+    }
+    
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes example {
+        0%   {left:88px; bottom:0px;}
+        2%  {left:158px; bottom:39px; transform:rotate(5deg);}
+        10%  {left:180px; bottom:30px; transform:rotate(25deg);}
+        100%  {left:180px; bottom:30px; transform:rotate(25deg);}
+    }
+    
+    /* Standard syntax */
+    @keyframes example {
+        0%   {left:88px; bottom:0px;}
+        2%  {left:158px; bottom:39px; transform:rotate(5deg);}
+        10%  {left:180px; bottom:30px; transform:rotate(25deg);}
+        100%  {left:180px; bottom:30px; transform:rotate(25deg);}
+    }
+    .point {
+        width: 37px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #2F353F;
+        position: absolute;
+        top: 99px;
+        left: 148px;
+        transform: skewX(8deg) skewY(-8deg);
+        border: 2px solid #fff;
+        box-shadow: inset 2px -1px 7px #bbb;
+    }
+</style>
+<div class="graphicContent">
+    <div class="speedometer">
+        <div class="needle"></div>
+        <div class="point"></div>
+    </div>
+</div>
+<div class="infoContent">
+        <ul>
+            <li><h1>Performance &amp; Scalability</h1></li>
+            <li>
+                <h2>Microsoft Azure</h2>
+                <p> is used because it's super sweet.</p>
+            </li>
+            <li>
+                <h2>Scale Up Instantly</h2>
+                <p> without any loss in performance, regardless of your company size, OnSched is built to scale with you.</p>
+            </li>
+            <li>
+                <h2>Multi-Threaded API</h2>
+                <p> running on dot net core.</p>
+            </li>
+            <li>
+                <h2>Something fun</h2>
+                <p> more cool stuff about something fun.</p>
+            </li>
+        </ul>
+</div>

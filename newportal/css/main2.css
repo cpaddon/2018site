@@ -1,0 +1,283 @@
+.dashboard-menu {
+    width: 70px;
+    background-color: #2F353F;
+    min-height: 100%;
+    position: fixed;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+.nav-line{
+    width: 60%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: .5;
+    margin: 0 auto;
+}
+
+.menu-links ul li button svg {
+    opacity: .7;
+}
+
+.menu-links ul li button.active svg {
+    opacity: 1;
+}
+
+.menu-links ul li button svg {
+}
+
+.menu-links ul li button {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 10px;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.menu-links ul li button.active {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 13px;
+    background: #d7dadc70;
+    border: none;
+    border-radius: 4px;
+}
+
+.menu-links ul li button.active:hover {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 13px;
+    background: #d7dadc48;
+    -webkit-transition-duration: 300ms;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-links ul li button:hover {
+    color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 10px;
+    background: #d7dadc3d;
+    -webkit-transition-duration: 300ms;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile {
+    position: fixed;
+    bottom: 0;
+}
+
+.profile svg {
+    color: #00ff80;
+    font-size: 8px;
+    position: fixed;
+    bottom: 8px;
+    left: 48px;
+}
+
+.profile img {
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px #2F353F;
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+    .dashboard-menu {
+        display: none;
+        transition-duration: 500ms;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: #f3f3f3;
+        border: none;
+        box-shadow: 0px 0px 10px #2f353f36;
+    }
+}
+@media (min-width: 500px) {
+    .navbar {
+        position: fixed;
+        left: 70px;
+        width: 100%;
+        height: 70px;
+        background-color: #f3f3f3;
+        border: none;
+        box-shadow: 0px 0px 10px #2f353f36;
+    }
+}
+
+.blockedDates {
+}
+
+.blockedDates .datepicker {
+    z-index: 9999 !important;
+    border-bottom: 2px solid rgba(244, 67, 54, 0.425) !important;
+    width: 15%;
+    margin: 0 10px !important;
+}
+
+.blockedDates svg {
+    color: rgba(244, 67, 54, 0.863);
+}
+
+.availabilityTabs {
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 40px;
+        width: 100%;
+        right: 0 !important;
+        background-color: transparent;
+        margin: 0 auto;
+        white-space: nowrap;
+}
+
+.blockedDates .input-field {
+    display: inline-block;
+    border-bottom: 2px solid rgb(244, 67, 54);
+    margin: 0 0 0 10px;
+}
+
+.blockedDates .input-field select {
+    background-color: transparent;
+    width: 150px;
+}
+
+.blockedDates .blockedDatesRange {
+    display: inline-block;
+    width: 300px;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 0;
+}
+
+.blockedDatesRange input[type=range]::-webkit-slider-thumb {
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: rgb(244, 67, 54);
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s;
+    -webkit-appearance: none;
+    background-color: rgb(244, 67, 54);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    margin: -5px 0 0 0;
+  }
+
+  .location-select ul {
+      top: 0 !important;
+  }
+
+  .location-select input {
+      margin-top: 30px !important;
+  }
+
+  .searchbar input {
+      margin-top: 30px !important;
+  }
+
+  .searchbar label {
+      left: 0 !important;
+  }
+
+  .searchbar svg {
+      color: #2196f3;
+      margin-right: 5px;
+  }
+
+@media only screen and (max-width: 768px){
+    .searchbar {
+      position: fixed;
+      top: 0px;
+      right: -35px;
+      width: 200px;
+    }
+    .searchbar label {
+
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .searchbar {
+      position: fixed;
+      top: 0px;
+      right: 10%;
+      width: 200px;
+    }
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 100% !important;
+    width: 90%;
+  }
+  
+  @media only screen and (min-width: 501px) {
+    .container {
+      width: 85%;
+      height: 100%;
+      position: fixed;
+      top: 75px;
+      left: 70px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .container {
+      width: 100% !important;
+      height: 100%;
+      position: fixed;
+      top: 75px;
+      left: 0px;
+    }
+    .cal-date {
+        width: 209px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .searchbar > label:not(.label-icon).active {
+        -webkit-transform: translateY(-12px) translateX(-100px) scale(0.8);
+                transform: translateY(-12px) translateX(-100px) scale(0.8);
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+      }
+    .searchbar > label {
+        color: transparent;
+    }
+    .searchbar label svg {
+        position: absolute;
+        right: -75px;
+        top: 20px;
+    }
+    .tabsAdjust {
+        width: 100% !important;
+    }
+    .tabsAdjust .tabs {
+        right: 0;
+    }
+  }
+
+  .tabsAdjust .tabs .tab a:hover, .tabsAdjust .tabs .tab a.active, .tabsAdjust .tabs .tab a {
+    background-color: transparent;
+    color: #2F353F;
+    font-weight: 600;
+}

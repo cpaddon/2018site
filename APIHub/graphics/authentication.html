@@ -1,0 +1,275 @@
+<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+<style>
+    body {
+        font-family: 'Proxima Nova','Open Sans',sans-serif;
+    }
+    @media only screen and (min-width:1000px) {
+        .authGraphic {
+            display: block;
+            width: 100%;
+        }
+        .app {
+            height: 100px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: #2F353F;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 20px 11px 2px #bbb;
+            position: relative;
+            top: 30px;
+            border-right: 3px solid #4f5561;
+            border-bottom: 3px solid #4f5561;
+        }
+        .app h2 {
+            margin-top: 0;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+            font-size: 14px;
+        }
+        .clientApp {
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            bottom: 55px;
+        }
+        .appIcon {
+            padding: 13px 22px;
+        }
+        .path {
+            display: inline-block;
+            width: 46%;
+            height: 100px;
+            color: #2196f3;
+            border-top: 2px solid #2196f3;
+            border-bottom: 2px solid #2196f3;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: 50%;
+        }
+        .path h1 {
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+        #CA {
+            position: relative;
+            top: 10px;
+        }
+        #CA-fa {
+            position: relative;
+            left: 95%;
+            bottom: 15px;
+            transform: rotate(20deg);
+        }
+        #AT {
+        position: relative;
+        top: 5px;
+        }
+        #AT-fa {
+            position: relative;
+            left: 2.5%;
+            bottom: 45px;
+            transform: rotate(20deg);
+        }
+        .authServer {
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            bottom: 55px;
+        }
+        .authIcon {
+            padding: 13px 18px;
+        }
+    }
+    @media only screen and (max-width:999px) {
+        .authGraphic {
+            display: block;
+            width: 100%;
+        }
+        .app {
+            height: 100px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: #2F353F;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 20px 11px 2px #bbb;
+            position: relative;
+            top: 50px;
+            border-right: 3px solid #4f5561;
+            border-bottom: 3px solid #4f5561;
+        }
+        .app h2 {
+            margin-top: 0;
+            text-align: center;
+            position: relative;
+            bottom: 10px;
+            font-size: 14px;
+        }
+        .clientApp {
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            bottom: 55px;
+        }
+        .appIcon {
+            padding: 13px 22px;
+        }
+        .path {
+            display: inline-block;
+            width: 50%;
+            height: 100px;
+            color: #2196f3;
+            border-top: 2px solid #2196f3;
+            border-bottom: 2px solid #2196f3;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: 50%;
+        }
+        .path h1 {
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+        }
+        #CA {
+            position: relative;
+            top: 15px;
+        }
+        #CA-fa {
+            position: relative;
+            left: 93%;
+            bottom: 12px;
+            transform: rotate(20deg);
+        }
+        #AT {
+            position: relative;
+            top: 10px;
+        }
+        #AT-fa {
+            position: relative;
+            left: 2.5%;
+            bottom: 27px;
+            transform: rotate(20deg);
+        }
+        .authServer {
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            bottom: 55px;
+        }
+        .authIcon {
+            padding: 13px 18px;
+        }
+    }
+    @media only screen and (max-width:480px) {
+        .authGraphic {
+            display: block;
+            width: 100%;
+            margin-left: -15px;
+        }
+        .app {
+            height: 75px;
+            width: 75px;
+            border-radius: 8px;
+            background-color: #2F353F;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 13px 10px 2px #bbb;
+            position: relative;
+            top: 55px;
+            border-right: 3px solid #4f5561;
+            border-bottom: 3px solid #4f5561;
+        }
+        .app h2 {
+            margin-top: 0;
+            text-align: center;
+            position: relative;
+            bottom: 15px;
+            font-size: 14px;
+            opacity: 0;
+        }
+        .clientApp {
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            bottom: 55px;
+        }
+        .appIcon {
+            padding: 7px 12px;
+        }
+        .path {
+            display: inline-block;
+            width: 46%;
+            height: 100px;
+            color: #2196f3;
+            border-top: 2px solid #2196f3;
+            border-bottom: 2px solid #2196f3;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: 50%;
+        }
+        .path h1 {
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+            width: 100px;
+            margin: 0 auto;
+        }
+        #CA {
+            position: relative;
+            top: 3px;
+        }
+        #CA-fa {
+            position: relative;
+            left: 88%;
+            bottom: 25px;
+            transform: rotate(20deg);
+            opacity: .6;
+        }
+        #AT {
+            position: relative;
+            top: 15px;
+        }
+        #AT-fa {
+            position: relative;
+            left: 2.5%;
+            bottom: 9px;
+            transform: rotate(20deg);
+            opacity: .6;
+        }
+        .authServer {
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            bottom: 55px;
+        }
+        .authIcon {
+            padding: 7px 8px;
+        }
+    }
+</style>
+<div class="authGraphic">
+    <div class="clientApp">
+        <div class="app">
+            <div class="appIcon"><i class="fas fa-database fa-4x"></i></div>
+            <h2>APP</h2>
+        </div>
+    </div>
+    <div class="path">
+        <h1 id="CA">CLIENT AUTHENTICATION</h1>
+        <i id="CA-fa" class="fas fa-angle-right fa-2x"></i>
+        <h1 id="AT">ACCESS TOKEN</h1>
+        <i id="AT-fa" class="fas fa-angle-left fa-2x"></i>
+    </div>
+    <div class="authServer">
+        <div class="app">
+            <div class="authIcon"><i class="fas fa-server fa-4x"></i></div>
+            <h2>SERVER</h2>
+        </div>
+    </div>
+</div>

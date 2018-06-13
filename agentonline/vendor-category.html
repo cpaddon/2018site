@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OnSched | Vendor Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="js/currency-autocomplete.js"></script>
+
+<!-- FAVicons -->
+<link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.ico">
+<style>
+.tm-nav{
+    width: 100%;
+    height: 60px;
+    box-shadow: 2px 2px 10px rgb(224, 224, 224);
+    
+}
+.tm-container{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    width: auto;
+    height: 40px;
+    margin: 10px 5px;
+    float: left;
+}
+.tm-nav span{
+    float: right;
+    line-height: 60px;
+}
+.tm-nav a{
+    color: #637280;
+    text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+.container-1{
+    margin-top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container-1 input#autocomplete{
+  width: 330px;
+  height: 50px;
+  background: #2e343dd3;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.whitespace a{
+    font-size: 12px;
+}
+.whitespace i{
+    margin: 15px 0px;
+    color: #2e343d;
+}
+.nav-icons i{
+    margin: 5px 0px;
+}
+.history{
+    text-align: center;
+}
+.history table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+}
+.history ul{
+    list-style-type: none;
+    text-align: center;
+    -webkit-padding-start: 0px;
+}
+.history h1{
+    font-size: 16px;
+    color: #2e343dd3;
+    text-align: center;
+    margin-top: 40px;
+}
+.history th{
+    font-size: 16px;
+    color: #2e343dd3;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-right: 8px;
+    
+}
+.history td{
+    font-size: 12px;
+    color: #2e343dd3;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 6px;
+}
+.categories h1{
+    font-size: 16px;
+    color: #2e343dd3;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.categories ul{
+    -webkit-padding-start: 0px;
+    text-align: center;
+}
+.categories ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: transparent;
+    color: #2e343dd3;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    width: 150px;
+}
+.categories ul li:hover{
+    background-color: #2196f3;
+    color: #fff;
+}
+.categories ul li:hover i{
+    background-color: #2196f3;
+    color: #fff;
+}
+.categories ul li i{
+    color: #2196f3;
+    display: block;
+    margin: 5px auto;
+    font-size: 35px;
+    opacity: .8;
+}
+.history img{
+    margin: 0px 5px;
+    height: 25px;
+    max-width: 50px;
+}.searchbtn{
+    background-color: #2196f3;
+    color: #fff;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+}
+}
+@media screen and (min-width: 801px) {
+    .container-1{
+    margin-top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container-1 input#autocomplete{
+  width: 450px;
+  height: 50px;
+  background: #2e343dd3;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.categories h1{
+    font-size: 16px;
+    color: #2e343dd3;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.categories ul{
+    -webkit-padding-start: 0px;
+    text-align: center;
+}
+.categories ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: transparent;
+    color: #2e343dd3;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 10px 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    width: 200px;
+}
+.categories ul li:hover{
+    background-color: #2196f3;
+    color: #fff;
+}
+.categories ul li:hover i{
+    color: #fff;
+}
+.categories ul li i{
+    color: #2196f3;
+    display: block;
+    margin: 5px auto;
+    font-size: 50px;
+    opacity: .8;
+}
+.whitespace a{
+    font-size: 16px;
+}
+.whitespace i{
+    margin: 15px 5px;
+    color: #2e343d;
+}
+.nav-icons i{
+    margin: 5px 5px;
+}
+.history{
+    text-align: center;
+}
+.history img{
+    margin: 0px 20px;
+    height: 40px;
+    max-width: 100px;
+}
+.history table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+}
+.history ul{
+    list-style-type: none;
+    text-align: center;
+    -webkit-padding-start: 0px;
+}
+.history h1{
+    font-size: 16px;
+    color: #2e343dd3;
+    text-align: center;
+    margin-top: 40px;
+}
+.history th{
+    font-size: 16px;
+    color: #2e343dd3;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.history td{
+    font-size: 14px;
+    color: #2e343dd3;
+    text-align: left;
+    cursor: pointer;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.searchbtn{
+    background-color: #2196f3;
+    color: #fff;
+    border-radius: 4px;
+    width: 180px;
+    height: 40px;
+    display: inline-block;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+}
+}
+.container-1 input#autocomplete::-webkit-input-placeholder {
+   color: #fff;
+}
+ 
+.container-1 input#autocomplete:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+ 
+.container-1 input#autocomplete::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+ 
+.container-1 input#autocomplete:-ms-input-placeholder {  
+   color: #fff;  
+}
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #35a8e6;
+  display: block;
+}
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.autocomplete-suggestions { 
+    border: 1px solid #999;
+    background: #fff;
+    cursor: default;
+    overflow: auto;
+    border-radius: 4px;
+    }
+.autocomplete-suggestion { 
+    padding: 10px 5px; 
+    font-size: 1.2em; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    }
+.autocomplete-selected { 
+    background: #f0f0f0; 
+    }
+.autocomplete-suggestions strong { 
+    font-weight: normal; 
+    color: #2196f3;; 
+    }
+#searchfield { 
+    display: block; 
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 35px; 
+    }
+ 
+#searchfield form {
+  display: inline-block;
+  background: #eeefed;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+}
+#searchfield form .biginput {
+  width: 600px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #aeaeae;
+  font-weight:normal;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#searchfield form .biginput:focus {
+  color: #858585;
+}
+
+.cancelbtn{
+    background-color: #fff;
+    color: #2196f3;
+    border-radius: 4px;
+    border: 2px solid #2196f3;
+    width: 180px;
+    height: 40px;
+    display: inline-block;
+    margin: 25px 5px;
+    outline: none;
+}
+.searchbuttons{
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.nav-icons{
+    height: 60px;
+}
+.nav-icons i{
+    padding: 10px 15px;
+    height: 50px;
+    border-radius: 4px;
+}
+.nav-icons i:hover{
+    background-color: #2195f33d;
+}
+.nav-icons i:active{
+    color: #fff;
+}
+.searchfilters{
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchfilters h1{
+    font-size: 16px;
+    color: #2e343dd3;
+    display: block;
+    margin-top: 60px;
+}
+.searchfilters select{
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 3px solid #2195f3;
+    outline: none;
+    color: #2e343d;
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+    margin: 30px 10px;
+}
+
+.history tr:hover:not(:first-child) {
+    border-bottom: 2px solid #2196f3;
+}
+.history tr:not(:first-child) {
+    border-bottom: 2px solid transparent;
+}
+[type="date"] {
+  background:#fff url(img/calicon.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.datepicker{
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 3px solid #2196f3;
+    outline: none;
+    color: #2e343d;
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+    margin: 30px 10px;
+    border-radius: 4px;
+}
+.vendorinfo img{
+    height: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vendorinfo span{
+    margin: 10px 0px;
+    display: block;
+    text-align: center;
+}
+.whitespace{
+    height: 50px;
+}
+.whitespace a{
+    margin: 15px 5px;
+    color: #2196f3;
+    cursor: pointer;
+}
+
+</style>
+<body>
+<div class="tm-nav">
+    <div class="tm-container">
+        <div>
+            <img class="logo" src="img/transdark.png" alt="OnSched Logo">
+        </div>
+        <div>
+            <span style="color:#2196f3;" class="nav-icons"><i style="background-color:#2195f33d;" alt="Book Now" class="fa fa-calendar-plus-o fa-2x"></i><a style="color:#2196f3" href="vendor-search.html"><i alt="Search Appointments" class="fa fa-search fa-2x"></i></a><a style="color:#2196f3;" href="vendor-history.html"><i alt="Appointment History" class="fa fa-history fa-2x"></i></a><a style="color:#2196f3" href="vendor-signin.html"><i alt="Logout" class="fa fa-sign-out fa-2x"></i></a></span>
+        </div>           
+    </div>
+</div>
+
+    <div class="tm-container">
+            <div class="col-md-12 whitespace">
+                <a href="vendor-book.html">Vendor</a><i class="fa fa-long-arrow-right"></i><a href="vendor-questions.html">Category</a><i class="animated bounceIn fa fa-long-arrow-right"></i><a>Vertical Industry Software</a>
+            </div>
+            <div class="col-md-12 categories">
+                <h1>Sub Categories</h1>
+                <ul>
+                    <a href=""><li><i class="fa fa-car"></i>Car Rental Software</li></a>
+                    <a href=""><li><i class="fa fa-mortar-board"></i>LMS Software</li></a>
+                    <a href=""><li><i class="fa fa-dollar"></i>Nonprofit Accounting</li></a>
+                    <a href=""><li><i class="fa fa-home"></i>Property Management</li></a>
+                </ul>
+            </div>
+        <div class="col-md-12 history">
+            <h1>Top Results</h1>
+            <div class="col-md-12">
+                <table>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Vendor</th>
+                        <th>Rating</th>
+                        <th>Reviews</th>
+                        <th>Book</th>
+                    </tr>
+                    <tr id="result1">
+                        <td><img src="img/appfolio-logo.png"></td>
+                        <td>App Folio</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>49</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result2">
+                        <td><img src="img/building-engines-logo.png"></td>
+                        <td>Building Engines</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
+                        <td>62</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result3">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489701342/yardi-voyager.jpeg"></td>
+                        <td>Yardi Voyager</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
+                        <td>68</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result4">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489701267/realpage.png"></td>
+                        <td>RealPage</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>43</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result5">
+                        <td><img src="https://images.g2crowd.com/uploads/product/hd_favicon/1515527434/rent-manager.png"></td>
+                        <td>Rent Manager</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>26</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result6">
+                        <td><img src="https://images.g2crowd.com/uploads/product/hd_favicon/1487565687/buildium.svg"></td>
+                        <td>Buildium</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>24</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result7">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489701246/quicken-rental-property-management.png"></td>
+                        <td>Intuit</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i></td>
+                        <td>34</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result8">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489696957/propertyware.jpeg"></td>
+                        <td>Propertyware</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
+                        <td>13</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result9">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489714163/on-site.png"></td>
+                        <td>On-Site</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>25</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result10">
+                        <td><img src="https://images.g2crowd.com/uploads/product/hd_favicon/1487566885/entrata.png"></td>
+                        <td>Entrata</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
+                        <td>20</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result11">
+                        <td><img src="https://images.g2crowd.com/uploads/product/hd_favicon/1517854036/resman.svg"></td>
+                        <td>ResMan</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                        <td>10</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result12">
+                        <td><img src="https://images.g2crowd.com/uploads/product/hd_favicon/1487566674/angus-anywhere.png"></td>
+                        <td>Angus AnyWhere</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>7</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result13">
+                        <td><img src="https://images.g2crowd.com/uploads/product/hd_favicon/1488244018/sitelink-web-edition.svg"></td>
+                        <td>SiteLink Web Edition</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>5</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result14">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489712706/mri-residential-management.png"></td>
+                        <td>MRI</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                        <td>4</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>  
+                    <tr id="result15">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489701286/property-matrix.jpeg"></td>
+                        <td>Property Matrix</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                        <td>4</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result16">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489711692/buildinglink-com.jpeg"></td>
+                        <td>BuildingLink.com</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>3</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result17">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1519938648/cornerstone.jpg"></td>
+                        <td>Cornerstone</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
+                        <td>3</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result18">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489709694/cozy.png"></td>
+                        <td>Cozy</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>3</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result19">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1489701316/skyline.png"></td>
+                        <td>Skyline</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i></td>
+                        <td>3</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                    <tr id="result20">
+                        <td><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1510714640/activebuilding.png"></td>
+                        <td>ActiveBuilding</td>
+                        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td>2</td>
+                        <td><button onclick="window.location.href='vendor-questions.html'" class="searchbtn">Book Now</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</script>
+</body>
+</html>

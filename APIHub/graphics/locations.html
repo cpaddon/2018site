@@ -1,0 +1,515 @@
+<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+<style>
+@media only screen and (min-width:601px) {
+    .allContent {
+        max-width: 640.5px;
+        max-height: 250px;
+        margin-bottom: -50px;
+    }
+    .infoContent {
+        display: inline-block;
+        width: 54%;
+        height: 280px;
+        position: relative;
+        bottom: 100px;
+        margin-right: 20px;
+    }
+    .infoContent p {
+        font-family: 'Proxima Nova','Open Sans',sans-serif;
+        display: inline;
+        padding-left: 1px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747c84;
+        font-weight: 400;
+        text-align: top;
+    }
+    .graphicContent {
+        display: inline-block;
+        width: calc(45% - 20px);
+    }
+    .solarCircle {
+        height: 225px;
+        width: 225px;
+        border: 1px solid #2196f3;
+        border-radius: 50%;
+        position: relative;
+        bottom: 300px;
+        z-index: 1;
+        animation: solarspin 240s;
+        }
+        @keyframes solarspin {
+        0% {}
+        100% { transform: rotate(1240deg) }
+        }
+    .innerCircle {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        border-left: 1px solid #2196f3;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #2196f3;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        bottom: 503px;
+        left: 24px;
+        opacity: .3;
+        animation: innerspin 240s;
+        }
+        @keyframes innerspin {
+        0% {}
+        100% { transform: rotate(-2840deg) }
+        }
+    #companyLocation {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        bottom: 160px;
+        left: 83px;
+        z-index: 2;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location1 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        left: 57px;
+        bottom: 26px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location2 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        top: 10px;
+        left: 190px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location3 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        top: 70px;
+        left: 111px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location4 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        right: 27px;
+        bottom: 75px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #atom1 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 130px;
+        bottom: 3px;
+    }
+    #atom2 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 190px;
+        top: 22px;
+    }
+    #atom3 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 191px;
+        top: 160px;
+    }
+    #atom4 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 97px;
+        top: 188px;
+    }
+    #atom5 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        right: 5px;
+        top: 60px;
+    }
+    #atom6 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 20px;
+        top: 128px;
+    }
+    #atom7 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 25px;
+        bottom: 30px;
+    }
+    #atom8 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 218px;
+        top: 50px;
+    }
+    #companyLocation svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 27%;
+    }
+    #location1 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 23%;
+    }
+    #location2 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 27%;
+    }
+    #location3 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 32%;
+    }
+    #location4 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 27%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .allContent {
+        max-width: 640.5px;
+        max-height: 420px;
+        margin-bottom: .25px;
+    }
+    .infoContent {
+        display: block;
+        width: 100%;
+        height: 280px;
+    }
+    .infoContent p {
+        font-family: 'Proxima Nova','Open Sans',sans-serif;
+        display: inline;
+        padding-left: 1px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747c84;
+        font-weight: 400;
+        text-align: top;
+    }
+    .graphicContent {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 20%;
+        bottom: 150px;
+    }
+    .solarCircle {
+        height: 225px;
+        width: 225px;
+        border: 1px solid #2196f3;
+        border-radius: 50%;
+        position: relative;
+        bottom: 300px;
+        z-index: 1;
+        animation: solarspin 240s;
+        }
+        @keyframes solarspin {
+        0% {}
+        100% { transform: rotate(1240deg) }
+        }
+    .innerCircle {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        border-left: 1px solid #2196f3;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #2196f3;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        bottom: 503px;
+        left: 24px;
+        opacity: .3;
+        animation: innerspin 240s;
+        }
+        @keyframes innerspin {
+        0% {}
+        100% { transform: rotate(-2840deg) }
+        }
+    #companyLocation {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        bottom: 160px;
+        left: 83px;
+        z-index: 2;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location1 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        left: 57px;
+        bottom: 26px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location2 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        top: 10px;
+        left: 190px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location3 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        top: 70px;
+        left: 111px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #location4 {
+        height: 60px;
+        width: 60px;
+        border: none;
+        border-radius: 50%;
+        background-color: #2196f3;
+        position: relative;
+        right: 27px;
+        bottom: 75px;
+        z-index: 2;
+        opacity: .8;
+        border: 2px solid #fff;
+        box-shadow: 0px 0px 14px 0px #bbb;
+    }
+    #atom1 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 130px;
+        bottom: 3px;
+    }
+    #atom2 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 190px;
+        top: 22px;
+    }
+    #atom3 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 191px;
+        top: 160px;
+    }
+    #atom4 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 97px;
+        top: 188px;
+    }
+    #atom5 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        right: 5px;
+        top: 60px;
+    }
+    #atom6 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 20px;
+        top: 128px;
+    }
+    #atom7 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 25px;
+        bottom: 30px;
+    }
+    #atom8 {
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        opacity: .8;
+        border-radius: 50%;
+        position: relative;
+        left: 218px;
+        top: 50px;
+    }
+    #companyLocation svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 27%;
+    }
+    #location1 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 23%;
+    }
+    #location2 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 27%;
+    }
+    #location3 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 32%;
+    }
+    #location4 svg {
+        color: #fff;
+        position: relative;
+        top: 24%;
+        left: 27%;
+    }
+}
+@media only screen and (max-width:480px) {
+    .graphicContent {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 15%;
+        bottom: 110px;
+    }
+}
+</style>
+<div class="allContent">
+    <div class="infoContent">
+        <p>A Business Location is the second layer of the "Top - Down" setup. By default, the Business Location will assume the Company level settings but may be customized specifically to that location. When a new account is created, both a Company and Business Location will be created.</p>
+    </div>
+    <div class="graphicContent">
+        <div id="location1"><i class="fas fa-box fa-2x"></i></div>
+        <div id="location2"><i class="fab fa-blogger-b fa-2x"></i></div>
+        <div id="location3"><i class="fas fa-clipboard-list fa-2x"></i></div>
+        <div id="location4"><i class="fas fa-database fa-2x"></i></div>
+        <div id="companyLocation"><i class="fas fa-building fa-2x"></i></div>
+        <div class="solarCircle">
+            <div id="atom1"></div>
+            <div id="atom2"></div>
+            <div id="atom3"></div>
+            <div id="atom4"></div>
+            <div id="atom5"></div>
+            <div id="atom6"></div>
+            <div id="atom7"></div>
+            <div id="atom8"></div>
+        </div>
+        <div class="innerCircle"></div>
+    </div>
+</div>

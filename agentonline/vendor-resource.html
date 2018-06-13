@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OnSched | Vendor Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="js/resource-autocomplete.js"></script>
+
+<!-- FAVicons -->
+<link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.ico">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.ico">
+<style>
+.tm-nav{
+    width: 100%;
+    height: 60px;
+    box-shadow: 2px 2px 10px rgb(224, 224, 224);
+    
+}
+.tm-container{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.tm-availability{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo{
+    width: auto;
+    height: 40px;
+    margin: 10px 5px;
+    float: left;
+}
+.tm-nav span{
+    float: right;
+    line-height: 60px;
+}
+.tm-nav a{
+    color: #637280;
+    text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+    .container-1{
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+    }
+    .container-1 input#autocomplete{
+        width: 330px;
+        height: 50px;
+        background: #2e343dd3;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #fff;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .apptinfo h2{
+        display: none;
+    }
+    .week{
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .week img{
+        width: 36px;
+        height: auto;
+    }
+    .week i{
+        display: inline-block;
+        color: #2196f3;
+        vertical-align: 20.5px;
+        margin: 0px 10px;
+    }
+    .week ul{
+        display: inline-block;
+        cursor: pointer;
+        padding: 0px 0px;
+    }
+    .week h1{
+        font-size: 10px;
+        margin-top: 6px;
+        margin-bottom: 0px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .week h2{
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 6px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .past{
+        margin: 0px 0px;
+        border: 2px solid #7e7e7e;
+        color: #7e7e7e;
+        display: inline-block;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    .selected{
+        margin: 0px 0px;
+        border: 4px solid #2196f3;
+        background-color: #2196f3;
+        color: #333;
+        display: inline-block;
+        border-radius: 50px;
+        width: 44px;
+        height: 44px;
+    }
+    .selected img{
+        border-radius: 50px;
+    }
+    .notselected img{
+        border-radius: 50px;
+    }
+    .notselected{
+        margin: 0px 0px;
+        border: none;
+        display: inline-block;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    .fa-4x{
+        font-size: 2em;
+    }
+    .times{
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .times ul li{
+        display: inline-block;
+        cursor: pointer;
+        margin: 30px 10px;
+        border: 2px solid #2196f3;
+        width: 80px;
+        text-align: center;
+        border-radius: 25px;
+        font-weight: 600;
+    }
+    .times ul{
+        padding-left: 0px;
+    }
+    .timeselected{
+        background-color: #2196f3;
+        color: #fff;
+    }
+    .whitespace a{
+        font-size: 12px;
+    }
+    .whitespace i{
+    margin: 15px 0px;
+    color: #2e343d;
+}
+.nav-icons i{
+    margin: 5px 0px;
+    padding: 10px 15px;
+    height: 50px;
+    border-radius: 4px;
+}
+}
+@media screen and (min-width: 801px) {
+        .container-1{
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+    }
+    .apptinfo h2{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .container-1 input#autocomplete{
+        width: 450px;
+        height: 50px;
+        background: #2e343dd3;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #fff;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .week{
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .week img{
+        width: 71px;
+        height: auto;
+    }
+    .week i{
+        display: inline-block;
+        color: #2196f3;
+        vertical-align: 30px;
+    }
+    .week ul{
+        display: inline-block;
+        cursor: pointer;
+        padding: 0px 40px;
+    }
+    .week h1{
+        font-size: 14px;
+        margin: 10px 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .week h2{
+        font-size: 14px;
+        margin: 10px 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .past{
+        margin: 0px 10px;
+        border: 2px solid #7e7e7e;
+        color: #7e7e7e;
+        display: inline-block;
+        border-radius: 50px;
+        width: 75px;
+        height: 75px;
+    }
+    .selected{
+        margin: 0px 10px;
+        border: 4px solid #2196f3;
+        background-color: #2196f3;
+        color: #333;
+        display: inline-block;
+        border-radius: 50px;
+        width: 79px;
+        height: 79px;
+    }
+    .selected img{
+        border-radius: 50px;
+    }
+    .notselected img{
+        border-radius: 50px;
+    }
+    .notselected{
+        margin: 0px 10px;
+        border: none;
+        display: inline-block;
+        border-radius: 50px;
+        width: 75px;
+        height: 75px;
+    }
+    .times{
+        text-align: center;
+        padding: 0px 200px;
+    }
+    .times ul{
+        padding-left: 0px;
+    }
+    .times ul li{
+        display: inline-block;
+        cursor: pointer;
+        margin: 30px 10px;
+        border: 2px solid #2196f3;
+        width: 80px;
+        text-align: center;
+        border-radius: 25px;
+        font-weight: 600;
+    }
+    .timeselected{
+        background-color: #2196f3;
+        color: #fff;
+    }
+    .whitespace a{
+        font-size: 16px;
+    }
+    .whitespace i{
+    margin: 15px 5px;
+    color: #2e343d;
+}
+.nav-icons i{
+    margin: 5px 5px;
+    padding: 10px 15px;
+    height: 50px;
+    border-radius: 4px;
+}
+}
+.container-1 input#autocomplete::-webkit-input-placeholder {
+   color: #fff;
+}
+ 
+.container-1 input#autocomplete:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+ 
+.container-1 input#autocomplete::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+ 
+.container-1 input#autocomplete:-ms-input-placeholder {  
+   color: #fff;  
+}
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #35a8e6;
+  display: block;
+}
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.autocomplete-suggestions { 
+    border: 1px solid #999;
+    background: #fff;
+    cursor: default;
+    overflow: auto;
+    border-radius: 4px;
+    }
+.autocomplete-suggestion { 
+    padding: 10px 5px; 
+    font-size: 1.2em; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    }
+.autocomplete-selected { 
+    background: #f0f0f0; 
+    }
+.autocomplete-suggestions strong { 
+    font-weight: normal; 
+    color: #2196f3;; 
+    }
+#searchfield { 
+    display: block; 
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 35px; 
+    }
+ 
+#searchfield form {
+  display: inline-block;
+  background: #eeefed;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+}
+#searchfield form .biginput {
+  width: 600px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #aeaeae;
+  font-weight:normal;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#searchfield form .biginput:focus {
+  color: #858585;
+}
+.searchbtn{
+    background-color: #2196f3;
+    color: #fff;
+    border-radius: 4px;
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    margin: 25px 5px;
+    outline: none;
+    border: none;
+}
+.cancelbtn{
+    background-color: #fff;
+    color: #2196f3;
+    border-radius: 4px;
+    border: 2px solid #2196f3;
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    margin: 25px 5px;
+    outline: none;
+}
+.searchbuttons{
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.nav-icons{
+    height: 60px;
+}
+
+.nav-icons i:hover{
+    background-color: #2195f33d;
+}
+.nav-icons i:active{
+    color: #fff;
+}
+.searchfilters{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchfilters h1{
+    font-size: 16px;
+    color: #2e343dd3;
+    display: inline-block;
+}
+.searchfilters select{
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 3px solid #2195f3;
+    outline: none;
+    color: #6e7175;
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+    margin: 30px 50px;
+}
+.searchfilters input{
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 3px solid #2195f3;
+    outline: none;
+    color: #2e343d;
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+    margin: 30px 50px;
+}
+[type="date"] {
+  background:#fff url(img/calicon.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.datepicker{
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 3px solid #2196f3;
+    outline: none;
+    color: #2e343d;
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+    margin: 30px 50px;
+    border-radius: 4px;
+}
+.whitespace{
+    height: 50px;
+}
+.whitespace a{
+    margin: 15px 5px;
+    color: #2196f3;
+    cursor: pointer;
+}
+
+.vendorinfo img{
+    height: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vendorinfo span{
+    margin: 10px 0px;
+    display: block;
+    text-align: center;
+}
+.apptinfo span{
+    float: right;
+    line-height: 48px;
+}
+.apptinfo h1{
+    margin: 10px 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2196f3;
+    cursor: pointer;
+}
+.apptinfo i{
+    margin: 10px 5px;
+    color: #2196f3;
+    cursor: pointer;
+}
+.apptinfo a{
+    color: #2196f3;
+    margin: 0px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.changedate i{
+    color: #2196f3;
+}
+
+</style>
+<body>
+<div class="tm-nav">
+    <div class="tm-container">
+        <div>
+            <img class="logo" src="img/transdark.png" alt="OnSched Logo">
+        </div>
+        <div>
+                <span style="color:#2196f3;" class="nav-icons"><i style="background-color:#2195f33d;" alt="Book Now" class="fa fa-calendar-plus-o fa-2x"></i><a style="color:#2196f3" href="vendor-search.html"><i alt="Search Appointments" class="fa fa-search fa-2x"></i></a><a style="color:#2196f3" href="vendor-history.html"><i alt="Appointment History" class="fa fa-history fa-2x"></i></a><a style="color:#2196f3" href="vendor-signin.html"><i alt="Logout" class="fa fa-sign-out fa-2x"></i></a></span>
+        </div>           
+    </div>
+</div>
+
+    <div class="tm-container">
+        <div class="col-md-12 whitespace">
+            <a href="vendor-book.html">Vendor</a><i class="fa fa-long-arrow-right"></i><a href="vendor-questions.html">Customer</a><i class="fa fa-long-arrow-right"></i><a href="vendor-service.html">Service</a><i class="animated bounceIn fa fa-long-arrow-right"></i><a>Resource</a>
+        </div>
+        <div class="tm-availability">
+            <div class="col-md-12 vendorinfo">
+                <img src="img/avatar.png">
+                <span>Example Company 1</span>
+            </div>
+            <div class="col-md-12 week">
+                    <i class="fa fa-4x fa-angle-left"></i>
+                    <ul>
+                        <li class="notselected">
+                            <img src="img/mitchell.png">
+                            <h1>Mitchell James</h1>
+                        </li>
+                        <li class="selected">
+                            <img src="img/connor.png">
+                            <h1>Connor Paddon</h1>
+                        </li>
+                        <li class="notselected">
+                            <img src="img/avatar.png">
+                            <h1>Joshua Samac</h1>
+                        </li>
+                        <li class="notselected">
+                            <img src="img/avatar.png">
+                            <h1>Tanja Balken</h1>
+                        </li>
+                        <li class="notselected">
+                            <img src="img/john.png">
+                            <h1>John Paddon</h1>
+                        </li>
+                    </ul>
+                    <i class="fa fa-4x fa-angle-right"></i>
+                </div>
+            <div class="col-md-12 searchbar">
+                    <div class="container-1">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="autocomplete" placeholder="Search Resource..." />
+                    </div>
+                </div>
+            <div class="col-md-12 searchbuttons">
+                <button onclick="window.location.href='vendor-book.html'" class="cancelbtn">Cancel</button>
+                <button onclick="window.location.href='vendor-availability.html'" class="searchbtn">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</script>
+</body>
+</html>
